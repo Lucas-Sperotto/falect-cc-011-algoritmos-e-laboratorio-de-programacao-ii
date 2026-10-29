@@ -1,5 +1,5 @@
 /* Prog19.c */
-/* Mostra o uso de ponteiro como argumento de função */
+/* Mostra o uso de ponteiro como argumento de funÃ§Ã£o */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -11,7 +11,7 @@ int main()
     p = gets;
     func(p);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 
@@ -21,7 +21,7 @@ void func(char * (*p)(char *))
 
     printf("Digite seu nome: ");
 
-    (*p)(nome);	/* chama a função gets()*/
+    (*p)(nome);	/* chama a funÃ§Ã£o gets()*/
 
-    printf("Seu nome é: %s\n", nome);
+    printf("Seu nome Ã©: %s\n", nome);
 }

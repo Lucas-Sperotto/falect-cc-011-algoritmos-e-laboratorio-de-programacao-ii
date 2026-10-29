@@ -1,5 +1,5 @@
 /* NotasF1.C */
-/* Calcula a média das notas de qualquer número de alunos */
+/* Calcula a mÃ©dia das notas de qualquer nÃºmero de alunos */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -24,15 +24,15 @@ int main()
     }
     while( notas[i++] >= 0.0);
 
-    i--; /* remove o item de término */
+    i--; /* remove o item de tÃ©rmino */
 
     for(j=0 ; j < i ; j++)
         media += notas[j];
 
     media /= i;
-    printf("Média das notas: %.2f\n", media);
+    printf("MÃ©dia das notas: %.2f\n", media);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 

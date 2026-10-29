@@ -1,11 +1,11 @@
 /* Histograma.C */
-/* Mostra matriz de duas dimensıes como argumento de funÁ„o */
+/* Mostra matriz de duas dimens√µes como argumento de fun√ß√£o */
 #include <stdio.h>
 #include <stdlib.h>
 #define MES 3
 #define FUNC 5
 
-void histograma( int [][MES], int);/* protÛtipo */
+void histograma( int [][MES], int);/* prot√≥tipo */
 
 int main()
 {
@@ -14,11 +14,11 @@ int main()
     for(i=0; i<FUNC ; i++)
         for(j=0; j<MES ; j++)
         {
-            printf("Funcion·rio: %d\tmÍs %d: ", i+1, j+1);
+            printf("Funcion√°rio: %d\tm√™s %d: ", i+1, j+1);
             scanf("%d", &pecas[i][j]);
         }
     histograma(pecas,FUNC);
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 /* Imprime um histograma horizontal */

@@ -1,5 +1,5 @@
 /* Prog14.c */
-/* Grava e lê estruturas em disco */
+/* Grava e lÃª estruturas em disco */
 #include <stdio.h> /* define FILE */
 #include <stdlib.h>
 #include <conio.h> /* Para getch() */
@@ -15,13 +15,13 @@ typedef struct Livro
 Livro GetLivro()
 {
     Livro livro;
-    printf("\n\tDigite o título: ");
+    printf("\n\tDigite o tÃ­tulo: ");
     gets(livro.Titulo);
     printf("\tDigite o nome do autor: ");
     gets(livro.Autor);
-    printf("\tDigite o número do registro: ");
+    printf("\tDigite o nÃºmero do registro: ");
     scanf("%hd",&livro.NumReg);
-    printf("\tDigite o preço: ");
+    printf("\tDigite o preÃ§o: ");
     scanf("%lf", &livro.Preco);
     rewind(stdin);
     return livro;
@@ -29,10 +29,10 @@ Livro GetLivro()
 
 void PrintLivro(Livro livro)
 {
-    printf("\n\tTítulo: %s\n", livro.Titulo);
+    printf("\n\tTÃ­tulo: %s\n", livro.Titulo);
     printf("\tAutor : %s\n", livro.Autor);
     printf("\tNo.Reg: %hd\n", livro.NumReg);
-    printf("\tPreço : %.2lf\n", livro.Preco );
+    printf("\tPreÃ§o : %.2lf\n", livro.Preco );
 }
 
 int main()
@@ -41,7 +41,7 @@ int main()
     char resp;
     FILE *fptr; /* ponteiro para arquivo */
 
-    /* Abre arquivo para leitura e gravação. Adiciona dados no final*/
+    /* Abre arquivo para leitura e gravaÃ§Ã£o. Adiciona dados no final*/
     if((fptr = fopen("Livros.Dat","ab+"))==NULL) exit(1);
 
     do
@@ -53,14 +53,14 @@ int main()
     }
     while(resp != 'n' && resp != 'N');
 
-    fflush(fptr); /* Esvazia o conteúdo do buffer de saída */
-    fseek(fptr,0,0); /*Coloca o ponteiro no início do arquivo */
+    fflush(fptr); /* Esvazia o conteÃºdo do buffer de saÃ­da */
+    fseek(fptr,0,0); /*Coloca o ponteiro no inÃ­cio do arquivo */
 
     puts("\n\nLISTA DE LIVROS DO ARQUIVO");
     puts("==========================");
 
     while(fread(&livro, sizeof(Livro),1,fptr)==1) PrintLivro(livro);
     fclose(fptr);
-    system("pause");
+    // system("pause");
     return 0;
 }

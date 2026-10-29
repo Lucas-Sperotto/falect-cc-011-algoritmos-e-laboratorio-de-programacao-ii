@@ -9,12 +9,12 @@ int main()
 
     pi = (int *) malloc(sizeof(int));
 
-    puts("Digite um número: ");
+    puts("Digite um nÃºmero: ");
     scanf("%d", pi);
-    printf("\nVocê digitou o número %d\n", *pi);
+    printf("\nVocÃª digitou o nÃºmero %d\n", *pi);
 
     free(pi);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

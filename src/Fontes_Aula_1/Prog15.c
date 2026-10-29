@@ -1,5 +1,5 @@
 /* Prog15.c */
-/* Mostra impressão de string com puts() */
+/* Mostra impressÃ£o de string com puts() */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -7,11 +7,11 @@ int main()
 {
     char nome[80];
     printf("Digite o seu nome: ");
-    gets(nome); /* lê texto do teclado */
-    puts("Saudacoes, ");/* imprime texto no vídeo */
+    gets(nome); /* lÃª texto do teclado */
+    puts("Saudacoes, ");/* imprime texto no vÃ­deo */
     puts(nome);
     puts("puts() pula de linha sozinha");
     puts(&nome[4]);
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

@@ -1,5 +1,5 @@
 /* NumDias.C */
-/* Imprime o número de dias do ano até a data especificada */
+/* Imprime o nÃºmero de dias do ano atÃ© a data especificada */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -11,7 +11,7 @@ int main()
 
     printf("Digite a data no formato DD/MM/AAAA: ");
 
-    /* %*c lê caractere do teclado e não atribui a nada */
+    /* %*c lÃª caractere do teclado e nÃ£o atribui a nada */
     scanf("%d%*c%d%*c%d", &dia, &mes, &ano);
 
     if( ((!(ano%4) && ano%100)) || !(ano%400))
@@ -22,10 +22,10 @@ int main()
     for(i=0; i < mes-1; i++)
         total+=dmes[i];
 
-    printf("Total de dias transcorridos desde o início do ano: %d\n",
+    printf("Total de dias transcorridos desde o inÃ­cio do ano: %d\n",
            total);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 

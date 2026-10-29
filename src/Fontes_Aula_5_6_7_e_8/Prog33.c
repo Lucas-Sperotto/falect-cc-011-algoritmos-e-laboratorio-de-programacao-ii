@@ -1,5 +1,5 @@
 /* Prog33.c */
-/* Atribui o texto digitado na linha de comando a uma tecla de função */
+/* Atribui o texto digitado na linha de comando a uma tecla de funÃ§Ã£o */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -24,6 +24,6 @@ int main(int argc, char **argv)
     if( strcmp(str, "null" )==0) /* limpa tecla */
         strcpy(str,"");
     printf("\x1B[0;%d;\"%s\";13p",tecla+58,str);
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

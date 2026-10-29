@@ -1,12 +1,12 @@
 /* JogoDaVelha1.C */
-/* Jogo-da-velha. Mostra matriz de duas dimensıes inicializada */
+/* Jogo-da-velha. Mostra matriz de duas dimens√µes inicializada */
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
     const char pt='.';
-    unsigned char m[3][3]= /* Matriz de duas dimensıes inicializada */
+    unsigned char m[3][3]= /* Matriz de duas dimens√µes inicializada */
     {{pt, pt, pt}, {pt, pt, pt}, {pt, pt, pt}};
 
     int lin, col, j=0;
@@ -70,6 +70,6 @@ int main()
         }
     }
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

@@ -1,5 +1,5 @@
 /* Prog7.c */
-/* Lê dados formatados do arquivo */
+/* LÃª dados formatados do arquivo */
 #include <stdio.h> /* define FILE */
 #include <stdlib.h>
 
@@ -15,6 +15,6 @@ int main(void)
         printf("%s %d %.2lf\n", titulo, regnum, preco);
 
     fclose(fptr);
-    system("pause");
+    // system("pause");
     return 0;
 }

@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char * procura(char *, char );/* protótipo */
+char * procura(char *, char );/* protÃ³tipo */
 
 int main()
 {
@@ -14,17 +14,17 @@ int main()
 
     ptr = procura(str, 'h');
 
-    printf("\nA frase começa no endereço %p\n", str);
+    printf("\nA frase comeÃ§a no endereÃ§o %p\n", str);
 
     if(ptr)
     {
-        printf("\nPrimeira ocorrência do caractere 'h': %p\n", ptr);
-        printf( "\nA sua posição é: %d\n", ptr-str);
+        printf("\nPrimeira ocorrÃªncia do caractere 'h': %p\n", ptr);
+        printf( "\nA sua posiÃ§Ã£o Ã©: %d\n", ptr-str);
     }
     else
-        printf( "O caractere 'h' não existe nesta frase.\n");
+        printf( "O caractere 'h' nÃ£o existe nesta frase.\n");
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 

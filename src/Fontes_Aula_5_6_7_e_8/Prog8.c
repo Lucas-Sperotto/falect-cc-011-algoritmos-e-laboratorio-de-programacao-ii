@@ -1,5 +1,5 @@
 /* Prog8.c */
-/* Imprime os elementos de uma matriz usando notação matriz */
+/* Imprime os elementos de uma matriz usando notaÃ§Ã£o matriz */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -8,8 +8,8 @@ int main()
     static int M[5]= {92,81,70,69,58};
     int i;
     for(i=0; i<5; i++)
-        printf("%d\n", M[i]); /* Notação matriz */
+        printf("%d\n", M[i]); /* NotaÃ§Ã£o matriz */
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

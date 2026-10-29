@@ -1,11 +1,11 @@
 /* JogoDaVelha.C */
-/* Jogo-da-velha. Mostra matriz de duas dimensıes */
+/* Jogo-da-velha. Mostra matriz de duas dimens√µes */
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
-    unsigned char m[3][3]; /* Matriz de duas dimensıes */
+    unsigned char m[3][3]; /* Matriz de duas dimens√µes */
     int lin, col, j=0;
 
     const int TRUE = 1;
@@ -71,7 +71,7 @@ int main()
         }
     }
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 

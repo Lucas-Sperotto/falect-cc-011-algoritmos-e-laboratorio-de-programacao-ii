@@ -6,7 +6,7 @@
 
 int main()
 {
-    char salute[100]="Saudações, ";
+    char salute[100]="SaudaÃ§Ãµes, ";
     char nome[80];
 
     printf("Digite o seu nome: ");
@@ -16,6 +16,6 @@ int main()
 
     printf("%s\n", salute);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

@@ -21,11 +21,11 @@ typedef struct
     float preco;
 } Venda;
 
-void listavenda(void); /* Protótipo */
-void novavenda(void);  /* Protótipo */
+void listavenda(void); /* ProtÃ³tipo */
+void novavenda(void);  /* ProtÃ³tipo */
 
 Venda vendas[50]; /* Cria matriz de estruturas */
-Venda Total= {{0,"",0},0,0.0}; /* Cria variável do tipo Venda */
+Venda Total= {{0,"",0},0,0.0}; /* Cria variÃ¡vel do tipo Venda */
 
 
 int n=0;
@@ -49,14 +49,14 @@ int main()
         case 'L':
             listavenda();
             break;
-        case ESC: /* ESC não pode ser declarado com const */
+        case ESC: /* ESC nÃ£o pode ser declarado com const */
             exit(0);
         default :
             printf("Opcao invalida!!\n");
         }
 
     }
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 void novavenda()
@@ -70,10 +70,10 @@ void novavenda()
     printf("Ano: ");
     gets(temp);
     vendas[n].diavenda.ano=atoi(temp);
-    printf("Peças: ");
+    printf("PeÃ§as: ");
     gets(temp);
     vendas[n].pecas=atoi(temp);
-    printf("Preço: ");
+    printf("PreÃ§o: ");
     gets(temp);
     vendas[n].preco=atof(temp);
     Total.pecas += vendas[n].pecas;
@@ -89,7 +89,7 @@ void listavenda()
         return;
     }
 
-    printf("\n\nRelatório\n");
+    printf("\n\nRelatÃ³rio\n");
     for (i=0; i<n; i++)
     {
         printf("%2d de %10s de %4d", vendas[i].diavenda.dia,

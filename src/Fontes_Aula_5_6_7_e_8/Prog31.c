@@ -1,5 +1,5 @@
 /* Prog30.c */
-/* Mostra a implementação de uma lista ligada */
+/* Mostra a implementaÃ§Ã£o de uma lista ligada */
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h> /* para getch() */
@@ -33,10 +33,10 @@ void GetLivro()
     gets(atual->Titulo);
     printf("Digite autor: ");
     gets(atual->Autor);
-    printf("Digite o número do registro: ");
+    printf("Digite o nÃºmero do registro: ");
     gets(temp);
     atual->NumReg = atoi(temp);
-    printf("Digite o preço: ");
+    printf("Digite o preÃ§o: ");
     gets(temp);
     atual->Preco = atof(temp);
     atual->Proximo=(Livro *)NULL;
@@ -54,10 +54,10 @@ void PrintLivro()
 
     do
     {
-        printf( "Título: %s\n", atual->Titulo);
+        printf( "TÃ­tulo: %s\n", atual->Titulo);
         printf( "Autor : %s\n" , atual->Autor);
         printf( "No.Reg: %d\n" , atual->NumReg);
-        printf( "Preço : %.2f\n\n" , atual->Preco);
+        printf( "PreÃ§o : %.2f\n\n" , atual->Preco);
         atual = atual->Proximo;
     }
     while(atual != NULL);
@@ -81,6 +81,6 @@ int main()
 
     PrintLivro();
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

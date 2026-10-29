@@ -5,11 +5,11 @@
 
 int main()
 {
-    char salute[]="Saudações, ";
+    char salute[]="SaudaÃ§Ãµes, ";
     char nome[80];
     printf("Digite o seu nome: ");
     gets(nome);
     printf("%s%s\n", salute, nome);
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

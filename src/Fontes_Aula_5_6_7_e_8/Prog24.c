@@ -8,17 +8,17 @@ int main(void)
     int i=5, *pi;
     float f=3.2, *pf;
 
-    void *pv;	/* Ponteiro genérico */
-    pv = &i;	/* Endereço de um int */
+    void *pv;	/* Ponteiro genÃ©rico */
+    pv = &i;	/* EndereÃ§o de um int */
 
     pi = (int *)pv; /* Convertendo o tipo do ponteiro */
     printf("%d\n", *pi); /* Correto */
 
-    pv = &f;	/* Endereço de um float */
+    pv = &f;	/* EndereÃ§o de um float */
 
     pf = (float *) pv; /* Convertendo o tipo do ponteiro */
     printf("%f\n", *pf);/* Correto */
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

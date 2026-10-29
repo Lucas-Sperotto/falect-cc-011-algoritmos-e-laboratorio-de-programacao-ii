@@ -1,10 +1,10 @@
 /* Prog10.C */
-/* Mostra a passagem de matrizes para funções como argumento */
+/* Mostra a passagem de matrizes para funÃ§Ãµes como argumento */
 #include <stdio.h>
 #include <stdlib.h>
 #define TAMANHO 50
 
-float media(float[], int); /*Protótipo*/
+float media(float[], int); /*ProtÃ³tipo*/
 
 int main()
 {
@@ -18,13 +18,13 @@ int main()
     }
     while( notas[i++] >= 0.0);
 
-    i--; /* remove o item de término */
+    i--; /* remove o item de tÃ©rmino */
 
     m = media(notas, i);
 
-    printf("Média das notas: %.2f\n", media);
+    printf("MÃ©dia das notas: %.2f\n", media);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 

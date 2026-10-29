@@ -11,7 +11,7 @@ int main()
 
     if((fptr = fopen("FilePrint.C","r"))==NULL)
     {
-        puts("Arquivo FilePrint.C não foi encontrado");
+        puts("Arquivo FilePrint.C nÃ£o foi encontrado");
         exit(1);
     }
 
@@ -23,11 +23,11 @@ int main()
 
     while(!feof(fptr))
     {
-        fgets(buff,80,fptr); /*Lê uma linha de texto */
+        fgets(buff,80,fptr); /*LÃª uma linha de texto */
         fputs(buff,fprn);    /*Imprime na impressora */
     }
     fclose(fptr);
     fclose(fprn);
-    system("pause");
+    // system("pause");
     return 0;
 }

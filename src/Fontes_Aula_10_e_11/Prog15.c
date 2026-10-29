@@ -15,10 +15,10 @@ typedef struct Livro
 
 void PrintLivro(Livro livro)
 {
-    printf("\n\tTítulo: %s\n", livro.Titulo);
+    printf("\n\tTÃ­tulo: %s\n", livro.Titulo);
     printf("\tAutor : %s\n", livro.Autor);
     printf("\tNo.Reg: %hd\n", livro.NumReg);
-    printf("\tPreço : %.2lf\n", livro.Preco );
+    printf("\tPreÃ§o : %.2lf\n", livro.Preco );
 }
 
 int main()
@@ -33,9 +33,9 @@ int main()
     fseek(fptr,0,2);
 
     nrec = ftell(fptr)/sizeof(Livro);
-    printf("O número de registros é %ld\n", nrec);
+    printf("O nÃºmero de registros Ã© %ld\n", nrec);
 
-    puts("Insira o número do registro: ");
+    puts("Insira o nÃºmero do registro: ");
     scanf("%ld", &rec);
     if(rec > 0 && rec <= nrec)
     {
@@ -46,8 +46,8 @@ int main()
         fclose(fptr);
     }
     else
-        puts("Registro não existe");
+        puts("Registro nÃ£o existe");
 
-    system("pause");
+    // system("pause");
     return 0;
 }

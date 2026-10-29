@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #define TAMANHO 50
 
-void ordena(int[], int);/* protótipo */
+void ordena(int[], int);/* protÃ³tipo */
 
 int main()
 {
@@ -12,7 +12,7 @@ int main()
 
     for(i=0; i<TAMANHO ; i++)
     {
-        printf("Digite número ou zero para terminar: ");
+        printf("Digite nÃºmero ou zero para terminar: ");
         scanf("%d", &Tab[i]);
 
         if( !Tab[i] ) break;
@@ -22,7 +22,7 @@ int main()
 
     for(j=0; j < i ; j++)
         printf("%d\n", Tab[j]);
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 

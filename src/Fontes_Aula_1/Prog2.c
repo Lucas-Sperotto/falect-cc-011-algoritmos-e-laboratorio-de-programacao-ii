@@ -1,5 +1,5 @@
 /* Notas.C */
-/* Calcula a média de 5 notas (usa matriz) */
+/* Calcula a mÃ©dia de 5 notas (usa matriz) */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -17,8 +17,8 @@ int main()
     }
 
     media /= 5.0;
-    printf("Média das notas: %.2f\n", media);
+    printf("MÃ©dia das notas: %.2f\n", media);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

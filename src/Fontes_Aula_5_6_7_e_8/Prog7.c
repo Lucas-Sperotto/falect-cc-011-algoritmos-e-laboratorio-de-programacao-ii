@@ -1,5 +1,5 @@
 /* Prog7.c */
-/* Mostra as operações possíveis com ponteiros */
+/* Mostra as operaÃ§Ãµes possÃ­veis com ponteiros */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -8,17 +8,17 @@ int main()
     unsigned int x=5, y=6;
     unsigned int *px, *py;
 
-    px = &x;	/* Atribuições */
+    px = &x;	/* AtribuiÃ§Ãµes */
     py = &y;
 
-    if( px < py) /* Comparações */
-        printf("py-px= %u\n", (py-px));/* Subtraçao */
+    if( px < py) /* ComparaÃ§Ãµes */
+        printf("py-px= %u\n", (py-px));/* SubtraÃ§ao */
     else
         printf("px-py= %u\n", (px-py));
 
     printf("px = %p", px);
     printf(", *px = %u", *px);	/* Op.Indireto */
-    printf(", &px = %p\n", &px);	/* Op.Endereços */
+    printf(", &px = %p\n", &px);	/* Op.EndereÃ§os */
 
     printf("py = %p", py);
     printf(", *py = %u", *py);
@@ -38,6 +38,6 @@ int main()
 
     printf("px-py= %u\n", (px-py));
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

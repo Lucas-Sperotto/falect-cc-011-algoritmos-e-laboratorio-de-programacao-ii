@@ -1,12 +1,12 @@
 /* Prog22.c */
-/* Mostra uma matriz de ponteiros para função */
+/* Mostra uma matriz de ponteiros para funÃ§Ã£o */
 #include <stdio.h>
 #include <stdlib.h>
-void func0(void), func1(void), func2(void);/* Protótipos */
+void func0(void), func1(void), func2(void);/* ProtÃ³tipos */
 
 const true=1;
 
-typedef void (*PFunc)(void); /* O tipo PFunc é ponteiro p/fção void */
+typedef void (*PFunc)(void); /* O tipo PFunc Ã© ponteiro p/fÃ§Ã£o void */
 
 int main()
 {
@@ -22,10 +22,10 @@ int main()
         scanf("%d", &i);
         if(i < 0 || i > 2) break;
 
-        (*ptrf[i])(); /* Chama função */
+        (*ptrf[i])(); /* Chama funÃ§Ã£o */
     }
     while(true);
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 

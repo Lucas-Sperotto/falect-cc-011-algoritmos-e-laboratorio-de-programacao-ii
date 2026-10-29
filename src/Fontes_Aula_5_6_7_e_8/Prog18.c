@@ -1,19 +1,19 @@
 /* Prog18.c */
-/* Mostra o uso de ponteiro para função */
+/* Mostra o uso de ponteiro para funÃ§Ã£o */
 #include <stdio.h>
 #include <stdlib.h>
 
-void doisbeep(void); /* protótipo */
+void doisbeep(void); /* protÃ³tipo */
 
 int main()
 {
-    void (*pf)(void);/* ponteiro p/fção void que recebe void */
+    void (*pf)(void);/* ponteiro p/fÃ§Ã£o void que recebe void */
 
-    pf = doisbeep; /* nome da função sem os parênteses */
+    pf = doisbeep; /* nome da funÃ§Ã£o sem os parÃªnteses */
 
-    (*pf)();/* chama a função */
+    (*pf)();/* chama a funÃ§Ã£o */
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 

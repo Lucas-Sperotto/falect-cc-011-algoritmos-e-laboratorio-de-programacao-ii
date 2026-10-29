@@ -1,5 +1,5 @@
 /* Prog17.c */
-/* Lê de stdin e imprime em stdout usando baixo nível */
+/* LÃª de stdin e imprime em stdout usando baixo nÃ­vel */
 #include <io.h> /* para read() e write() */
 #include <stdlib.h> /* para system() */
 #include <string.h> /* para strlen() */
@@ -12,13 +12,13 @@ int main()
 
     write(1,str,strlen(str)); /* Imprime em stdout */
 
-    BytesLidos=read(0,nome,80); /* Lê de stdin */
+    BytesLidos=read(0,nome,80); /* LÃª de stdin */
 
     nome[BytesLidos + 1]='\0';
 
-    str="Seu nome é ";
+    str="Seu nome Ã© ";
     write(1,str,strlen(str)); /* Imprime em stdout */
     write(1,nome,strlen(nome));
-    system("pause");
+    // system("pause");
     return 0;
 }

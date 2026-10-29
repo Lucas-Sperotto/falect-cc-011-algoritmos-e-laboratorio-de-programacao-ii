@@ -1,6 +1,6 @@
 /* Prog5.c */
 /* Mostra o uso de ponteiros declarados
-   dentro da função main() */
+   dentro da funÃ§Ã£o main() */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -18,6 +18,6 @@ int main()
     printf("px = %p\t*px = %d\n", px,*px);
     printf("py = %p\t*py = %d\n", py,*py);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

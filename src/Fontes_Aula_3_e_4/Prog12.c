@@ -1,5 +1,5 @@
 /* Prog12.c */
-/* Mostra o uso do operador de endereço */
+/* Mostra o uso do operador de endereÃ§o */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -15,11 +15,11 @@ int main(void)
     Num exemplo;
 
     printf("\n\n");
-    printf("Endereço de i  = %08X\n" , &exemplo.i );
-    printf("Endereço de f  = %08X\n" , &exemplo.f );
-    printf("Endereço de d  = %08X\n" , &exemplo.d );
-    printf("Endereço de x  = %08X\n" , &exemplo   );
+    printf("EndereÃ§o de i  = %08X\n" , &exemplo.i );
+    printf("EndereÃ§o de f  = %08X\n" , &exemplo.f );
+    printf("EndereÃ§o de d  = %08X\n" , &exemplo.d );
+    printf("EndereÃ§o de x  = %08X\n" , &exemplo   );
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

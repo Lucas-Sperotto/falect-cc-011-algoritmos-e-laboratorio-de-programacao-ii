@@ -21,6 +21,6 @@ int main(void)
     }
 
     fclose(fptr);
-    system("pause");
+    // system("pause");
     return 0;
 }

@@ -1,6 +1,6 @@
 /* Prog10.c */
-/* Mostra uni„o com estrutura */
-/* Imprime um caractere em bin·rio */
+/* Mostra uni√£o com estrutura */
+/* Imprime um caractere em bin√°rio */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -28,8 +28,8 @@ int main(void)
     Binario B;
     printf("Digite um caractere: ");
     B.ch  = getchar();
-    printf("O caractere digitado È: %c\n", B.ch);
-    printf("O valor em bin·rio correspondente È: ");
+    printf("O caractere digitado √©: %c\n", B.ch);
+    printf("O valor em bin√°rio correspondente √©: ");
 
     printf("%d", B.x.bit7);
     printf("%d", B.x.bit6);
@@ -41,7 +41,7 @@ int main(void)
     printf("%d", B.x.bit0);
     printf("\n");
 
-    system("pause");
+    // system("pause");
     return 0;
 }
 

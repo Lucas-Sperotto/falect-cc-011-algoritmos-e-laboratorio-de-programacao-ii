@@ -1,9 +1,9 @@
 /* NotasF.C */
-/* Calcula a mÈdia das notas de 5 alunos usando matriz float */
+/* Calcula a m√©dia das notas de 5 alunos usando matriz float */
 #include <stdio.h>
 #include <stdlib.h>
 
-#define TAMANHO 5 /* n„o podemos usar const */
+#define TAMANHO 5 /* n√£o podemos usar const */
 
 int main()
 {
@@ -18,8 +18,8 @@ int main()
         media += notas[i];
     }
     media /= 5.0;
-    printf("MÈdia das notas: %.2f\n", media);
+    printf("M√©dia das notas: %.2f\n", media);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

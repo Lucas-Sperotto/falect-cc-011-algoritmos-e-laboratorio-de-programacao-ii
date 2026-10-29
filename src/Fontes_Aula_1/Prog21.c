@@ -9,7 +9,7 @@ int main()
     char resposta[]="BRANCO";
     char resp[40];
 
-    printf("Qual È a cor do cavalo branco de Napole„o?");
+    printf("Qual √© a cor do cavalo branco de Napole√£o?");
     gets(resp);
 
     while (strcmp(resp,resposta) != 0)
@@ -18,6 +18,6 @@ int main()
         gets(resp);
     }
     printf("Correto!\n");
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

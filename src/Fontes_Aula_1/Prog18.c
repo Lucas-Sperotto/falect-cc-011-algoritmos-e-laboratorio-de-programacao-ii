@@ -15,9 +15,9 @@ int main()
     len=strlen(nome);
 
     for(i=0; i<len + 4; i++)
-        printf("Endereço = %u\tChar  = %c\tDec   = %d\n",
+        printf("EndereÃ§o = %u\tChar  = %c\tDec   = %d\n",
                (unsigned)(nome+i), nome[i], (int)nome[i]);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

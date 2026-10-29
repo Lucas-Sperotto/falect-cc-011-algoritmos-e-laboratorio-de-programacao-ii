@@ -47,6 +47,6 @@ int main()
     for(i=0; i<n; i++)
         printf("%s\n", p[i]);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
