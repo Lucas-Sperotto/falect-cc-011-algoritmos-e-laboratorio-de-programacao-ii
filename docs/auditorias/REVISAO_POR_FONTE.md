@@ -143,4 +143,3 @@ Correção da revisão cruzada: Prog11/30 acumulam em `double` antes de retornar
 `src/entrada_segura.h` centraliza somente a substituição de gets: remove LF/CRLF, aceita linha de tamanho exato (inclusive sem LF no EOF), consome e rejeita linha excessiva, retorna erro em EOF antes da leitura. A revisão cruzada corrigiu CRLF no limite exato da capacidade; os testes unitários incluem essa fronteira. Comprimentos são em bytes, não caracteres Unicode.
 
 Os exemplos numéricos que mantêm scanf/sscanf pressupõem tokens representáveis. Isso é possível problema documentado, não alegação de um parser para entradas arbitrárias. A revisão não altera o formato das structs, a progressão didática nem os PDFs.
-
