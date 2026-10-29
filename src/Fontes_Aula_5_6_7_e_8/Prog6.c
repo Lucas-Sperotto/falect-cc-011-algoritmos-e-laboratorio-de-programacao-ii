@@ -1,9 +1,14 @@
+/*
+ * ID: A05-08-P06
+ * Aula: ../../atividades/aulas-05-e-06.md
+ * Objetivo: Mostra a inicialização do ponteiro.
+ */
 /* Prog6.c */
 /* Mostra a inicialização do ponteiro */
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+int main(void)
 {
     int x,y;
     int *px = &x;	/* Inicializa px com o endereço de x */

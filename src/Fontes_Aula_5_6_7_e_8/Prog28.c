@@ -1,3 +1,8 @@
+/*
+ * ID: A05-08-P28
+ * Aula: ../../atividades/aulas-06-e-07.md
+ * Objetivo: Mostra a ordenação de estruturas por diferentes campos utilizando qsort().
+ */
 /* Prog28.c */
 /* Algoritmo qsort e binarySearch com estruturas */
 #include <stdio.h>
@@ -13,20 +18,20 @@ struct est_pop
 /* qsort - função para comparar struct por população (membro int) */
 int struct_cmp_por_pop(const void *a, const void *b)
 {
-    struct est_pop *pa = (struct est_pop *)a;
-    struct est_pop *pb = (struct est_pop *)b;
-    return pa->pop - pb->pop;	/* Retorna neg. se a<b e pos. se a>b */
+    const struct est_pop *pa = a;
+    const struct est_pop *pb = b;
+    return (pa->pop > pb->pop) - (pa->pop < pb->pop);	/* Retorna neg. se a<b e pos. se a>b */
 }
 
 /* qsort - função para comparar struct por estado (membro C-string) */
 int struct_cmp_por_estado(const void *a, const void *b)
 {
-    struct est_pop *pa = (struct est_pop *)a;
-    struct est_pop *pb = (struct est_pop *)b;
+    const struct est_pop *pa = a;
+    const struct est_pop *pb = b;
     return strcmp(pa->estado, pb->estado);
 }
 
-int main()
+int main(void)
 {
     unsigned int tamanho, i;
     struct est_pop structs[] = /* população dividido por 1000 */

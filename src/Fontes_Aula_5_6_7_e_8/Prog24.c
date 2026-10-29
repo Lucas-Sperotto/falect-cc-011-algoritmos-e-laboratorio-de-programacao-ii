@@ -1,3 +1,8 @@
+/*
+ * ID: A05-08-P24
+ * Aula: ../../atividades/aulas-06-e-07.md
+ * Objetivo: Mostra o uso de ponteiros genéricos com conversão de tipos.
+ */
 /* Prog24.c */
 /* Mostra ponteiros void */
 #include <stdio.h>

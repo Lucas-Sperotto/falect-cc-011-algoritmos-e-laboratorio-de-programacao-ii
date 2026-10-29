@@ -1,3 +1,8 @@
+/*
+ * ID: A05-08-P32
+ * Aula: ../../atividades/aula-08.md
+ * Objetivo: Mostra a utilização de argumentos da linha de comando (argc e argv).
+ */
 /* Prog32.c */
 /* Mostra argumentos da linha de comando */
 #include <stdio.h>

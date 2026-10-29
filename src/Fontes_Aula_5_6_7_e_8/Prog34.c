@@ -1,23 +1,30 @@
+/*
+ * ID: A05-08-P34
+ * Aula: ../../atividades/aula-08.md
+ * Objetivo: Mostra aloca√ß√£o, inicializa√ß√£o e libera√ß√£o din√¢mica de vetores.
+ */
 /* Prog34.c */
-/* AlocaÁ„o de Vetores */
+/* Aloca√ß√£o de Vetores */
 #include <stdio.h>
 #include <stdlib.h>
 
-int *aloca_array(int);               /* FunÁ„o para reservar a mÈmÛria do array                     */
-void init_array(int *, int);         /* FunÁ„o para preencher o array com valores aleatÛrios        */
-void print_array(int *, int);        /* FunÁ„o para printar o array na tela                         */
-void destruir_array(int **, int);    /* FunÁ„o para liberar o espaÁo alocado com a funÁ„o free()    */
+int *aloca_array(int);               /* Fun√ß√£o para reservar a mem√≥ria do array                     */
+void init_array(int *, int);         /* Fun√ß√£o para preencher o array com valores aleat√≥rios        */
+void print_array(int *, int);        /* Fun√ß√£o para printar o array na tela                         */
+void destruir_array(int **, int);    /* Fun√ß√£o para liberar o espa√ßo alocado com a fun√ß√£o free()    */
 
 
-int main()
+int main(void)
 {
-    unsigned int size;
+    int size;
     int *Vet; /*Cria o ponteiro para o array */
 
-    printf("Informe o n˙mero de elementos do array: ");
-    scanf("%d", &size);
+    printf("Informe o n√∫mero de elementos do array: ");
+    if (scanf("%d", &size) != 1 || size <= 0 || size > 100000)
+        return 1; /* Mant√©m o exemplo pequeno e evita tamanhos inv√°lidos. */
 
-    Vet = (int *)aloca_array(size);
+    Vet = aloca_array(size);
+    if (Vet == NULL) return 1;
 
     init_array(Vet, size);
     print_array(Vet, size);
@@ -29,16 +36,17 @@ int main()
     return 0;
 }
 
-/* funÁ„o reserva a memÛria usando a funÁ„o malloc e */
+/* fun√ß√£o reserva a mem√≥ria usando a fun√ß√£o malloc e */
 /* testa se o ponteiro foi corretamente alocado      */
 int *aloca_array(int Size)
 {
-    int *Array = (int *)malloc(Size*sizeof(int));
+    int *Array;
+    if (Size <= 0 || Size > 100000) return NULL;
+    Array = malloc((size_t)Size * sizeof *Array);
 
     if(Array == NULL)
     {
-        printf("\tERRO!\n\n**N„o foi Possivel Alocar\n");
-        getche();
+        printf("\tERRO!\n\n**N√£o foi Possivel Alocar\n");
         exit(1);
     }
     return ((int *)Array);
@@ -46,21 +54,21 @@ int *aloca_array(int Size)
 
 void init_array(int *Array, int Size)
 {
-    unsigned register int i = 0;
+    int i = 0;
     for(i = 0; i < Size; i++)
     {
         Array[i] = rand() % Size;
     }
 }
 
-/* funÁ„o testa se o ponteiro existe antes de imprimir */
+/* fun√ß√£o testa se o ponteiro existe antes de imprimir */
 void print_array(int *Array, int Size)
 {
-    unsigned register int i = 0;
+    int i = 0;
 
     if(Array == NULL)
     {
-        printf("\tERRO!\n\n**N„o foi Possivel Imprimir: Ponteiro NULL\n");
+        printf("\tERRO!\n\n**N√£o foi Possivel Imprimir: Ponteiro NULL\n");
         return;
     }
 
@@ -71,15 +79,16 @@ void print_array(int *Array, int Size)
     }
     printf("\n");
 }
-/* funÁ„o testa se o ponteiro existe antes de destruir */
-/* destroi ponteiro chamando a funÁ„o free() e depois  */
+/* fun√ß√£o testa se o ponteiro existe antes de destruir */
+/* destroi ponteiro chamando a fun√ß√£o free() e depois  */
 /* coloca o ponteiro como NULL para evitar que seja    */
-/* usado em outras partes do cÛdigo                    */
+/* usado em outras partes do c√≥digo                    */
 void destruir_array(int **Array, int Size)
 {
+    (void)Size; /* A quantidade n√£o √© necess√°ria para free de um vetor. */
     if(Array == NULL)
     {
-        printf("\tERRO!\n\n**N„o foi Possivel Destruir: Ponteiro NULL\n");
+        printf("\tERRO!\n\n**N√£o foi Possivel Destruir: Ponteiro NULL\n");
         return;
     }
 

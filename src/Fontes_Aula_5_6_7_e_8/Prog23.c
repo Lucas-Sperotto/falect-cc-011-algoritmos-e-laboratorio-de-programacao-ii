@@ -1,3 +1,8 @@
+/*
+ * ID: A05-08-P23
+ * Aula: ../../atividades/aulas-06-e-07.md
+ * Objetivo: Mostra o uso e as limitações de ponteiros do tipo void.
+ */
 /* Prog23.c */
 /* Mostra ponteiros void */
 #include <stdio.h>
@@ -12,12 +17,14 @@ int main(void)
     pv = &i;	/* Endereço de um int */
 
     /* não podemos usar o operador indireto com ponteiros void */
-    printf("%d\n", *pv); /* ERRO de compilação */
+    /* printf("%d\n", *pv); ERRO intencional: void não tem valor. */
+    printf("%d\n", *(int *)pv); /* Converter antes de acessar, como em Prog24. */
 
     pv = &f;	/* Endereço de um float */
 
     /* não podemos usar o operador indireto com ponteiros void */
-    printf("%f\n", *pv); /* ERRO de compilação */
+    /* printf("%f\n", *pv); ERRO intencional. */
+    printf("%f\n", *(float *)pv);
 
     // system("PAUSE");
     return 0;
