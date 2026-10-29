@@ -1,0 +1,3145 @@
+[
+  {
+    "source": "src/Fontes_Aula_1/Prog1.c",
+    "name": "entrada-invalida",
+    "stdin": "x\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog1.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog1.c",
+    "name": "media-cinco-notas",
+    "stdin": "6 7 8 9 10\n",
+    "contains": [
+      "8.00"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog1.c",
+    "name": "soma-sem-overflow",
+    "stdin": "2147483647 2147483647 2147483647 2147483647 2147483647\n",
+    "contains": [
+      "2147483648.00"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog10.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Nota inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog10.c",
+    "name": "limite-cinquenta",
+    "stdin": "8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8\n",
+    "contains": [
+      "8.00"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog10.c",
+    "name": "media-grande-finita",
+    "stdin": "3e38\n3e38\n-1\n",
+    "contains": [
+      "Média das notas: 300000000549775575777803994281145270272.00"
+    ],
+    "not_contains": [
+      "inf",
+      "nan"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog10.c",
+    "name": "sentinela-com-notas",
+    "stdin": "6 8 -1\n",
+    "contains": [
+      "7.00"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog10.c",
+    "name": "sentinela-sem-notas",
+    "stdin": "-1\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Nenhuma nota"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog11.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Entrada inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog11.c",
+    "name": "ordenacao",
+    "stdin": "3 1 2 0\n",
+    "contains": [
+      "1\n2\n3\n"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog11.c",
+    "name": "vetor-cheio",
+    "stdin": "50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1\n",
+    "contains": [
+      "1\n2\n3\n",
+      "49\n50\n"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog12.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Quantidade inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog12.c",
+    "name": "histograma-individual",
+    "stdin": "1 1 1 2 2 2 3 3 3 4 4 4 5 5 5\n",
+    "contains": [
+      " 1 -     3:",
+      " 2 -     6:",
+      " 3 -     9:",
+      " 5 -    15:"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog12.c",
+    "name": "histograma-zerado",
+    "stdin": "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n",
+    "contains": [
+      " 1 -     0:\n",
+      " 5 -     0:\n"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog12.c",
+    "name": "quantidade-negativa",
+    "stdin": "-1\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Quantidade inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog12.c",
+    "name": "soma-int-max",
+    "stdin": "2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647\n",
+    "contains": [
+      "6442450941"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog13.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Nome não informado"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog13.c",
+    "name": "nome-limite",
+    "stdin": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n",
+    "contains": [
+      "Saudações AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA."
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog13.c",
+    "name": "nome-palavra",
+    "stdin": "Ana Maria\n",
+    "contains": [
+      "Saudações Ana."
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog14.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Entrada ausente"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog14.c",
+    "name": "nome-curto",
+    "stdin": "Ana\n",
+    "contains": [
+      "Ana"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog14.c",
+    "name": "nome-limite",
+    "stdin": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n",
+    "contains": [
+      "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog14.c",
+    "name": "nome-longo-recusado",
+    "stdin": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "longa demais"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog15.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Entrada ausente"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog15.c",
+    "name": "nome-curto",
+    "stdin": "Ana\n",
+    "contains": [
+      "Ana"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog15.c",
+    "name": "nome-limite",
+    "stdin": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n",
+    "contains": [
+      "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog15.c",
+    "name": "nome-longo-recusado",
+    "stdin": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "longa demais"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog15.c",
+    "name": "substring-segura",
+    "stdin": "Maria Silva\n",
+    "contains": [
+      "a Silva"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog16.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Entrada ausente"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog16.c",
+    "name": "nome-curto",
+    "stdin": "Ana\n",
+    "contains": [
+      "Ana"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog16.c",
+    "name": "nome-limite",
+    "stdin": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n",
+    "contains": [
+      "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog16.c",
+    "name": "nome-longo-recusado",
+    "stdin": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "longa demais"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog17.c",
+    "name": "aritmetica-enderecos",
+    "stdin": "Maria Silva\n",
+    "contains": [
+      "Saudações,  Silva"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog17.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Entrada ausente"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog17.c",
+    "name": "nome-curto",
+    "stdin": "Ana\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "cinco bytes"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog17.c",
+    "name": "nome-limite",
+    "stdin": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n",
+    "contains": [
+      "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog17.c",
+    "name": "nome-longo-recusado",
+    "stdin": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "longa demais"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog18.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Entrada ausente"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog18.c",
+    "name": "nome-curto",
+    "stdin": "Ana\n",
+    "contains": [
+      "Dec   = 65",
+      "Dec   = 110",
+      "Dec   = 97",
+      "Dec   = 0"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog18.c",
+    "name": "nome-limite",
+    "stdin": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n",
+    "contains": [
+      "A"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog18.c",
+    "name": "nome-longo-recusado",
+    "stdin": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "longa demais"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog18.c",
+    "name": "string-vazia",
+    "stdin": "\n",
+    "contains": [
+      "Dec   = 0"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog19.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Entrada ausente"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog19.c",
+    "name": "nome-curto",
+    "stdin": "Ana\n",
+    "contains": [
+      "Ana"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog19.c",
+    "name": "nome-limite",
+    "stdin": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n",
+    "contains": [
+      "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog19.c",
+    "name": "nome-longo-recusado",
+    "stdin": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "longa demais"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog2.c",
+    "name": "entrada-invalida",
+    "stdin": "x\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog2.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog2.c",
+    "name": "media-cinco-notas",
+    "stdin": "6 7 8 9 10\n",
+    "contains": [
+      "8.00"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog20.c",
+    "name": "comparacao-didatica",
+    "stdin": "BRANCO\n",
+    "contains": [
+      "Endereços diferentes",
+      "Prog21.c"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog20.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Entrada ausente"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog21.c",
+    "name": "comparacao-conteudo",
+    "stdin": "BRANCO\n",
+    "contains": [
+      "Correto!"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog21.c",
+    "name": "eof-apos-resposta-errada",
+    "stdin": "PRETO\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Entrada ausente"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog21.c",
+    "name": "nova-tentativa",
+    "stdin": "PRETO\nBRANCO\n",
+    "contains": [
+      "Resposta errada",
+      "Correto!"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog21.c",
+    "name": "resposta-longa",
+    "stdin": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "longa demais"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog22.c",
+    "name": "sinais-strcmp",
+    "stdin": "",
+    "contains": [
+      "0\n",
+      "-"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog23.c",
+    "name": "remocao-sobreposta",
+    "stdin": "",
+    "contains": [
+      "Carrta\nCarta\n"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog24.c",
+    "name": "dia-da-semana",
+    "stdin": "29 10 2026\n\u001b\n",
+    "contains": [
+      "Quinta-feira"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog24.c",
+    "name": "dia-invalido",
+    "stdin": "31 4 2026\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Data inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog24.c",
+    "name": "duas-datas",
+    "stdin": "29 10 2026\n\n1 1 2000\n\u001b\n",
+    "contains": [
+      "Quinta-feira",
+      "Sábado"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog24.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Data inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog24.c",
+    "name": "mes-invalido",
+    "stdin": "1 13 2026\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Data inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog25.c",
+    "name": "capacidade-maxima",
+    "stdin": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB\n+\n*\n",
+    "contains": [
+      "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "FELIZ NATAL"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog25.c",
+    "name": "cartao",
+    "stdin": "Ana\nPaz\n+\n*\n",
+    "contains": [
+      "Ana",
+      "FELIZ NATAL",
+      "2008"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog25.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Entrada ausente"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog25.c",
+    "name": "mensagem-excede-capacidade",
+    "stdin": "Ana\nBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "longa demais"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog25.c",
+    "name": "nome-excede-capacidade",
+    "stdin": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "longa demais"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog3.c",
+    "name": "entrada-invalida",
+    "stdin": "x\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog3.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog3.c",
+    "name": "media-cinco-notas",
+    "stdin": "6 7 8 9 10\n",
+    "contains": [
+      "8.00"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog3.c",
+    "name": "media-grande-finita",
+    "stdin": "3e38\n3e38\n3e38\n3e38\n3e38\n",
+    "contains": [
+      "Média das notas: 300000000549775575777803994281145270272.00"
+    ],
+    "not_contains": [
+      "inf",
+      "nan"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog4.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Nota inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog4.c",
+    "name": "limite-cinquenta",
+    "stdin": "8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8\n",
+    "contains": [
+      "8.00"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog4.c",
+    "name": "media-grande-finita",
+    "stdin": "3e38\n3e38\n-1\n",
+    "contains": [
+      "Média das notas: 300000000549775575777803994281145270272.00"
+    ],
+    "not_contains": [
+      "inf",
+      "nan"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog4.c",
+    "name": "sentinela-com-notas",
+    "stdin": "6 8 -1\n",
+    "contains": [
+      "7.00"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog4.c",
+    "name": "sentinela-sem-notas",
+    "stdin": "-1\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Nenhuma nota"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog5.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Nota inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog5.c",
+    "name": "limite-cinquenta",
+    "stdin": "8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8\n",
+    "contains": [
+      "8.00"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog5.c",
+    "name": "media-grande-finita",
+    "stdin": "3e38\n3e38\n-1\n",
+    "contains": [
+      "Média das notas: 300000000549775575777803994281145270272.00"
+    ],
+    "not_contains": [
+      "inf",
+      "nan"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog5.c",
+    "name": "sentinela-com-notas",
+    "stdin": "6 8 -1\n",
+    "contains": [
+      "7.00"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog5.c",
+    "name": "sentinela-sem-notas",
+    "stdin": "-1\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Nenhuma nota"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog6.c",
+    "name": "ano-bissexto",
+    "stdin": "29/02/2024\n",
+    "contains": [
+      "60"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog6.c",
+    "name": "dezembro",
+    "stdin": "31/12/2023\n",
+    "contains": [
+      "365"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog6.c",
+    "name": "dia-invalido",
+    "stdin": "29/02/2023\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Data inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog6.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Data inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog6.c",
+    "name": "mes-invalido",
+    "stdin": "1/13/2024\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Data inválida"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog7.c",
+    "name": "cinquenta-combinacoes",
+    "stdin": "",
+    "contains": [
+      "Combinacao  1:",
+      "Combinacao 50:"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog8.c",
+    "name": "empate",
+    "stdin": "0 0\n0 1\n0 2\n1 1\n1 0\n2 0\n1 2\n2 2\n2 1\n",
+    "contains": [
+      "Empatou"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog8.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Coordenadas inválidas"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog8.c",
+    "name": "fora-do-vetor",
+    "stdin": "3 0\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Coordenadas inválidas"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog8.c",
+    "name": "indice-negativo",
+    "stdin": "-1 0\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Coordenadas inválidas"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog8.c",
+    "name": "vitoria-primeiro",
+    "stdin": "0 0\n1 0\n0 1\n1 1\n0 2\n",
+    "contains": [
+      "primeiro jogador"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog9.c",
+    "name": "empate",
+    "stdin": "0 0\n0 1\n0 2\n1 1\n1 0\n2 0\n1 2\n2 2\n2 1\n",
+    "contains": [
+      "Empatou"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog9.c",
+    "name": "eof",
+    "stdin": "",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Coordenadas inválidas"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog9.c",
+    "name": "fora-do-vetor",
+    "stdin": "3 0\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Coordenadas inválidas"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog9.c",
+    "name": "indice-negativo",
+    "stdin": "-1 0\n",
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true,
+    "stderr_contains": [
+      "Coordenadas inválidas"
+    ]
+  },
+  {
+    "source": "src/Fontes_Aula_1/Prog9.c",
+    "name": "vitoria-primeiro",
+    "stdin": "0 0\n1 0\n0 1\n1 1\n0 2\n",
+    "contains": [
+      "primeiro jogador"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog1.c",
+    "name": "gravar-caracteres",
+    "stdin": "abc\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "reviewed": true,
+    "files_expected": {
+      "ArqText.txt": "abc"
+    }
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog10.c",
+    "name": "copiar-binario",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {
+      "CopiaArq.C": "ab\u0000c\n"
+    },
+    "reviewed": true,
+    "files_expected": {
+      "CopiaArq.cpy": "ab\u0000c\n"
+    }
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog10.c",
+    "name": "origem-ausente",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog11.c",
+    "name": "gravar-livro",
+    "stdin": "Algoritmos\nAutor\n7\n12.5\nn\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "reviewed": true,
+    "files_expected": {
+      "Livros.Dat": {}
+    }
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog11.c",
+    "name": "preco-numerico-enorme",
+    "stdin": "Livro\nAutor\n7\n1e9999\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog11.c",
+    "name": "registro-fora-short",
+    "stdin": "Titulo\nAutor\n100000000\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog11.c",
+    "name": "titulo-limite-49",
+    "stdin": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\nAutor\n7\n12.5\nn\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "reviewed": true,
+    "files_expected": {
+      "Livros.Dat": {}
+    }
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog11.c",
+    "name": "titulo-longo",
+    "stdin": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog12.c",
+    "name": "gravar-livro",
+    "stdin": "Algoritmos\nAutor\n7\n12.5\nn\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "reviewed": true,
+    "files_expected": {
+      "Livros.Dat": {}
+    }
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog12.c",
+    "name": "registro-fora-short",
+    "stdin": "Titulo\nAutor\n100000000\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog12.c",
+    "name": "titulo-longo",
+    "stdin": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog13.c",
+    "name": "ler-dois-livros",
+    "stdin": "",
+    "contains": [
+      "Primeiro",
+      "Segundo",
+      "10.00",
+      "20.00"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "setup": [
+      {
+        "source": "src/Fontes_Aula_10_e_11/Prog11.c",
+        "stdin": "Primeiro\nAutor Um\n1\n10\ns\nSegundo\nAutor Dois\n2\n20\nn\n",
+        "args": []
+      }
+    ],
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog13.c",
+    "name": "registro-binario-truncado",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {
+      "Livros.Dat": "curto"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog14.c",
+    "name": "gravar-ler-livro",
+    "stdin": "Algoritmos\nAutor\n7\n12.5\nn\n",
+    "contains": [
+      "LISTA DE LIVROS",
+      "Algoritmos",
+      "Autor",
+      "12.50"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "reviewed": true,
+    "files_expected": {}
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog14.c",
+    "name": "titulo-longo",
+    "stdin": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog15.c",
+    "name": "primeiro-de-dois",
+    "stdin": "1\n",
+    "contains": [
+      "registros é 2",
+      "Primeiro"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "setup": [
+      {
+        "source": "src/Fontes_Aula_10_e_11/Prog11.c",
+        "stdin": "Primeiro\nAutor Um\n1\n10\ns\nSegundo\nAutor Dois\n2\n20\nn\n",
+        "args": []
+      }
+    ],
+    "not_contains": [
+      "Título: Segundo"
+    ],
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog15.c",
+    "name": "registro-binario-truncado",
+    "stdin": "1\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {
+      "Livros.Dat": "curto"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog15.c",
+    "name": "registro-inexistente",
+    "stdin": "3\n",
+    "contains": [
+      "Registro não existe"
+    ],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "setup": [
+      {
+        "source": "src/Fontes_Aula_10_e_11/Prog11.c",
+        "stdin": "Primeiro\nAutor Um\n1\n10\ns\nSegundo\nAutor Dois\n2\n20\nn\n",
+        "args": []
+      }
+    ],
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog15.c",
+    "name": "segundo-de-dois",
+    "stdin": "2\n",
+    "contains": [
+      "Título: Segundo"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "setup": [
+      {
+        "source": "src/Fontes_Aula_10_e_11/Prog11.c",
+        "stdin": "Primeiro\nAutor Um\n1\n10\ns\nSegundo\nAutor Dois\n2\n20\nn\n",
+        "args": []
+      }
+    ],
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog16.c",
+    "name": "arquivo-vazio",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {
+      "FilePrint.C": ""
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog16.c",
+    "name": "saida-linux",
+    "stdin": "",
+    "contains": [
+      "linha"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {
+      "FilePrint.C": "linha\n"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog17.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog17.c",
+    "name": "nome",
+    "stdin": "Ana\n",
+    "contains": [
+      "Seu nome é Ana"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog17.c",
+    "name": "nome-longo",
+    "stdin": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n",
+    "contains": [
+      "Seu nome é aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog18.c",
+    "name": "arquivo-ausente",
+    "stdin": "",
+    "contains": [],
+    "args": [
+      "inexistente"
+    ],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog18.c",
+    "name": "bloco-cheio-nul",
+    "stdin": "",
+    "contains": [
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "\u0000fim"
+    ],
+    "args": [
+      "input.bin"
+    ],
+    "expected_returncode": 0,
+    "files": {
+      "input.bin": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\u0000fim\n"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog19.c",
+    "name": "busca-candidatos",
+    "stdin": "",
+    "contains": [
+      "Primeira ocorrência",
+      "needle"
+    ],
+    "args": [
+      "input.bin",
+      "needle"
+    ],
+    "expected_returncode": 0,
+    "files": {
+      "input.bin": "nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnneedle"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog19.c",
+    "name": "busca-cruza-bloco",
+    "stdin": "",
+    "contains": [
+      "Primeira ocorrência",
+      "needle"
+    ],
+    "args": [
+      "input.bin",
+      "needle"
+    ],
+    "expected_returncode": 0,
+    "files": {
+      "input.bin": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaneedle\n"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog19.c",
+    "name": "busca-frase-grande",
+    "stdin": "",
+    "contains": [],
+    "args": [
+      "input.bin",
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    ],
+    "expected_returncode": 1,
+    "files": {
+      "input.bin": "abc"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog19.c",
+    "name": "busca-frase-maxima",
+    "stdin": "",
+    "contains": [
+      "Primeira ocorrência",
+      "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    ],
+    "args": [
+      "input.bin",
+      "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    ],
+    "expected_returncode": 0,
+    "files": {
+      "input.bin": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog19.c",
+    "name": "busca-inicio",
+    "stdin": "",
+    "contains": [
+      "Primeira ocorrência",
+      "needle"
+    ],
+    "args": [
+      "input.bin",
+      "needle"
+    ],
+    "expected_returncode": 0,
+    "files": {
+      "input.bin": "needle"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog19.c",
+    "name": "busca-sem-match",
+    "stdin": "",
+    "contains": [
+      "Frase não encontrada"
+    ],
+    "args": [
+      "input.bin",
+      "needle"
+    ],
+    "expected_returncode": 0,
+    "files": {
+      "input.bin": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaan"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog19.c",
+    "name": "busca-vazia",
+    "stdin": "",
+    "contains": [],
+    "args": [
+      "input.bin",
+      ""
+    ],
+    "expected_returncode": 1,
+    "files": {
+      "input.bin": "abc"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog2.c",
+    "name": "arquivo-ausente",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog2.c",
+    "name": "ler-caracteres",
+    "stdin": "",
+    "contains": [
+      "abc"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {
+      "ArqText.txt": "abc\n"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog20.c",
+    "name": "copia-binaria",
+    "stdin": "",
+    "contains": [],
+    "args": [
+      "input.bin",
+      "output.bin"
+    ],
+    "expected_returncode": 0,
+    "files": {
+      "input.bin": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\u0000fim\n",
+      "output.bin": "antigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigoantigo"
+    },
+    "reviewed": true,
+    "files_expected": {
+      "output.bin": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\u0000fim\n"
+    }
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog20.c",
+    "name": "origem-ausente",
+    "stdin": "",
+    "contains": [],
+    "args": [
+      "inexistente",
+      "output.bin"
+    ],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog20.c",
+    "name": "origem-igual-destino",
+    "stdin": "",
+    "contains": [],
+    "args": [
+      "input.bin",
+      "input.bin"
+    ],
+    "expected_returncode": 1,
+    "files": {
+      "input.bin": "preservar"
+    },
+    "reviewed": true,
+    "files_expected": {
+      "input.bin": "preservar"
+    }
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog3.c",
+    "name": "arquivo-ausente",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog3.c",
+    "name": "ler-caracteres",
+    "stdin": "",
+    "contains": [
+      "abc"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {
+      "ArqText.txt": "abc\n"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog4.c",
+    "name": "gravar-strings",
+    "stdin": "",
+    "contains": [
+      "Um grande antídoto"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "reviewed": true,
+    "files_expected": {
+      "TesteSTR.txt": "Um grande antídoto contra o egoísmo\né a generosidade... Dê, mesmo que\nisso requeira de você um esforço\nconsciente. Pelo fato de partilhar\ntudo o que possui, seu egoísmo se\nabrandará.\n"
+    }
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog5.c",
+    "name": "arquivo-ausente",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog5.c",
+    "name": "ler-linhas",
+    "stdin": "",
+    "contains": [
+      "linha"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {
+      "TesteSTR.txt": "linha\n"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog6.c",
+    "name": "entrada-incompleta",
+    "stdin": "Algoritmos 7\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog6.c",
+    "name": "gravar-formatado",
+    "stdin": "Algoritmos 7 12.5\nx 0 0\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "reviewed": true,
+    "files_expected": {
+      "Livros.txt": "Algoritmos 7 12.50\n"
+    }
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog6.c",
+    "name": "preco-numerico-enorme",
+    "stdin": "Livro 7 1e9999\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog6.c",
+    "name": "registro-numerico-enorme",
+    "stdin": "Livro 99999999999999999999999999999 12.5\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog7.c",
+    "name": "arquivo-ausente",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog7.c",
+    "name": "ler-formatado",
+    "stdin": "",
+    "contains": [
+      "Algoritmos 7 12.50"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {
+      "Livros.txt": "Algoritmos 7 12.50\n"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog7.c",
+    "name": "registro-formatado-invalido",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {
+      "Livros.txt": "Algoritmos erro 12.5\n"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog7.c",
+    "name": "registro-numerico-enorme",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {
+      "Livros.txt": "Livro 99999999999999999999999999999 12.5\n"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog8.c",
+    "name": "arquivo-ausente",
+    "stdin": "",
+    "contains": [],
+    "args": [
+      "inexistente"
+    ],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog8.c",
+    "name": "contar-bytes",
+    "stdin": "",
+    "contains": [
+      "5 bytes."
+    ],
+    "args": [
+      "input.bin"
+    ],
+    "expected_returncode": 0,
+    "files": {
+      "input.bin": "abc\u0000\n"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog9.c",
+    "name": "arquivo-ausente",
+    "stdin": "",
+    "contains": [],
+    "args": [
+      "inexistente"
+    ],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_10_e_11/Prog9.c",
+    "name": "contar-bytes",
+    "stdin": "",
+    "contains": [
+      "5 bytes."
+    ],
+    "args": [
+      "input.bin"
+    ],
+    "expected_returncode": 0,
+    "files": {
+      "input.bin": "abc\u0000\n"
+    },
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/BitTest.c",
+    "name": "normal",
+    "stdin": "",
+    "contains": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog1.c",
+    "name": "normal",
+    "stdin": "",
+    "contains": [
+      "Matrícula: 456",
+      "7.03"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog10.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog10.c",
+    "name": "normal",
+    "stdin": "A\n",
+    "contains": [
+      "O caractere digitado é: A",
+      "01000001"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog11.c",
+    "name": "normal",
+    "stdin": "",
+    "contains": [
+      "32\n32\n"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog12.c",
+    "name": "normal",
+    "stdin": "",
+    "contains": [
+      "Endereço de i  = 0x",
+      "Endereço de x  = 0x"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog13.c",
+    "name": "normal",
+    "stdin": "",
+    "contains": [
+      "Str = VVB-Treinamento de Pessoal",
+      "Float = 34.56",
+      "Int = 345"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog2.c",
+    "name": "normal",
+    "stdin": "",
+    "contains": [
+      "Matrícula: 456",
+      "7.03"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog3.c",
+    "name": "normal",
+    "stdin": "",
+    "contains": [
+      "Preço: 110.00",
+      "7 de Novembro de 2001"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog4.c",
+    "name": "entrada-invalida",
+    "stdin": "a\n",
+    "contains": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog4.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog4.c",
+    "name": "normal",
+    "stdin": "2\n10\n3\n20\n",
+    "contains": [
+      "Total de peças: 5.",
+      "Preço total   : 30.00"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog4.c",
+    "name": "preco-grande",
+    "stdin": "1\n3e38\n1\n1\n",
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog4.c",
+    "name": "preco-inf",
+    "stdin": "1\ninf\n1\n1\n",
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog4.c",
+    "name": "preco-nan",
+    "stdin": "1\nnan\n1\n1\n",
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog4.c",
+    "name": "preco-negativo",
+    "stdin": "1\n-1\n1\n1\n",
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog5.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog5.c",
+    "name": "limite-vendas",
+    "stdin": "E\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nE\n1\nOutubro\n2026\n1\n1\nL\nQ\n",
+    "contains": [
+      "Limite de 50 vendas atingido.",
+      "50.00"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog5.c",
+    "name": "lista-vazia",
+    "stdin": "L\nQ\n",
+    "contains": [
+      "Lista vazia."
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog5.c",
+    "name": "menu-invalido",
+    "stdin": "X\nL\nQ\n",
+    "contains": [
+      "Opção inválida!",
+      "Lista vazia."
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog5.c",
+    "name": "mes-longo",
+    "stdin": "E\n1\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\nQ\n",
+    "contains": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog5.c",
+    "name": "normal",
+    "stdin": "E\n29\nOutubro\n2026\n2\n12.5\nL\nQ\n",
+    "contains": [
+      "Relatório",
+      "Outubro",
+      "12.50"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog5.c",
+    "name": "pecas-negativas",
+    "stdin": "E\n1\nOutubro\n2026\n-1\nL\nQ\n",
+    "contains": [
+      "Lista vazia."
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog5.c",
+    "name": "preco-grande",
+    "stdin": "E\n1\nOutubro\n2026\n1\n3e38\nL\nQ\n",
+    "contains": [
+      "Lista vazia."
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog5.c",
+    "name": "preco-inf",
+    "stdin": "E\n1\nOutubro\n2026\n1\ninf\nL\nQ\n",
+    "contains": [
+      "Lista vazia."
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog5.c",
+    "name": "preco-nan",
+    "stdin": "E\n1\nOutubro\n2026\n1\nnan\nL\nQ\n",
+    "contains": [
+      "Lista vazia."
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog5.c",
+    "name": "preco-negativo",
+    "stdin": "E\n1\nOutubro\n2026\n1\n-1\nL\nQ\n",
+    "contains": [
+      "Lista vazia."
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog5.c",
+    "name": "sair-esc",
+    "stdin": "\u001b\n",
+    "contains": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog5.c",
+    "name": "venda-dia-invalido",
+    "stdin": "E\nx\nL\nQ\n",
+    "contains": [
+      "Lista vazia."
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog5.c",
+    "name": "venda-preco-invalido",
+    "stdin": "E\n1\nOutubro\n2026\n1\nx\nL\nQ\n",
+    "contains": [
+      "Lista vazia."
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog6.c",
+    "name": "normal",
+    "stdin": "",
+    "contains": [
+      "Diferença entre os meses: 2",
+      "Primeiro Mês é menor"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog7.c",
+    "name": "normal",
+    "stdin": "",
+    "contains": [
+      "Diferença entre os meses: 2",
+      "Primeiro Mês é menor"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog8.c",
+    "name": "normal",
+    "stdin": "",
+    "contains": [
+      "Idade (primeiro membro da união): 123"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_3_e_4/Prog9.c",
+    "name": "normal",
+    "stdin": "",
+    "contains": [
+      "unex.x.n1      = 734",
+      "unex.x.n2      = 333",
+      "unex.f         = 345.22"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog1.c",
+    "name": "enderecos",
+    "stdin": "",
+    "contains": [
+      "0x"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog10.c",
+    "name": "notacoes_equivalentes",
+    "stdin": "",
+    "contains": [
+      "92\n81\n70\n69\n58"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog11.c",
+    "name": "entrada_invalida",
+    "stdin": "x\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog11.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog11.c",
+    "name": "limite_50_notas",
+    "stdin": "8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n8\n",
+    "contains": [
+      "8.00"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog11.c",
+    "name": "media",
+    "stdin": "6\n8\n-1\n",
+    "contains": [
+      "7.00"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog11.c",
+    "name": "media-grande-finita",
+    "stdin": "3e38\n3e38\n-1\n",
+    "contains": [
+      "Média das notas: 300000000549775575777803994281145270272.00"
+    ],
+    "not_contains": [
+      "inf",
+      "nan"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog11.c",
+    "name": "sem_notas",
+    "stdin": "-1\n",
+    "contains": [
+      "Nenhuma nota"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog12.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog12.c",
+    "name": "linha_longa",
+    "stdin": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog12.c",
+    "name": "procura",
+    "stdin": "hoje\n",
+    "contains": [
+      "posição é: 0"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog12.c",
+    "name": "sem_caractere",
+    "stdin": "abc\n",
+    "contains": [
+      "não existe"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog13.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog13.c",
+    "name": "nome_limite_79",
+    "stdin": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nBRANCO\n",
+    "contains": [
+      "Correto!"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog13.c",
+    "name": "resposta_errada",
+    "stdin": "Ana\nPRETO\nBRANCO\n",
+    "contains": [
+      "Resposta errada",
+      "Correto!"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog13.c",
+    "name": "strings",
+    "stdin": "Ana\nBRANCO\n",
+    "contains": [
+      "Carta",
+      "Correto!"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog14.c",
+    "name": "ponteiro_string",
+    "stdin": "",
+    "contains": [
+      "audações!"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog15.c",
+    "name": "data_bissexta",
+    "stdin": "29 2 2024\n\u001b\n",
+    "contains": [
+      "Quinta-feira"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog15.c",
+    "name": "data_invalida",
+    "stdin": "31 2 2026\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog15.c",
+    "name": "dia_semana",
+    "stdin": "29 10 2026\n\u001b\n",
+    "contains": [
+      "Quinta-feira"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog15.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog16.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog16.c",
+    "name": "limite_30_nomes",
+    "stdin": "Ana\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\nAna\n",
+    "contains": [
+      "Lista ordenada:"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog16.c",
+    "name": "ordena_nomes",
+    "stdin": "Zuleima\nAndre\n\n",
+    "contains": [
+      "Lista ordenada:\nAndre\nZuleima"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog17.c",
+    "name": "animacao",
+    "stdin": "\n\n\n\n\n\n\n\n\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog17.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog18.c",
+    "name": "ponteiro_funcao",
+    "stdin": "",
+    "contains": [
+      "\u0007\u0007"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog19.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog19.c",
+    "name": "funcao_argumento",
+    "stdin": "Ana\n",
+    "contains": [
+      "Seu nome é: Ana"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog2.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog2.c",
+    "name": "reajuste",
+    "stdin": "100\n0\n",
+    "contains": [
+      "120.00",
+      "20.00"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog20.c",
+    "name": "despacho",
+    "stdin": "0\n2\n3\n",
+    "contains": [
+      "func0()",
+      "func2()"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog20.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog21.c",
+    "name": "despacho",
+    "stdin": "0\n2\n3\n",
+    "contains": [
+      "func0()",
+      "func2()"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog21.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog22.c",
+    "name": "despacho",
+    "stdin": "0\n2\n3\n",
+    "contains": [
+      "func0()",
+      "func2()"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog22.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog23.c",
+    "name": "void_cast",
+    "stdin": "",
+    "contains": [
+      "5\n3.200000"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog24.c",
+    "name": "void_cast",
+    "stdin": "",
+    "contains": [
+      "5\n3.200000"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog25.c",
+    "name": "ordena_inteiros",
+    "stdin": "",
+    "contains": [
+      "-45\n-23\n162\n234\n398\n567\n760\n888\n890\n914"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog26.c",
+    "name": "busca_inteiros",
+    "stdin": "",
+    "contains": [
+      "Indice de 567 = 5"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog27.c",
+    "name": "busca_strings",
+    "stdin": "",
+    "contains": [
+      "Indice de Carolina = 2"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog28.c",
+    "name": "ordena_estruturas",
+    "stdin": "",
+    "contains": [
+      "Estrutura ordenada por população",
+      "Estrutura ordenada por estado"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog29.c",
+    "name": "entrada_invalida",
+    "stdin": "x\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog29.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog29.c",
+    "name": "malloc",
+    "stdin": "42\n",
+    "contains": [
+      "Você digitou o número 42"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog3.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog3.c",
+    "name": "troca_por_valor",
+    "stdin": "2\n7\n",
+    "contains": [
+      "V1: 2; V2: 7"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog30.c",
+    "name": "calloc",
+    "stdin": "2\n6\n8\n",
+    "contains": [
+      "7.00"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog30.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog30.c",
+    "name": "falha_no_meio",
+    "stdin": "2\n8\nx\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog30.c",
+    "name": "media-grande-finita",
+    "stdin": "2\n3e38\n3e38\n",
+    "contains": [
+      "Média das notas: 300000000549775575777803994281145270272.00"
+    ],
+    "not_contains": [
+      "inf",
+      "nan"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog30.c",
+    "name": "zero_notas",
+    "stdin": "0\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog31.c",
+    "name": "dois_livros",
+    "stdin": "Livro A\nAutor A\n10\n12.50\ns\nLivro B\nAutor B\n20\n30.25\nn\n",
+    "contains": [
+      "Título: Livro A",
+      "Título: Livro B"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog31.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog31.c",
+    "name": "eof_parcial",
+    "stdin": "Livro\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog31.c",
+    "name": "lista_livros",
+    "stdin": "Livro A\nAutor A\n10\n12.50\nn\n",
+    "contains": [
+      "Título: Livro A",
+      "No.Reg: 10",
+      "12.50"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog31.c",
+    "name": "registro_excessivo",
+    "stdin": "Livro\nAutor\n9999999999999999999999999999999999999\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog32.c",
+    "name": "argv",
+    "stdin": "",
+    "contains": [
+      "Número de argumentos: 3",
+      "Argumento número 1: alfa",
+      "Argumento número 2: beta"
+    ],
+    "args": [
+      "alfa",
+      "beta"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog33.c",
+    "name": "ansi_historico",
+    "stdin": "",
+    "contains": [
+      "\u001b[0;60;\"dir *.c\";13p"
+    ],
+    "args": [
+      "2",
+      "dir",
+      "*.c"
+    ],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog33.c",
+    "name": "fronteira_buffer",
+    "stdin": "",
+    "contains": [],
+    "args": [
+      "2",
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "b"
+    ],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog33.c",
+    "name": "tecla_invalida",
+    "stdin": "",
+    "contains": [],
+    "args": [
+      "99999999999999999999999",
+      "abc"
+    ],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog33.c",
+    "name": "texto_longo",
+    "stdin": "",
+    "contains": [],
+    "args": [
+      "2",
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    ],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog34.c",
+    "name": "aloca_vetor",
+    "stdin": "3\n",
+    "contains": [
+      "Ponteiro NULL"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog34.c",
+    "name": "dimensao_excessiva",
+    "stdin": "1000001\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog34.c",
+    "name": "dimensao_negativa",
+    "stdin": "-1\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog34.c",
+    "name": "dimensao_zero",
+    "stdin": "0\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog34.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog35.c",
+    "name": "aloca_matriz",
+    "stdin": "2\n3\n",
+    "contains": [
+      "Ponteiro NULL"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog35.c",
+    "name": "dimensao_excessiva",
+    "stdin": "1000001\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog35.c",
+    "name": "dimensao_negativa",
+    "stdin": "-1\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog35.c",
+    "name": "dimensao_zero",
+    "stdin": "0\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog35.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog4.c",
+    "name": "eof",
+    "stdin": "",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog4.c",
+    "name": "troca_por_ponteiro",
+    "stdin": "2\n7\n",
+    "contains": [
+      "V1: 7; V2: 2"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog5.c",
+    "name": "enderecos",
+    "stdin": "",
+    "contains": [
+      "0x"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog6.c",
+    "name": "inicializacao",
+    "stdin": "",
+    "contains": [
+      "y = 14"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog7.c",
+    "name": "aritmetica_no_mesmo_vetor",
+    "stdin": "",
+    "contains": [
+      "px-py= 5"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog8.c",
+    "name": "notacoes_equivalentes",
+    "stdin": "",
+    "contains": [
+      "92\n81\n70\n69\n58"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_5_6_7_e_8/Prog9.c",
+    "name": "notacoes_equivalentes",
+    "stdin": "",
+    "contains": [
+      "92\n81\n70\n69\n58"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_9/Prog1.c",
+    "name": "complemento",
+    "stdin": "AX",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "reviewed": true,
+    "stdout_hex": "be"
+  },
+  {
+    "source": "src/Fontes_Aula_9/Prog2.c",
+    "name": "tamanho-unsigned",
+    "stdin": "",
+    "contains": [
+      "unsigned int",
+      "bits."
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_9/Prog3.c",
+    "name": "hex-binario",
+    "stdin": "ff\n",
+    "contains": [
+      "11111111--"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_9/Prog3.c",
+    "name": "hex-fora-da-faixa",
+    "stdin": "ffffffffffffffffffffffffffffffffffffffff\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_9/Prog3.c",
+    "name": "hex-invalido",
+    "stdin": "invalido\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_9/Prog4.c",
+    "name": "calculadora-and",
+    "stdin": "FF00 & A23C\n",
+    "contains": [
+      "A200"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_9/Prog4.c",
+    "name": "calculadora-operador-longo",
+    "stdin": "0001 >>>>>>>>>>> 1\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_9/Prog4.c",
+    "name": "calculadora-shift",
+    "stdin": "0001 << F\n",
+    "contains": [
+      "8000"
+    ],
+    "args": [],
+    "expected_returncode": 0,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_9/Prog4.c",
+    "name": "calculadora-shift-invalido",
+    "stdin": "0001 << 10\n",
+    "contains": [
+      "Deslocamento inválido"
+    ],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  },
+  {
+    "source": "src/Fontes_Aula_9/Prog4.c",
+    "name": "operando-fora-de-16bits",
+    "stdin": "10000 & FFFF\n",
+    "contains": [],
+    "args": [],
+    "expected_returncode": 1,
+    "files": {},
+    "reviewed": true
+  }
+]

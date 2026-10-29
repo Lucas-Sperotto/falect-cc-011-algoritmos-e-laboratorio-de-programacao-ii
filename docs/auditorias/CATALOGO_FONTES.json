@@ -1,0 +1,1572 @@
+[
+  {
+    "id": "A01-P01",
+    "path": "src/Fontes_Aula_1/Prog1.c",
+    "sigaa_name": "Prog01.c",
+    "aula_markdown": "atividades/aula-01-pt1.md",
+    "references": [
+      "atividades/aula-01-pt1.md"
+    ],
+    "objective": "Calcula a média de cinco notas (não usa matriz).",
+    "proposed_path": "src/aulas-01-e-02/prog01.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A01-P10",
+    "path": "src/Fontes_Aula_1/Prog10.c",
+    "sigaa_name": "Prog10.c",
+    "aula_markdown": "atividades/aula-01-pt2.md",
+    "references": [
+      "atividades/aula-01-pt2.md"
+    ],
+    "objective": "Mostra a passagem de matrizes para funções como argumento.",
+    "proposed_path": "src/aulas-01-e-02/prog10.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A01-P11",
+    "path": "src/Fontes_Aula_1/Prog11.c",
+    "sigaa_name": "Prog11.c",
+    "aula_markdown": "atividades/aula-01-pt2.md",
+    "references": [
+      "atividades/aula-01-pt2.md"
+    ],
+    "objective": "Ordena os valores da matriz.",
+    "proposed_path": "src/aulas-01-e-02/prog11.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A01-P12",
+    "path": "src/Fontes_Aula_1/Prog12.c",
+    "sigaa_name": "Prog12.c",
+    "aula_markdown": "atividades/aula-01-pt2.md",
+    "references": [
+      "atividades/aula-01-pt2.md"
+    ],
+    "objective": "Mostra matriz de duas dimensões como argumento de função.",
+    "proposed_path": "src/aulas-01-e-02/prog12.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A01-P13",
+    "path": "src/Fontes_Aula_1/Prog13.c",
+    "sigaa_name": "Prog13.c",
+    "aula_markdown": "atividades/aula-02.md",
+    "references": [
+      "atividades/aula-02.md"
+    ],
+    "objective": "Mostra o uso de strings.",
+    "proposed_path": "src/aulas-01-e-02/prog13.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A01-P14",
+    "path": "src/Fontes_Aula_1/Prog14.c",
+    "sigaa_name": "Prog14.c",
+    "aula_markdown": "atividades/aula-02.md",
+    "references": [
+      "atividades/aula-02.md"
+    ],
+    "objective": "Mostra leitura de string com gets().",
+    "proposed_path": "src/aulas-01-e-02/prog14.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "gets"
+    ]
+  },
+  {
+    "id": "A01-P15",
+    "path": "src/Fontes_Aula_1/Prog15.c",
+    "sigaa_name": "Prog15.c",
+    "aula_markdown": "atividades/aula-02.md",
+    "references": [
+      "atividades/aula-02.md"
+    ],
+    "objective": "Mostra impressão de string com puts().",
+    "proposed_path": "src/aulas-01-e-02/prog15.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "gets"
+    ]
+  },
+  {
+    "id": "A01-P16",
+    "path": "src/Fontes_Aula_1/Prog16.c",
+    "sigaa_name": "Prog16.c",
+    "aula_markdown": "atividades/aula-02.md",
+    "references": [
+      "atividades/aula-02.md"
+    ],
+    "objective": "Mostra o uso de strings inicializadas.",
+    "proposed_path": "src/aulas-01-e-02/prog16.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "gets"
+    ]
+  },
+  {
+    "id": "A01-P17",
+    "path": "src/Fontes_Aula_1/Prog17.c",
+    "sigaa_name": "Prog17.c",
+    "aula_markdown": "atividades/aula-02.md",
+    "references": [
+      "atividades/aula-02.md"
+    ],
+    "objective": "Mostra o uso da aritmética com endereços.",
+    "proposed_path": "src/aulas-01-e-02/prog17.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "gets"
+    ]
+  },
+  {
+    "id": "A01-P18",
+    "path": "src/Fontes_Aula_1/Prog18.c",
+    "sigaa_name": "Prog18.c",
+    "aula_markdown": "atividades/aula-02.md",
+    "references": [
+      "atividades/aula-02.md"
+    ],
+    "objective": "Mostra o uso de strlen().",
+    "proposed_path": "src/aulas-01-e-02/prog18.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "gets"
+    ]
+  },
+  {
+    "id": "A01-P19",
+    "path": "src/Fontes_Aula_1/Prog19.c",
+    "sigaa_name": "Prog19.c",
+    "aula_markdown": "atividades/aula-02.md",
+    "references": [
+      "atividades/aula-02.md"
+    ],
+    "objective": "Mostra o uso de strcat().",
+    "proposed_path": "src/aulas-01-e-02/prog19.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "gets",
+      "strcat"
+    ]
+  },
+  {
+    "id": "A01-P02",
+    "path": "src/Fontes_Aula_1/Prog2.c",
+    "sigaa_name": "Prog02.c",
+    "aula_markdown": "atividades/aula-01-pt1.md",
+    "references": [
+      "atividades/aula-01-pt1.md"
+    ],
+    "objective": "Calcula a média de cinco notas (usa matriz).",
+    "proposed_path": "src/aulas-01-e-02/prog02.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A01-P20",
+    "path": "src/Fontes_Aula_1/Prog20.c",
+    "sigaa_name": "Prog20.c",
+    "aula_markdown": "atividades/aula-02.md",
+    "references": [
+      "atividades/aula-02.md"
+    ],
+    "objective": "Mostra o uso de cinco operações entre strings.",
+    "proposed_path": "src/aulas-01-e-02/prog20.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "gets"
+    ]
+  },
+  {
+    "id": "A01-P21",
+    "path": "src/Fontes_Aula_1/Prog21.c",
+    "sigaa_name": "Prog21.c",
+    "aula_markdown": "atividades/aula-02.md",
+    "references": [
+      "atividades/aula-02.md"
+    ],
+    "objective": "Mostra o uso de strcmp().",
+    "proposed_path": "src/aulas-01-e-02/prog21.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "gets"
+    ]
+  },
+  {
+    "id": "A01-P22",
+    "path": "src/Fontes_Aula_1/Prog22.c",
+    "sigaa_name": "Prog22.c",
+    "aula_markdown": "atividades/aula-02.md",
+    "references": [
+      "atividades/aula-02.md"
+    ],
+    "objective": "Testa a função strcmp().",
+    "proposed_path": "src/aulas-01-e-02/prog22.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A01-P23",
+    "path": "src/Fontes_Aula_1/Prog23.c",
+    "sigaa_name": "Prog23.c",
+    "aula_markdown": "atividades/aula-02.md",
+    "references": [
+      "atividades/aula-02.md"
+    ],
+    "objective": "Mostra o uso de strcpy().",
+    "proposed_path": "src/aulas-01-e-02/prog23.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": [
+      "strcpy"
+    ]
+  },
+  {
+    "id": "A01-P24",
+    "path": "src/Fontes_Aula_1/Prog24.c",
+    "sigaa_name": "Prog24.c",
+    "aula_markdown": "atividades/aula-02.md",
+    "references": [
+      "atividades/aula-02.md"
+    ],
+    "objective": "Imprime o dia da semana a partir de uma data.",
+    "proposed_path": "src/aulas-01-e-02/prog24.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A01-P25",
+    "path": "src/Fontes_Aula_1/Prog25.c",
+    "sigaa_name": "Prog25.c",
+    "aula_markdown": "atividades/aula-02.md",
+    "references": [
+      "atividades/aula-02.md"
+    ],
+    "objective": "Imprime um cartão de Natal.",
+    "proposed_path": "src/aulas-01-e-02/prog25.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "gets",
+      "strcpy"
+    ]
+  },
+  {
+    "id": "A01-P03",
+    "path": "src/Fontes_Aula_1/Prog3.c",
+    "sigaa_name": "Prog03.c",
+    "aula_markdown": "atividades/aula-01-pt1.md",
+    "references": [
+      "atividades/aula-01-pt1.md"
+    ],
+    "objective": "Calcula a média das notas de cinco alunos usando matriz float.",
+    "proposed_path": "src/aulas-01-e-02/prog03.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A01-P04",
+    "path": "src/Fontes_Aula_1/Prog4.c",
+    "sigaa_name": "Prog04.c",
+    "aula_markdown": "atividades/aula-01-pt1.md",
+    "references": [
+      "atividades/aula-01-pt1.md"
+    ],
+    "objective": "Calcula a média das notas de qualquer número de alunos.",
+    "proposed_path": "src/aulas-01-e-02/prog04.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A01-P05",
+    "path": "src/Fontes_Aula_1/Prog5.c",
+    "sigaa_name": "Prog05.c",
+    "aula_markdown": "atividades/aula-01-pt1.md",
+    "references": [
+      "atividades/aula-01-pt1.md"
+    ],
+    "objective": "Calcula a média das notas de qualquer número de alunos.",
+    "proposed_path": "src/aulas-01-e-02/prog05.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A01-P06",
+    "path": "src/Fontes_Aula_1/Prog6.c",
+    "sigaa_name": "Prog06.c",
+    "aula_markdown": "atividades/aula-01-pt2.md",
+    "references": [
+      "atividades/aula-01-pt2.md"
+    ],
+    "objective": "Imprime o número de dias do ano até uma data especificada.",
+    "proposed_path": "src/aulas-01-e-02/prog06.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A01-P07",
+    "path": "src/Fontes_Aula_1/Prog7.c",
+    "sigaa_name": "Prog07.c",
+    "aula_markdown": "atividades/aula-01-pt2.md",
+    "references": [
+      "atividades/aula-01-pt2.md"
+    ],
+    "objective": "Imprime 50 combinações de jogos para a Mega-Sena.",
+    "proposed_path": "src/aulas-01-e-02/prog07.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A01-P08",
+    "path": "src/Fontes_Aula_1/Prog8.c",
+    "sigaa_name": "Prog08.c",
+    "aula_markdown": "atividades/aula-01-pt2.md",
+    "references": [
+      "atividades/aula-01-pt2.md"
+    ],
+    "objective": "Jogo-da-velha: mostra matriz de duas dimensões.",
+    "proposed_path": "src/aulas-01-e-02/prog08.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A01-P09",
+    "path": "src/Fontes_Aula_1/Prog9.c",
+    "sigaa_name": "Prog09.c",
+    "aula_markdown": "atividades/aula-01-pt2.md",
+    "references": [
+      "atividades/aula-01-pt2.md"
+    ],
+    "objective": "Jogo-da-velha: mostra matriz de duas dimensões inicializada.",
+    "proposed_path": "src/aulas-01-e-02/prog09.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A10-11-P01",
+    "path": "src/Fontes_Aula_10_e_11/Prog1.c",
+    "sigaa_name": "Prog01.c",
+    "aula_markdown": "atividades/aula-10.md",
+    "references": [
+      "atividades/aula-10.md"
+    ],
+    "objective": "Grava um caractere por vez em um arquivo texto.",
+    "proposed_path": "src/aulas-10-e-11/prog01.c",
+    "interactive": true,
+    "file_operations": true,
+    "historical_functions": [
+      "fclose",
+      "fopen"
+    ]
+  },
+  {
+    "id": "A10-11-P10",
+    "path": "src/Fontes_Aula_10_e_11/Prog10.c",
+    "sigaa_name": "Prog10.c",
+    "aula_markdown": "atividades/aula-10.md",
+    "references": [
+      "atividades/aula-10.md"
+    ],
+    "objective": "Copia arquivos utilizando as funções fread() e fwrite().",
+    "proposed_path": "src/aulas-10-e-11/prog10.c",
+    "interactive": false,
+    "file_operations": true,
+    "historical_functions": [
+      "fclose",
+      "fopen",
+      "fread",
+      "fwrite"
+    ]
+  },
+  {
+    "id": "A10-11-P11",
+    "path": "src/Fontes_Aula_10_e_11/Prog11.c",
+    "sigaa_name": "Prog11.c",
+    "aula_markdown": "atividades/aula-11.md",
+    "references": [
+      "atividades/aula-11.md"
+    ],
+    "objective": "Grava estruturas de dados em um arquivo binário.",
+    "proposed_path": "src/aulas-10-e-11/prog11.c",
+    "interactive": true,
+    "file_operations": true,
+    "historical_functions": [
+      "fclose",
+      "fopen",
+      "fwrite",
+      "gets",
+      "scanf"
+    ]
+  },
+  {
+    "id": "A10-11-P12",
+    "path": "src/Fontes_Aula_10_e_11/Prog12.c",
+    "sigaa_name": "Prog12.c",
+    "aula_markdown": "atividades/aula-11.md",
+    "references": [
+      "atividades/aula-11.md"
+    ],
+    "objective": "Mostra a gravação de estruturas em um arquivo binário.",
+    "proposed_path": "src/aulas-10-e-11/prog12.c",
+    "interactive": true,
+    "file_operations": true,
+    "historical_functions": [
+      "fclose",
+      "fopen",
+      "fwrite",
+      "gets",
+      "scanf"
+    ]
+  },
+  {
+    "id": "A10-11-P13",
+    "path": "src/Fontes_Aula_10_e_11/Prog13.c",
+    "sigaa_name": "Prog13.c",
+    "aula_markdown": "atividades/aula-11.md",
+    "references": [
+      "atividades/aula-11.md"
+    ],
+    "objective": "Lê estruturas de dados armazenadas em um arquivo binário.",
+    "proposed_path": "src/aulas-10-e-11/prog13.c",
+    "interactive": true,
+    "file_operations": true,
+    "historical_functions": [
+      "fclose",
+      "fopen",
+      "fread"
+    ]
+  },
+  {
+    "id": "A10-11-P14",
+    "path": "src/Fontes_Aula_10_e_11/Prog14.c",
+    "sigaa_name": "Prog14.c",
+    "aula_markdown": "atividades/aula-11.md",
+    "references": [
+      "atividades/aula-11.md"
+    ],
+    "objective": "Grava e lê estruturas em um arquivo binário.",
+    "proposed_path": "src/aulas-10-e-11/prog14.c",
+    "interactive": true,
+    "file_operations": true,
+    "historical_functions": [
+      "fclose",
+      "fopen",
+      "fread",
+      "fseek",
+      "fwrite",
+      "gets",
+      "scanf"
+    ]
+  },
+  {
+    "id": "A10-11-P15",
+    "path": "src/Fontes_Aula_10_e_11/Prog15.c",
+    "sigaa_name": "Prog15.c",
+    "aula_markdown": "atividades/aula-11.md",
+    "references": [
+      "atividades/aula-11.md"
+    ],
+    "objective": "Mostra o uso das funções fseek() e ftell() para posicionamento e acesso a registros em arquivos.",
+    "proposed_path": "src/aulas-10-e-11/prog15.c",
+    "interactive": true,
+    "file_operations": true,
+    "historical_functions": [
+      "fclose",
+      "fopen",
+      "fread",
+      "fseek",
+      "scanf"
+    ]
+  },
+  {
+    "id": "A10-11-P16",
+    "path": "src/Fontes_Aula_10_e_11/Prog16.c",
+    "sigaa_name": "Prog16.c",
+    "aula_markdown": "atividades/aula-11.md",
+    "references": [
+      "atividades/aula-11.md"
+    ],
+    "objective": "Envia o conteúdo de um arquivo para uma impressora.",
+    "proposed_path": "src/aulas-10-e-11/prog16.c",
+    "interactive": true,
+    "file_operations": true,
+    "historical_functions": [
+      "fclose",
+      "fopen"
+    ]
+  },
+  {
+    "id": "A10-11-P17",
+    "path": "src/Fontes_Aula_10_e_11/Prog17.c",
+    "sigaa_name": "Prog17.c",
+    "aula_markdown": "atividades/aula-11.md",
+    "references": [
+      "atividades/aula-11.md"
+    ],
+    "objective": "Mostra operações de entrada e saída de baixo nível utilizando stdin e stdout.",
+    "proposed_path": "src/aulas-10-e-11/prog17.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": [
+      "read",
+      "write"
+    ]
+  },
+  {
+    "id": "A10-11-P18",
+    "path": "src/Fontes_Aula_10_e_11/Prog18.c",
+    "sigaa_name": "Prog18.c",
+    "aula_markdown": "atividades/aula-11.md",
+    "references": [
+      "atividades/aula-11.md"
+    ],
+    "objective": "Lê e imprime o conteúdo de um arquivo utilizando operações de baixo nível.",
+    "proposed_path": "src/aulas-10-e-11/prog18.c",
+    "interactive": false,
+    "file_operations": true,
+    "historical_functions": [
+      "close",
+      "open",
+      "read",
+      "write"
+    ]
+  },
+  {
+    "id": "A10-11-P19",
+    "path": "src/Fontes_Aula_10_e_11/Prog19.c",
+    "sigaa_name": "Prog19.c",
+    "aula_markdown": "atividades/aula-11.md",
+    "references": [
+      "atividades/aula-11.md"
+    ],
+    "objective": "Procura uma sequência de caracteres em um arquivo utilizando operações de baixo nível.",
+    "proposed_path": "src/aulas-10-e-11/prog19.c",
+    "interactive": false,
+    "file_operations": true,
+    "historical_functions": [
+      "close",
+      "open",
+      "read",
+      "write"
+    ]
+  },
+  {
+    "id": "A10-11-P02",
+    "path": "src/Fontes_Aula_10_e_11/Prog2.c",
+    "sigaa_name": "Prog02.c",
+    "aula_markdown": "atividades/aula-10.md",
+    "references": [
+      "atividades/aula-10.md"
+    ],
+    "objective": "Lê um caractere por vez de um arquivo texto.",
+    "proposed_path": "src/aulas-10-e-11/prog02.c",
+    "interactive": false,
+    "file_operations": true,
+    "historical_functions": [
+      "fclose",
+      "fopen"
+    ]
+  },
+  {
+    "id": "A10-11-P20",
+    "path": "src/Fontes_Aula_10_e_11/Prog20.c",
+    "sigaa_name": "Prog20.c",
+    "aula_markdown": "atividades/aula-11.md",
+    "references": [
+      "atividades/aula-11.md"
+    ],
+    "objective": "Copia o conteúdo de um arquivo para outro utilizando operações de baixo nível.",
+    "proposed_path": "src/aulas-10-e-11/prog20.c",
+    "interactive": false,
+    "file_operations": true,
+    "historical_functions": [
+      "close",
+      "open",
+      "read",
+      "write"
+    ]
+  },
+  {
+    "id": "A10-11-P03",
+    "path": "src/Fontes_Aula_10_e_11/Prog3.c",
+    "sigaa_name": "Prog03.c",
+    "aula_markdown": "atividades/aula-10.md",
+    "references": [
+      "atividades/aula-10.md"
+    ],
+    "objective": "Lê caracteres de um arquivo texto, verificando se o arquivo foi aberto corretamente.",
+    "proposed_path": "src/aulas-10-e-11/prog03.c",
+    "interactive": false,
+    "file_operations": true,
+    "historical_functions": [
+      "fclose",
+      "fopen"
+    ]
+  },
+  {
+    "id": "A10-11-P04",
+    "path": "src/Fontes_Aula_10_e_11/Prog4.c",
+    "sigaa_name": "Prog04.c",
+    "aula_markdown": "atividades/aula-10.md",
+    "references": [
+      "atividades/aula-10.md"
+    ],
+    "objective": "Grava strings em um arquivo texto.",
+    "proposed_path": "src/aulas-10-e-11/prog04.c",
+    "interactive": false,
+    "file_operations": true,
+    "historical_functions": [
+      "fclose",
+      "fopen"
+    ]
+  },
+  {
+    "id": "A10-11-P05",
+    "path": "src/Fontes_Aula_10_e_11/Prog5.c",
+    "sigaa_name": "Prog05.c",
+    "aula_markdown": "atividades/aula-10.md",
+    "references": [
+      "atividades/aula-10.md"
+    ],
+    "objective": "Lê um arquivo texto linha por linha.",
+    "proposed_path": "src/aulas-10-e-11/prog05.c",
+    "interactive": true,
+    "file_operations": true,
+    "historical_functions": [
+      "fclose",
+      "fopen"
+    ]
+  },
+  {
+    "id": "A10-11-P06",
+    "path": "src/Fontes_Aula_10_e_11/Prog6.c",
+    "sigaa_name": "Prog06.c",
+    "aula_markdown": "atividades/aula-10.md",
+    "references": [
+      "atividades/aula-10.md"
+    ],
+    "objective": "Grava dados formatados em um arquivo utilizando fprintf().",
+    "proposed_path": "src/aulas-10-e-11/prog06.c",
+    "interactive": true,
+    "file_operations": true,
+    "historical_functions": [
+      "fclose",
+      "fopen",
+      "scanf"
+    ]
+  },
+  {
+    "id": "A10-11-P07",
+    "path": "src/Fontes_Aula_10_e_11/Prog7.c",
+    "sigaa_name": "Prog07.c",
+    "aula_markdown": "atividades/aula-10.md",
+    "references": [
+      "atividades/aula-10.md"
+    ],
+    "objective": "Lê dados formatados de um arquivo utilizando fscanf().",
+    "proposed_path": "src/aulas-10-e-11/prog07.c",
+    "interactive": false,
+    "file_operations": true,
+    "historical_functions": [
+      "fclose",
+      "fopen"
+    ]
+  },
+  {
+    "id": "A10-11-P08",
+    "path": "src/Fontes_Aula_10_e_11/Prog8.c",
+    "sigaa_name": "Prog08.c",
+    "aula_markdown": "atividades/aula-10.md",
+    "references": [
+      "atividades/aula-10.md"
+    ],
+    "objective": "Conta os caracteres de um arquivo aberto em modo texto.",
+    "proposed_path": "src/aulas-10-e-11/prog08.c",
+    "interactive": false,
+    "file_operations": true,
+    "historical_functions": [
+      "fclose",
+      "fopen"
+    ]
+  },
+  {
+    "id": "A10-11-P09",
+    "path": "src/Fontes_Aula_10_e_11/Prog9.c",
+    "sigaa_name": "Prog09.c",
+    "aula_markdown": "atividades/aula-10.md",
+    "references": [
+      "atividades/aula-10.md"
+    ],
+    "objective": "Conta os bytes de um arquivo aberto em modo binário.",
+    "proposed_path": "src/aulas-10-e-11/prog09.c",
+    "interactive": false,
+    "file_operations": true,
+    "historical_functions": [
+      "fclose",
+      "fopen"
+    ]
+  },
+  {
+    "id": "A03-04-BITTEST",
+    "path": "src/Fontes_Aula_3_e_4/BitTest.c",
+    "sigaa_name": "BitTest.c",
+    "aula_markdown": "atividades/aulas-03-e-04.md",
+    "references": [
+      "atividades/aulas-03-e-04.md"
+    ],
+    "objective": "Bits 0 a 7",
+    "proposed_path": "src/aulas-03-e-04/bit-test.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A03-04-P01",
+    "path": "src/Fontes_Aula_3_e_4/Prog1.c",
+    "sigaa_name": "Prog01.c",
+    "aula_markdown": "atividades/aulas-03-e-04.md",
+    "references": [
+      "atividades/aulas-03-e-04.md"
+    ],
+    "objective": "Cria uma estrutura para armazenar dados de um aluno.",
+    "proposed_path": "src/aulas-03-e-04/prog01.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A03-04-P10",
+    "path": "src/Fontes_Aula_3_e_4/Prog10.c",
+    "sigaa_name": "Prog10.c",
+    "aula_markdown": "atividades/aulas-03-e-04.md",
+    "references": [
+      "atividades/aulas-03-e-04.md"
+    ],
+    "objective": "Mostra união com estrutura.",
+    "proposed_path": "src/aulas-03-e-04/prog10.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A03-04-P11",
+    "path": "src/Fontes_Aula_3_e_4/Prog11.c",
+    "sigaa_name": "Prog11.c",
+    "aula_markdown": "atividades/aulas-03-e-04.md",
+    "references": [
+      "atividades/aulas-03-e-04.md"
+    ],
+    "objective": "Mostra o uso do operador sizeof().",
+    "proposed_path": "src/aulas-03-e-04/prog11.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A03-04-P12",
+    "path": "src/Fontes_Aula_3_e_4/Prog12.c",
+    "sigaa_name": "Prog12.c",
+    "aula_markdown": "atividades/aulas-03-e-04.md",
+    "references": [
+      "atividades/aulas-03-e-04.md"
+    ],
+    "objective": "Mostra o uso do operador de endereço.",
+    "proposed_path": "src/aulas-03-e-04/prog12.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A03-04-P13",
+    "path": "src/Fontes_Aula_3_e_4/Prog13.c",
+    "sigaa_name": "Prog13.c",
+    "aula_markdown": "atividades/aulas-03-e-04.md",
+    "references": [
+      "atividades/aulas-03-e-04.md"
+    ],
+    "objective": "Mostra o uso de uniões anônimas.",
+    "proposed_path": "src/aulas-03-e-04/prog13.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": [
+      "strcpy"
+    ]
+  },
+  {
+    "id": "A03-04-P02",
+    "path": "src/Fontes_Aula_3_e_4/Prog2.c",
+    "sigaa_name": "Prog02.c",
+    "aula_markdown": "atividades/aulas-03-e-04.md",
+    "references": [
+      "atividades/aulas-03-e-04.md"
+    ],
+    "objective": "Cria uma estrutura para armazenar dados de um aluno.",
+    "proposed_path": "src/aulas-03-e-04/prog02.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A03-04-P03",
+    "path": "src/Fontes_Aula_3_e_4/Prog3.c",
+    "sigaa_name": "Prog03.c",
+    "aula_markdown": "atividades/aulas-03-e-04.md",
+    "references": [
+      "atividades/aulas-03-e-04.md"
+    ],
+    "objective": "Mostra estruturas aninhadas.",
+    "proposed_path": "src/aulas-03-e-04/prog03.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A03-04-P04",
+    "path": "src/Fontes_Aula_3_e_4/Prog4.c",
+    "sigaa_name": "Prog04.c",
+    "aula_markdown": "atividades/aulas-03-e-04.md",
+    "references": [
+      "atividades/aulas-03-e-04.md"
+    ],
+    "objective": "Mostra passagem de estruturas para funções por valor; mostra uma função que retorna uma estrutura.",
+    "proposed_path": "src/aulas-03-e-04/prog04.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A03-04-P05",
+    "path": "src/Fontes_Aula_3_e_4/Prog5.c",
+    "sigaa_name": "Prog05.c",
+    "aula_markdown": "atividades/aulas-03-e-04.md",
+    "references": [
+      "atividades/aulas-03-e-04.md"
+    ],
+    "objective": "Mostra uma matriz de estruturas.",
+    "proposed_path": "src/aulas-03-e-04/prog05.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "gets",
+      "scanf"
+    ]
+  },
+  {
+    "id": "A03-04-P06",
+    "path": "src/Fontes_Aula_3_e_4/Prog6.c",
+    "sigaa_name": "Prog06.c",
+    "aula_markdown": "atividades/aulas-03-e-04.md",
+    "references": [
+      "atividades/aulas-03-e-04.md"
+    ],
+    "objective": "Mostra o uso de enumerações.",
+    "proposed_path": "src/aulas-03-e-04/prog06.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A03-04-P07",
+    "path": "src/Fontes_Aula_3_e_4/Prog7.c",
+    "sigaa_name": "Prog07.c",
+    "aula_markdown": "atividades/aulas-03-e-04.md",
+    "references": [
+      "atividades/aulas-03-e-04.md"
+    ],
+    "objective": "Mostra o uso de enumerações.",
+    "proposed_path": "src/aulas-03-e-04/prog07.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A03-04-P08",
+    "path": "src/Fontes_Aula_3_e_4/Prog8.c",
+    "sigaa_name": "Prog08.c",
+    "aula_markdown": "atividades/aulas-03-e-04.md",
+    "references": [
+      "atividades/aulas-03-e-04.md"
+    ],
+    "objective": "Mostra o uso de uniões.",
+    "proposed_path": "src/aulas-03-e-04/prog08.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": [
+      "strcpy"
+    ]
+  },
+  {
+    "id": "A03-04-P09",
+    "path": "src/Fontes_Aula_3_e_4/Prog9.c",
+    "sigaa_name": "Prog09.c",
+    "aula_markdown": "atividades/aulas-03-e-04.md",
+    "references": [
+      "atividades/aulas-03-e-04.md"
+    ],
+    "objective": "Mostra união de estruturas.",
+    "proposed_path": "src/aulas-03-e-04/prog09.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A05-08-P01",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog1.c",
+    "sigaa_name": "Prog01.c",
+    "aula_markdown": "atividades/aulas-05-e-06.md",
+    "references": [
+      "atividades/aulas-05-e-06.md"
+    ],
+    "objective": "Mostra ponteiros constantes.",
+    "proposed_path": "src/aulas-05-a-08/prog01.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A05-08-P10",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog10.c",
+    "sigaa_name": "Prog10.c",
+    "aula_markdown": "atividades/aulas-05-e-06.md",
+    "references": [
+      "atividades/aulas-05-e-06.md"
+    ],
+    "objective": "Imprime os elementos de um vetor utilizando incremento de ponteiros.",
+    "proposed_path": "src/aulas-05-a-08/prog10.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A05-08-P11",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog11.c",
+    "sigaa_name": "Prog11.c",
+    "aula_markdown": "atividades/aulas-05-e-06.md",
+    "references": [
+      "atividades/aulas-05-e-06.md"
+    ],
+    "objective": "Mostra a passagem de vetores para funções utilizando ponteiros.",
+    "proposed_path": "src/aulas-05-a-08/prog11.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A05-08-P12",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog12.c",
+    "sigaa_name": "Prog12.c",
+    "aula_markdown": "atividades/aulas-05-e-06.md",
+    "references": [
+      "atividades/aulas-05-e-06.md"
+    ],
+    "objective": "Procura um caractere em uma string utilizando ponteiros.",
+    "proposed_path": "src/aulas-05-a-08/prog12.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "gets"
+    ]
+  },
+  {
+    "id": "A05-08-P13",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog13.c",
+    "sigaa_name": "Prog13.c",
+    "aula_markdown": "atividades/aulas-05-e-06.md",
+    "references": [
+      "atividades/aulas-05-e-06.md"
+    ],
+    "objective": "Implementa funções para manipulação de strings utilizando ponteiros.",
+    "proposed_path": "src/aulas-05-a-08/prog13.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "gets",
+      "strcpy"
+    ]
+  },
+  {
+    "id": "A05-08-P14",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog14.c",
+    "sigaa_name": "Prog14.c",
+    "aula_markdown": "atividades/aulas-06-e-07.md",
+    "references": [
+      "atividades/aulas-06-e-07.md"
+    ],
+    "objective": "Mostra o uso de ponteiros para cadeias de caracteres.",
+    "proposed_path": "src/aulas-05-a-08/prog14.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A05-08-P15",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog15.c",
+    "sigaa_name": "Prog15.c",
+    "aula_markdown": "atividades/aulas-06-e-07.md",
+    "references": [
+      "atividades/aulas-06-e-07.md"
+    ],
+    "objective": "Imprime o dia da semana a partir de uma data utilizando um vetor de ponteiros.",
+    "proposed_path": "src/aulas-05-a-08/prog15.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A05-08-P16",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog16.c",
+    "sigaa_name": "Prog16.c",
+    "aula_markdown": "atividades/aulas-06-e-07.md",
+    "references": [
+      "atividades/aulas-06-e-07.md"
+    ],
+    "objective": "Mostra o uso de ponteiros para ponteiros na ordenação de strings.",
+    "proposed_path": "src/aulas-05-a-08/prog16.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "gets"
+    ]
+  },
+  {
+    "id": "A05-08-P17",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog17.c",
+    "sigaa_name": "Prog17.c",
+    "aula_markdown": "atividades/aulas-06-e-07.md",
+    "references": [
+      "atividades/aulas-06-e-07.md"
+    ],
+    "objective": "Movimenta uma imagem na tela utilizando ponteiros e matrizes.",
+    "proposed_path": "src/aulas-05-a-08/prog17.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A05-08-P18",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog18.c",
+    "sigaa_name": "Prog18.c",
+    "aula_markdown": "atividades/aulas-06-e-07.md",
+    "references": [
+      "atividades/aulas-06-e-07.md"
+    ],
+    "objective": "Mostra o uso de ponteiros para funções.",
+    "proposed_path": "src/aulas-05-a-08/prog18.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A05-08-P19",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog19.c",
+    "sigaa_name": "Prog19.c",
+    "aula_markdown": "atividades/aulas-06-e-07.md",
+    "references": [
+      "atividades/aulas-06-e-07.md"
+    ],
+    "objective": "Mostra a passagem de ponteiros para funções como argumentos.",
+    "proposed_path": "src/aulas-05-a-08/prog19.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "gets"
+    ]
+  },
+  {
+    "id": "A05-08-P02",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog2.c",
+    "sigaa_name": "Prog02.c",
+    "aula_markdown": "atividades/aulas-05-e-06.md",
+    "references": [
+      "atividades/aulas-05-e-06.md"
+    ],
+    "objective": "Mostra o uso de ponteiros variáveis.",
+    "proposed_path": "src/aulas-05-a-08/prog02.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A05-08-P20",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog20.c",
+    "sigaa_name": "Prog20.c",
+    "aula_markdown": "atividades/aulas-06-e-07.md",
+    "references": [
+      "atividades/aulas-06-e-07.md"
+    ],
+    "objective": "Mostra o uso de um vetor de ponteiros para funções.",
+    "proposed_path": "src/aulas-05-a-08/prog20.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A05-08-P21",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog21.c",
+    "sigaa_name": "Prog21.c",
+    "aula_markdown": "atividades/aulas-06-e-07.md",
+    "references": [
+      "atividades/aulas-06-e-07.md"
+    ],
+    "objective": "Mostra a inicialização de um vetor de ponteiros para funções.",
+    "proposed_path": "src/aulas-05-a-08/prog21.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A05-08-P22",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog22.c",
+    "sigaa_name": "Prog22.c",
+    "aula_markdown": "atividades/aulas-06-e-07.md",
+    "references": [
+      "atividades/aulas-06-e-07.md"
+    ],
+    "objective": "Mostra o uso de typedef para definir ponteiros para funções.",
+    "proposed_path": "src/aulas-05-a-08/prog22.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A05-08-P23",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog23.c",
+    "sigaa_name": "Prog23.c",
+    "aula_markdown": "atividades/aulas-06-e-07.md",
+    "references": [
+      "atividades/aulas-06-e-07.md"
+    ],
+    "objective": "Mostra o uso e as limitações de ponteiros do tipo void.",
+    "proposed_path": "src/aulas-05-a-08/prog23.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A05-08-P24",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog24.c",
+    "sigaa_name": "Prog24.c",
+    "aula_markdown": "atividades/aulas-06-e-07.md",
+    "references": [
+      "atividades/aulas-06-e-07.md"
+    ],
+    "objective": "Mostra o uso de ponteiros genéricos com conversão de tipos.",
+    "proposed_path": "src/aulas-05-a-08/prog24.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A05-08-P25",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog25.c",
+    "sigaa_name": "Prog25.c",
+    "aula_markdown": "atividades/aulas-06-e-07.md",
+    "references": [
+      "atividades/aulas-06-e-07.md"
+    ],
+    "objective": "Mostra a ordenação de números inteiros utilizando qsort().",
+    "proposed_path": "src/aulas-05-a-08/prog25.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": [
+      "qsort"
+    ]
+  },
+  {
+    "id": "A05-08-P26",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog26.c",
+    "sigaa_name": "Prog26.c",
+    "aula_markdown": "atividades/aulas-06-e-07.md",
+    "references": [
+      "atividades/aulas-06-e-07.md"
+    ],
+    "objective": "Mostra a ordenação e a busca binária em vetores de números inteiros.",
+    "proposed_path": "src/aulas-05-a-08/prog26.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": [
+      "qsort"
+    ]
+  },
+  {
+    "id": "A05-08-P27",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog27.c",
+    "sigaa_name": "Prog27.c",
+    "aula_markdown": "atividades/aulas-06-e-07.md",
+    "references": [
+      "atividades/aulas-06-e-07.md"
+    ],
+    "objective": "Mostra a ordenação e a busca binária em vetores de strings.",
+    "proposed_path": "src/aulas-05-a-08/prog27.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": [
+      "qsort"
+    ]
+  },
+  {
+    "id": "A05-08-P28",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog28.c",
+    "sigaa_name": "Prog28.c",
+    "aula_markdown": "atividades/aulas-06-e-07.md",
+    "references": [
+      "atividades/aulas-06-e-07.md"
+    ],
+    "objective": "Mostra a ordenação de estruturas por diferentes campos utilizando qsort().",
+    "proposed_path": "src/aulas-05-a-08/prog28.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": [
+      "qsort"
+    ]
+  },
+  {
+    "id": "A05-08-P29",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog29.c",
+    "sigaa_name": "Prog29.c",
+    "aula_markdown": "atividades/aula-08.md",
+    "references": [
+      "atividades/aula-08.md"
+    ],
+    "objective": "Mostra o uso de malloc() para alocação dinâmica de memória.",
+    "proposed_path": "src/aulas-05-a-08/prog29.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "free",
+      "malloc",
+      "scanf"
+    ]
+  },
+  {
+    "id": "A05-08-P03",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog3.c",
+    "sigaa_name": "Prog03.c",
+    "aula_markdown": "atividades/aulas-05-e-06.md",
+    "references": [
+      "atividades/aulas-05-e-06.md"
+    ],
+    "objective": "Função Troca.",
+    "proposed_path": "src/aulas-05-a-08/prog03.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A05-08-P30",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog30.c",
+    "sigaa_name": "Prog30.c",
+    "aula_markdown": "atividades/aula-08.md",
+    "references": [
+      "atividades/aula-08.md"
+    ],
+    "objective": "Mostra alocação dinâmica de vetores utilizando calloc().",
+    "proposed_path": "src/aulas-05-a-08/prog30.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "calloc",
+      "free",
+      "scanf"
+    ]
+  },
+  {
+    "id": "A05-08-P31",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog31.c",
+    "sigaa_name": "Prog31.c",
+    "aula_markdown": "atividades/aula-08.md",
+    "references": [
+      "atividades/aula-08.md"
+    ],
+    "objective": "Mostra a implementação de uma lista encadeada de livros.",
+    "proposed_path": "src/aulas-05-a-08/prog31.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "gets",
+      "malloc"
+    ]
+  },
+  {
+    "id": "A05-08-P32",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog32.c",
+    "sigaa_name": "Prog32.c",
+    "aula_markdown": "atividades/aula-08.md",
+    "references": [
+      "atividades/aula-08.md"
+    ],
+    "objective": "Mostra a utilização de argumentos da linha de comando (argc e argv).",
+    "proposed_path": "src/aulas-05-a-08/prog32.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A05-08-P33",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog33.c",
+    "sigaa_name": "Prog33.c",
+    "aula_markdown": "atividades/aula-08.md",
+    "references": [
+      "atividades/aula-08.md"
+    ],
+    "objective": "Mostra a utilização de argumentos da linha de comando para configurar teclas de função.",
+    "proposed_path": "src/aulas-05-a-08/prog33.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": [
+      "strcat",
+      "strcpy"
+    ]
+  },
+  {
+    "id": "A05-08-P34",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog34.c",
+    "sigaa_name": "Prog34.c",
+    "aula_markdown": "atividades/aula-08.md",
+    "references": [
+      "atividades/aula-08.md"
+    ],
+    "objective": "Mostra alocação, inicialização e liberação dinâmica de vetores.",
+    "proposed_path": "src/aulas-05-a-08/prog34.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "free",
+      "malloc",
+      "scanf"
+    ]
+  },
+  {
+    "id": "A05-08-P35",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog35.c",
+    "sigaa_name": "Prog35.c",
+    "aula_markdown": "atividades/aula-08.md",
+    "references": [
+      "atividades/aula-08.md"
+    ],
+    "objective": "Mostra alocação, inicialização e liberação dinâmica de matrizes.",
+    "proposed_path": "src/aulas-05-a-08/prog35.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "free",
+      "malloc",
+      "scanf"
+    ]
+  },
+  {
+    "id": "A05-08-P04",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog4.c",
+    "sigaa_name": "Prog04.c",
+    "aula_markdown": "atividades/aulas-05-e-06.md",
+    "references": [
+      "atividades/aulas-05-e-06.md"
+    ],
+    "objective": "Função Troca.",
+    "proposed_path": "src/aulas-05-a-08/prog04.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A05-08-P05",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog5.c",
+    "sigaa_name": "Prog05.c",
+    "aula_markdown": "atividades/aulas-05-e-06.md",
+    "references": [
+      "atividades/aulas-05-e-06.md"
+    ],
+    "objective": "Mostra o uso de ponteiros declarados dentro da função main().",
+    "proposed_path": "src/aulas-05-a-08/prog05.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A05-08-P06",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog6.c",
+    "sigaa_name": "Prog06.c",
+    "aula_markdown": "atividades/aulas-05-e-06.md",
+    "references": [
+      "atividades/aulas-05-e-06.md"
+    ],
+    "objective": "Mostra a inicialização do ponteiro.",
+    "proposed_path": "src/aulas-05-a-08/prog06.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A05-08-P07",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog7.c",
+    "sigaa_name": "Prog07.c",
+    "aula_markdown": "atividades/aulas-05-e-06.md",
+    "references": [
+      "atividades/aulas-05-e-06.md"
+    ],
+    "objective": "Mostra as operações possíveis com ponteiros.",
+    "proposed_path": "src/aulas-05-a-08/prog07.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A05-08-P08",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog8.c",
+    "sigaa_name": "Prog08.c",
+    "aula_markdown": "atividades/aulas-05-e-06.md",
+    "references": [
+      "atividades/aulas-05-e-06.md"
+    ],
+    "objective": "Imprime os elementos de um vetor utilizando a notação de índices.",
+    "proposed_path": "src/aulas-05-a-08/prog08.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A05-08-P09",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog9.c",
+    "sigaa_name": "Prog09.c",
+    "aula_markdown": "atividades/aulas-05-e-06.md",
+    "references": [
+      "atividades/aulas-05-e-06.md"
+    ],
+    "objective": "Imprime os elementos de um vetor utilizando a notação de ponteiros.",
+    "proposed_path": "src/aulas-05-a-08/prog09.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A09-P01",
+    "path": "src/Fontes_Aula_9/Prog1.c",
+    "sigaa_name": "Prog01.c",
+    "aula_markdown": "aulas/aula-09.md",
+    "references": [
+      "aulas/aula-09.md"
+    ],
+    "objective": "Mostra o uso do operador de complemento ~",
+    "proposed_path": "src/aula-09/prog01.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A09-P02",
+    "path": "src/Fontes_Aula_9/Prog2.c",
+    "sigaa_name": "Prog02.c",
+    "aula_markdown": "aulas/aula-09.md",
+    "references": [
+      "aulas/aula-09.md"
+    ],
+    "objective": "todos os bits ligados",
+    "proposed_path": "src/aula-09/prog02.c",
+    "interactive": false,
+    "file_operations": false,
+    "historical_functions": []
+  },
+  {
+    "id": "A09-P03",
+    "path": "src/Fontes_Aula_9/Prog3.c",
+    "sigaa_name": "Prog03.c",
+    "aula_markdown": "aulas/aula-09.md",
+    "references": [
+      "aulas/aula-09.md"
+    ],
+    "objective": "um no bit mais significativo e zero nos outros",
+    "proposed_path": "src/aula-09/prog03.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  },
+  {
+    "id": "A09-P04",
+    "path": "src/Fontes_Aula_9/Prog4.c",
+    "sigaa_name": "Prog04.c",
+    "aula_markdown": "aulas/aula-09.md",
+    "references": [
+      "aulas/aula-09.md"
+    ],
+    "objective": "Calculadora bit-a-bit",
+    "proposed_path": "src/aula-09/prog04.c",
+    "interactive": true,
+    "file_operations": false,
+    "historical_functions": [
+      "scanf"
+    ]
+  }
+]
