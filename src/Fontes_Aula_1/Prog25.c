@@ -1,5 +1,5 @@
 /* Prog25.c */
-/* Imprime um cart„o de natal */
+/* Imprime um cart√£o de natal */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -30,7 +30,7 @@ int main()
     Contorno[i+1]='\0';
     fim=strlen(Contorno);
 
-    /* Impress„o da ·rvore */
+    /* Impress√£o da √°rvore */
     printf("\n");
     for(i=0; i < (80-strlen(Nome))/2; i++) printf(" ");
     printf("%s\n\n\n",Nome);
@@ -57,6 +57,6 @@ int main()
     printf("FELIZ NATAL\n");
     for(i=0; i<me+11; i++) printf(" ");
     printf("E UM PROSPERO 2008!\n");
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

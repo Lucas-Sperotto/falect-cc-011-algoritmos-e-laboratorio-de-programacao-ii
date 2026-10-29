@@ -15,13 +15,13 @@ typedef struct Livro
 Livro GetLivro()
 {
     Livro livro;
-    printf("\n\tDigite o título: ");
+    printf("\n\tDigite o tÃ­tulo: ");
     gets(livro.Titulo);
     printf("\tDigite o nome do autor: ");
     gets(livro.Autor);
-    printf("\tDigite o número do registro: ");
+    printf("\tDigite o nÃºmero do registro: ");
     scanf("%hd",&livro.NumReg);
-    printf("\tDigite o preço: ");
+    printf("\tDigite o preÃ§o: ");
     scanf("%lf", &livro.Preco);
     rewind(stdin);
     return livro;
@@ -45,6 +45,6 @@ int main()
     while(resp != 'n' && resp != 'N');
 
     fclose(fptr);
-    system("pause");
+    // system("pause");
     return 0;
 }

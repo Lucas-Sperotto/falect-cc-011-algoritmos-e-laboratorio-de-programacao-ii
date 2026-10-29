@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-void strdel(char[], int); /*Protótipo */
+void strdel(char[], int); /*ProtÃ³tipo */
 
 int main()
 {
@@ -14,7 +14,7 @@ int main()
     strdel(str,2);
     printf("%s\n", str);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 

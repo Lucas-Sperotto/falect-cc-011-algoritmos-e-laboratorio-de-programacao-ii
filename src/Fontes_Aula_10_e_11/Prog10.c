@@ -12,7 +12,7 @@ int main()
 
     CopiaArquivo(Origem, Destino);
     system("type CopiaArq.cpy");
-    system("pause");
+    // system("pause");
     return 0;
 }
 

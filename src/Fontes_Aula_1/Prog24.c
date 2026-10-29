@@ -6,17 +6,17 @@
 #include <string.h>
 #include <conio.h>	/* para getche() */
 
-int dsemana(int, int, int); /*Protótipo */
+int dsemana(int, int, int); /*ProtÃ³tipo */
 
 int main()
 {
     char diasemana[7][14]= {	"Domingo",
                                 "Segunda-feira",
-                                "Terça-feira",
+                                "TerÃ§a-feira",
                                 "Quarta-feira",
                                 "Quinta-feira",
                                 "Sexta-feira",
-                                "Sábado"
+                                "SÃ¡bado"
                            };
     int dia, mes, ano;
     const char ESC = 27;
@@ -25,11 +25,11 @@ int main()
         printf("Digite a data na forma dd mm aaaa: ");
         scanf("%d%d%d", &dia, &mes, &ano);
         printf("%s\n", diasemana [ dsemana(dia,mes,ano)] );
-        printf("ESC para terminar ou ENTER para recomeçar\n");
+        printf("ESC para terminar ou ENTER para recomeÃ§ar\n");
     }
     while (getch() != ESC);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 

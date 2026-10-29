@@ -1,5 +1,5 @@
 /* Loteria.C */
-/* Imprime 50 combinações de jogos para a Sena */
+/* Imprime 50 combinaÃ§Ãµes de jogos para a Sena */
 #include <stdio.h>
 #include <stdlib.h>
 #define JOGOS 50
@@ -11,7 +11,7 @@ int main()
 
     for(k = 0; k < JOGOS; k++)
         for(j=0 ; j < N; j++)
-            matriz[k][j]=rand()%60+1;/*gera núm. aleatório de 1 a 60*/
+            matriz[k][j]=rand()%60+1;/*gera nÃºm. aleatÃ³rio de 1 a 60*/
 
     for(k = 0; k < JOGOS; k++)
     {
@@ -20,6 +20,6 @@ int main()
             printf("%2d   ",matriz[k][j]);
         printf("\n");
     }
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
