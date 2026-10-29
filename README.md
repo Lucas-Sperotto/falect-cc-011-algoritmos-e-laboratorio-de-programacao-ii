@@ -87,6 +87,10 @@ python3 scripts/verificar_fontes_c.py
 - `script.sh`: compilação/execução em lote com relatórios;
 - `scripts/verificar_fontes_c.py`: inspeção estática de codificação e instruções de pausa.
 
+## Tarefas individuais do SIGAA
+
+Consulte o [índice das tarefas por aula](atividades/README.md), com enunciados e links para os códigos C correspondentes.
+
 ## Documentação acadêmica
 
 Consulte [Plano da disciplina](PLANO_DISCIPLINA.md), [Cronograma](CRONOGRAMA.md), [Avaliação](AVALIACAO.md), [Política de GitHub](POLITICA_GITHUB.md), [Política de uso de IA](POLITICA_IA.md), [Perguntas frequentes](FAQ.md) e [Revisão dos fontes C](docs/REVISAO_FONTES_C.md).
