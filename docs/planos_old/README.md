@@ -1,13 +1,5 @@
-# Planos Antigos Organizados por Disciplina
+# Histórico de planos de curso
 
-- `algoritmos-e-laboratorio-de-programacao-i/`
-- `algoritmos-e-laboratorio-de-programacao-ii/`
-- `estrutura-de-dados-i/`
-- `estrutura-de-dados-ii/`
-- `laboratorio-de-programacao-orientada-a-objetos/`
-- `processamento-de-alto-desempenho/`
+Os PDFs históricos estão organizados por disciplina. Para **Algoritmos e Laboratório de Programação II (FALECT-CC-011)**, consulte o [inventário das ofertas](algoritmos-e-laboratorio-de-programacao-ii/README.md).
 
-Cada pasta contem:
-
-- planos antigos em PDF (AIA, ROO e FALECT);
-- um arquivo `plano de curso.md` revisado para o PPC e padronizado em 15 encontros sem data.
+O plano atual é o da oferta **2026.2**; seu conteúdo foi incorporado à [documentação de planejamento](../../PLANO_DISCIPLINA.md). O PDF oficial de 2026.2 está pendente de inclusão binária nesta pasta.

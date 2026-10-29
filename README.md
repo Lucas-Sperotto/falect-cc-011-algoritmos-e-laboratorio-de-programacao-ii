@@ -4,6 +4,16 @@
 
 Repositório de apoio à disciplina, com programas em linguagem C, materiais de aula, atividades, orientações, avaliações e referências. Os exemplos têm finalidade didática e incluem códigos legados que podem exigir análise e correções.
 
+## Oferta 2026.2 — Plano de curso e cronograma
+
+- **Disciplina:** FALECT-CC-011, turma 01, 60h.
+- **Módulo 1:** 31/08 a 04/09/2026 — vetores, matrizes, strings e structs.
+- **Módulo 2:** 21/09 a 25/09/2026 — ponteiros e manipulação de arquivos.
+- **Módulo 3:** 27/10 a 30/10/2026 — prática de programação e algoritmos.
+- **Avaliação:** três listas de exercícios de até 10 pontos, com média aritmética simples.
+
+Consulte o [plano de curso 2026.2](PLANO_DISCIPLINA.md), [cronograma](CRONOGRAMA.md) e o [arquivo histórico de planos](docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/README.md). O PDF original de 2026.2 ainda aguarda inclusão no histórico.
+
 ## Comece por aqui: VS Code + WSL Ubuntu
 
 ### 1. Instalação

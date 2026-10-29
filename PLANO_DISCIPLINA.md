@@ -1,178 +1,50 @@
-# Plano da Disciplina – [NOME DA DISCIPLINA]
+# Plano da disciplina — oferta 2026.2
 
-## 1. Identificação
+**Documento de referência:** Plano de Curso SIGAA, FALECT-CC-011 — Algoritmos e Laboratório de Programação II, turma 01, semestre 2026.2, 60 horas. **Docente:** Lucas Kriesel Sperotto.
 
-- Curso: Bacharelado em Ciência da Computação
-- Instituição: UNEMAT – Campus Universitário de Alto Araguaia
-- Disciplina: [NOME DA DISCIPLINA]
-- Código: [CODIGO NO PPC]
-- Semestre letivo: [SEMESTRE]
-- Professor: Prof. Me. Lucas Kriesel Sperotto
-- Área do professor: Programação/Computação
-- Carga horária total: [60h]
-- Carga horária presencial: [45h ou 60h]
-- Carga horária EAD: [15h ou 0h]
-- Créditos teóricos: [T]
-- Créditos práticos: [P]
-- Pré-requisitos: [CONFORME PPC]
-- Linguagem principal da disciplina: [C, C/C++, Java, Python ou outra]
+> O PDF oficial fornecido pelo docente deve ser arquivado em [`docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/Plano_de_Curso_FALECT-CC-011_2026.2_01_.pdf`](docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/Plano_de_Curso_FALECT-CC-011_2026.2_01_.pdf). Este texto é um índice de consulta, não substitui o documento do SIGAA.
 
-## 2. Ementa
+## Ementa registrada no plano
 
-### 2.1 Ementa oficial do PPC
+Vetores e matrizes estáticos (inserção, remoção e busca); ponteiros; variáveis dinâmicas; manipulação de arquivos; conceito de estrutura de dados e abstração de dados; variáveis locais e globais; biblioteca STL (Standard Template Library); cadeias de caracteres; registros; programação estruturada; passagem por valor e por referência; recursividade.
 
-[Transcrever a ementa oficial do PPC.]
+A menção à STL está no documento oficial e foi conservada, embora as práticas indicadas utilizem linguagem C.
 
-### 2.2 Leitura pedagógica da ementa
+## Metodologia
 
-[Apresentar uma interpretação pedagógica da ementa, sem contrariar o PPC.]
+Três módulos no semestre, com encontros na sala do segundo semestre ou no Laboratório Pedagógico de Computação 2 (LPC-2). Disciplina de caráter prático, com codificação de algoritmos em linguagem C e exploração das ferramentas de IDE. Materiais organizados cronologicamente no AVA e vídeos de consulta complementar.
 
-## 3. Justificativa da disciplina
+## Avaliação
 
-[Explicar a função da disciplina na formação do bacharel, sua relação com o PPC e a articulação com disciplinas anteriores e posteriores.]
+Três listas de exercícios, cada uma valendo **10 pontos**. A **média aritmética simples** das três listas compõe a nota final. Cada lista é disponibilizada ao final de um bloco conceitual, com prazo de entrega; parte do tempo em aula é reservada à resolução das atividades.
 
-## 4. Objetivo geral
+## Cronograma oficial
 
-[Transcrever ou adaptar com fidelidade ao PPC.]
+| Módulo | Período | Conteúdo |
+|---|---|---|
+| 1 | 31/08/2026 a 04/09/2026 | Vetores e matrizes, strings e structs |
+| 2 | 21/09/2026 a 25/09/2026 | Ponteiros e manipulação de arquivos |
+| 3 | 27/10/2026 a 30/10/2026 | Prática de programação e algoritmos |
 
-## 5. Objetivos específicos
+| Unidade | Data | Horário |
+|---|---|---|
+| 1ª | 04/09/2026 | 19h |
+| 2ª | 25/09/2026 | 19h |
+| 3ª | 30/10/2026 | 19h |
 
-- [objetivo específico 1]
-- [objetivo específico 2]
-- [objetivo específico 3]
-- [objetivo específico 4]
+**Atendimento:** segunda a sexta-feira, das 18h às 19h, mediante agendamento prévio.
 
-## 6. Competências e habilidades a desenvolver
+## Referências básicas do SIGAA
 
-- raciocínio lógico;
-- abstração;
-- modelagem;
-- implementação;
-- depuração;
-- documentação;
-- uso de versionamento;
-- comunicação técnica;
-- autonomia intelectual;
-- uso ético e crítico de IA, quando aplicável.
+1. MIZRAHI, Victorine Viviane. *Treinamento em Linguagem C*. São Paulo: Pearson Education do Brasil, 1990.
+2. SOFFNER, Renato. *Algoritmos e Programação em Linguagem C*. 3. ed. Saraiva, 2016.
+3. MIZRAHI, Victorine Viviane. *Treinamento em Linguagem C — Módulo 2*. São Paulo: MAKRON Books/Pearson Education, 1990. ISBN 007460855.
 
-## 7. Organização pedagógica da disciplina
+## Relação com os arquivos deste repositório
 
-### 7.1 Princípios
+- [Fontes C por aula](../../MAPA_FONTES_C.md)
+- [Tarefas do SIGAA](../../../atividades/README.md)
+- [Cronograma](../../../CRONOGRAMA.md)
+- [Orientações de compilação no WSL](../../../README.md)
 
-- articulação entre teoria e prática;
-- progressão gradual de complexidade;
-- protagonismo discente;
-- uso do GitHub como eixo de organização;
-- uso do VS Code como ambiente padrão;
-- integração entre resolução de problemas, codificação e documentação.
-
-### 7.2 Metodologia
-
-[Descrever como a disciplina alterna momentos teóricos, resolução de problemas, laboratório, estudo orientado e acompanhamento das entregas.]
-
-### 7.3 Aulas teóricas
-
-- desenvolvimento do conteúdo central no quadro;
-- uso do projetor apenas para gráficos, imagens, animações, vídeos e demonstrações;
-- priorização de raciocínio, representação e explicação oral.
-
-### 7.4 Aulas práticas
-
-- realização integral no laboratório pedagógico de computação;
-- foco em implementação, depuração, organização e versionamento;
-- acompanhamento do professor durante o processo.
-
-### 7.5 Registro de saída
-
-Ao final de cada encontro, reservar de 10 a 15 minutos para um resumo individual breve do que foi compreendido, das dificuldades encontradas e do que precisa ser retomado.
-
-## 8. Cronograma por encontro
-
-[Usar como base o arquivo `CRONOGRAMA.md` e adaptar para a disciplina.]
-
-## 9. Organização da carga EAD
-
-[Preencher apenas quando houver carga EAD no PPC.]
-
-### 9.1 Objetivos da EAD
-
-[Definir objetivos claros e compatíveis com a carga horária.]
-
-### 9.2 Formato dos vídeos
-
-- vídeos curtos, preferencialmente entre 15 e 30 minutos;
-- um vídeo por encontro ou por unidade, conforme o melhor ajuste à carga EAD;
-- foco em preparação, reforço ou consolidação.
-
-### 9.3 Atividades EAD
-
-[Descrever as atividades e como elas se articulam com os encontros presenciais.]
-
-### 9.4 Critérios de entrega
-
-[Definir prazo, formato e registro da atividade.]
-
-## 10. Materiais e recursos
-
-- quadro;
-- laboratório pedagógico de computação;
-- VS Code;
-- compiladores, interpretadores ou SDKs necessários;
-- Git e GitHub;
-- vídeos curtos;
-- roteiros e exemplos comentados;
-- IA generativa como apoio orientado, quando permitida.
-
-## 11. Avaliação
-
-### 11.1 Princípios
-
-- avaliação processual;
-- avaliação prática;
-- coerência entre processo e produto;
-- valorização da clareza técnica, organização e autonomia.
-
-### 11.2 Instrumentos
-
-- listas;
-- práticas de laboratório;
-- projeto integrador;
-- entregas no GitHub;
-- relatório curto em PDF para registro no SIGAA;
-- atividades EAD, quando houver;
-- explicações orais e verificações em aula.
-
-### 11.3 Critérios
-
-- correção técnica;
-- organização do repositório;
-- clareza do código e da documentação;
-- progressão do trabalho;
-- compreensão demonstrada pelo estudante;
-- cumprimento das regras da atividade, inclusive sobre IA.
-
-## 12. Projeto integrador da disciplina
-
-- título provisório: [NOME DO PROJETO]
-- problema a resolver: [DESCRIÇÃO]
-- entregas por etapa: [ETAPAS]
-- critérios de avaliação: [CRITÉRIOS]
-- relação com a ementa: [EXPLICAR]
-
-## 13. Política de GitHub
-
-Remeter ao arquivo `POLITICA_GITHUB.md`.
-
-## 14. Política de IA
-
-Remeter ao arquivo `POLITICA_IA.md`.
-
-## 15. Bibliografia
-
-### Básica
-
-[Bibliografia básica do PPC.]
-
-### Complementar
-
-[Bibliografia complementar do PPC e materiais adicionais selecionados pelo professor.]
+**Nota:** este arquivo descreve a oferta **2026.2**. Os demais PDFs históricos permanecem arquivados. O PDF de 2026.2 ainda precisa ser incluído fisicamente no caminho indicado.
