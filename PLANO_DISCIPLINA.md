@@ -2,7 +2,7 @@
 
 **Documento de referência:** Plano de Curso SIGAA, FALECT-CC-011 — Algoritmos e Laboratório de Programação II, turma 01, semestre 2026.2, 60 horas. **Docente:** Lucas Kriesel Sperotto.
 
-> O PDF oficial fornecido pelo docente deve ser arquivado em [`docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/Plano_de_Curso_FALECT-CC-011_2026.2_01_.pdf`](docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/Plano_de_Curso_FALECT-CC-011_2026.2_01_.pdf). Este texto é um índice de consulta, não substitui o documento do SIGAA.
+> O PDF oficial fornecido pelo docente está arquivado em [`docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/Plano_de_Curso_FALECT-CC-011_2026.2_01_.pdf`](docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/Plano_de_Curso_FALECT-CC-011_2026.2_01_.pdf). Este texto é um índice de consulta, não substitui o documento do SIGAA.
 
 ## Ementa registrada no plano
 
@@ -42,9 +42,9 @@ Três listas de exercícios, cada uma valendo **10 pontos**. A **média aritmét
 
 ## Relação com os arquivos deste repositório
 
-- [Fontes C por aula](../../MAPA_FONTES_C.md)
-- [Tarefas do SIGAA](../../../atividades/README.md)
-- [Cronograma](../../../CRONOGRAMA.md)
-- [Orientações de compilação no WSL](../../../README.md)
+- [Fontes C por aula](docs/MAPA_FONTES_C.md)
+- [Tarefas do SIGAA](atividades/README.md)
+- [Cronograma](CRONOGRAMA.md)
+- [Orientações de compilação no WSL](README.md)
 
-**Nota:** este arquivo descreve a oferta **2026.2**. Os demais PDFs históricos permanecem arquivados. O PDF de 2026.2 ainda precisa ser incluído fisicamente no caminho indicado.
+**Nota:** este arquivo descreve a oferta **2026.2**. Os demais PDFs históricos permanecem arquivados. O PDF de 2026.2 está incluído no caminho indicado e foi consultado nesta revisão.
