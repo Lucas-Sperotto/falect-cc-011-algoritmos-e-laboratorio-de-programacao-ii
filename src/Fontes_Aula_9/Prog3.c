@@ -17,9 +17,9 @@ int main()
         /* um no bit mais significativo e zero nos outros */
         mask = pow(2, t-1);
 
-        printf("\nDigite um n˙mero em hexadecimal: ");
+        printf("\nDigite um n√∫mero em hexadecimal: ");
         scanf("%x",&num) ;
-        printf("Bin·rio de %04x È: ", num);
+        printf("Bin√°rio de %04x √©: ", num);
 
         for(j=0; j<t ; j++)
         {
@@ -30,7 +30,7 @@ int main()
             mask >>= 1;
         }
     }
-    system("pause");
+    // system("pause");
     return 0;
 }
 
@@ -38,7 +38,7 @@ int palavra()
 {
     unsigned int n = ~0; /* todos os bits ligados */
     int i;
-    for(i = 0; n ; i++) /* enquanto n n„o for zero */
+    for(i = 0; n ; i++) /* enquanto n n√£o for zero */
         n <<= 1;
     return i;
 }

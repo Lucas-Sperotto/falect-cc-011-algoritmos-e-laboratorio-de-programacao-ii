@@ -11,7 +11,7 @@ int main()
 
     while(1)
     {
-        printf("\n\nDigite uma expressão (ex. 'FF00 & A23C'):");
+        printf("\n\nDigite uma expressÄƒo (ex. 'FF00 & A23C'):");
         scanf("%x %s %x", &x1, op, &x2);
         switch( op[0] )
         {
@@ -58,13 +58,13 @@ int main()
             printf("Operador invalido.\n");
         }
     }
-    system("pause");
+    // system("pause");
     return 0;
 }
 
 
 /* pbin() */
-/* imprime número em binario */
+/* imprime nÃºmero em binario */
 void pbin(unsigned short num)
 {
     unsigned short mask;

@@ -1,5 +1,5 @@
 /* Prog9.c */
-/* Imprime os elementos de uma matriz usando notação ponteiro */
+/* Imprime os elementos de uma matriz usando notaÃ§Ã£o ponteiro */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -8,8 +8,8 @@ int main()
     static int M[5]= {92,81,70,69,58};
     int i;
     for(i=0; i<5; i++)
-        printf("%d\n", *(M + i)); /* Notação ponteiro */
+        printf("%d\n", *(M + i)); /* NotaÃ§Ã£o ponteiro */
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

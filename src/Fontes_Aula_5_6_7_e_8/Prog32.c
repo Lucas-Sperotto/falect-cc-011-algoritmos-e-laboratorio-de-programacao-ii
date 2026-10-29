@@ -7,11 +7,11 @@ int main(int argc, char **argv) /* int main(int argc, char *argv[]) */
 {
     int i;
 
-    printf("Número de argumentos: %d\n", argc);
+    printf("NÃºmero de argumentos: %d\n", argc);
 
     for(i=0; i<argc; i++)
-        printf("Argumento número %d: %s\n", i, argv[i]);
+        printf("Argumento nÃºmero %d: %s\n", i, argv[i]);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

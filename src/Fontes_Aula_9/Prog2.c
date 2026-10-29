@@ -6,7 +6,7 @@ int palavra()
 {
     unsigned int n = ~0; /* todos os bits ligados */
     int i;
-    for(i = 0; n ; i++) /* enquanto n n„o for zero */
+    for(i = 0; n ; i++) /* enquanto n n√£o for zero */
         n <<= 1;
     return i;
 }
@@ -14,8 +14,8 @@ int palavra()
 int main()
 {
     int t = palavra();
-    printf("O tamanho da palavra dessa m·quina È %d bits.\n", t);
-    system("pause");
+    printf("O tamanho da palavra dessa m√°quina √© %d bits.\n", t);
+    // system("pause");
     return 0;
 }
 

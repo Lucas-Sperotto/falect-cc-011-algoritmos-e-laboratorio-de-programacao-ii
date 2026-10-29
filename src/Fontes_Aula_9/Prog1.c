@@ -10,7 +10,7 @@ int main()
     unsigned char ch;
     while((ch=getch())!= 'X')
         printf("%c", ~ch);
-    system("pause");
+    // system("pause");
     return 0;
 }
 
