@@ -8,18 +8,18 @@ int main(void)
     int i=5;
     float f=3.2;
 
-    void *pv;	/* Ponteiro genÈrico */
-    pv = &i;	/* EndereÁo de um int */
+    void *pv;	/* Ponteiro gen√©rico */
+    pv = &i;	/* Endere√ßo de um int */
 
-    /* n„o podemos usar o operador indireto com ponteiros void */
-    printf("%d\n", *pv); /* ERRO de compilaÁ„o */
+    /* n√£o podemos usar o operador indireto com ponteiros void */
+    printf("%d\n", *pv); /* ERRO de compila√ß√£o */
 
-    pv = &f;	/* EndereÁo de um float */
+    pv = &f;	/* Endere√ßo de um float */
 
-    /* n„o podemos usar o operador indireto com ponteiros void */
-    printf("%f\n", *pv); /* ERRO de compilaÁ„o */
+    /* n√£o podemos usar o operador indireto com ponteiros void */
+    printf("%f\n", *pv); /* ERRO de compila√ß√£o */
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 

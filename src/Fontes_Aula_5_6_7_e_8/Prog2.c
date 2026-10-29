@@ -1,29 +1,29 @@
 /* Prog2.c */
-/* Mostra o uso de ponteiros vari·veis */
+/* Mostra o uso de ponteiros vari√°veis */
 #include <stdio.h>
 #include <stdlib.h>
 
-void reajusta20( float *, float *); /* protÛtipo */
+void reajusta20( float *, float *); /* prot√≥tipo */
 
 int main()
 {
     float val_preco, val_reaj;
     do
     {
-        printf("\nInsira o preÁo atual: ");
+        printf("\nInsira o pre√ßo atual: ");
         scanf("%f", &val_preco);
-        reajusta20(&val_preco, &val_reaj); /* Enviando endereÁos */
-        printf("\nO preÁo novo È %.2f\n", val_preco);
+        reajusta20(&val_preco, &val_reaj); /* Enviando endere√ßos */
+        printf("\nO pre√ßo novo √© %.2f\n", val_preco);
         printf("O aumento foi de %.2f\n", val_reaj);
     }
     while( val_preco != 0.0);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 
 /* reajusta20() */
-/* Reajusta o preÁo em 20% */
+/* Reajusta o pre√ßo em 20% */
 void reajusta20(float *preco, float *reajuste) /* Recebendo ponteiros */
 {
     *reajuste = *preco * 0.2;

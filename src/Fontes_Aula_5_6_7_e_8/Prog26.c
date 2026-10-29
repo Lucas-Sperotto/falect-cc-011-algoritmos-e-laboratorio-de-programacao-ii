@@ -3,9 +3,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* FunÁ„o procura bin·ria para inteiros
+/* Fun√ß√£o procura bin√°ria para inteiros
  * procura entre MatrizOrdenada[inicio]..MatrizOrdenada[fim] pela chave.
- * retorna o Ìndice do elemento encontrado ou -1 se n„o foi encontrado */
+ * retorna o √≠ndice do elemento encontrado ou -1 se n√£o foi encontrado */
 int binarySearchInt(int MatrizOrdenada[], int inicio, int fim, int chave)
 {
     while (inicio <= fim)
@@ -14,14 +14,14 @@ int binarySearchInt(int MatrizOrdenada[], int inicio, int fim, int chave)
         if (chave > MatrizOrdenada[meio])
             inicio = meio + 1;  /* repete a procura a partir do meio */
         else if (chave < MatrizOrdenada[meio])
-            fim = meio - 1; /* repete a procura atÈ o meio */
+            fim = meio - 1; /* repete a procura at√© o meio */
         else
-            return meio;     /* encontrado, retorna posiÁ„o */
+            return meio;     /* encontrado, retorna posi√ß√£o */
     }
-    return -1; /* n„o foi encontrado */
+    return -1; /* n√£o foi encontrado */
 }
 
-/* qsort - funÁ„o para comparar inteiros */
+/* qsort - fun√ß√£o para comparar inteiros */
 int compara(const void *a, const void *b)
 {
     const int *pa = (const int *)a; /* modifica o tipo do ponteiro */
@@ -45,7 +45,7 @@ int main()
     procura = binarySearchInt(tab, 0, tamanho - 1, 567);
     printf("\n\nIndice de 567 = %d\n",procura);
 
-    system("pause");
+    // system("pause");
     return 0;
 }
 

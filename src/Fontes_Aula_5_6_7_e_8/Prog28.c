@@ -7,10 +7,10 @@
 struct est_pop
 {
     char estado[16];
-    int pop; /* população */
+    int pop; /* populaÃ§Ã£o */
 };
 
-/* qsort - função para comparar struct por população (membro int) */
+/* qsort - funÃ§Ã£o para comparar struct por populaÃ§Ã£o (membro int) */
 int struct_cmp_por_pop(const void *a, const void *b)
 {
     struct est_pop *pa = (struct est_pop *)a;
@@ -18,7 +18,7 @@ int struct_cmp_por_pop(const void *a, const void *b)
     return pa->pop - pb->pop;	/* Retorna neg. se a<b e pos. se a>b */
 }
 
-/* qsort - função para comparar struct por estado (membro C-string) */
+/* qsort - funÃ§Ã£o para comparar struct por estado (membro C-string) */
 int struct_cmp_por_estado(const void *a, const void *b)
 {
     struct est_pop *pa = (struct est_pop *)a;
@@ -29,37 +29,37 @@ int struct_cmp_por_estado(const void *a, const void *b)
 int main()
 {
     unsigned int tamanho, i;
-    struct est_pop structs[] = /* população dividido por 1000 */
+    struct est_pop structs[] = /* populaÃ§Ã£o dividido por 1000 */
     { {"Sergipe   ", 1968}, {"Bahia     ", 13815},
-        {"Piauí     ", 3007}, {"Acre      ", 670},
-        {"Rondônia  ",1535 }, {"Tocantins ", 1306 }
+        {"PiauÃ­     ", 3007}, {"Acre      ", 670},
+        {"RondÃ´nia  ",1535 }, {"Tocantins ", 1306 }
     };
 
     tamanho = sizeof(structs) / sizeof(struct est_pop);
     /* imprime matriz de estruturas original */
     puts("Estrutura Original");
     for(i=0; i<tamanho; i++)
-        printf("[ estado: %s \t população: %6d000 ]\n",
+        printf("[ estado: %s \t populaÃ§Ã£o: %6d000 ]\n",
                structs[i].estado, structs[i].pop);
     puts("===============================================");
-    /* ordena usando a função qsort */
+    /* ordena usando a funÃ§Ã£o qsort */
     qsort(structs, tamanho, sizeof(struct est_pop),
           struct_cmp_por_pop);
     /* imprime matriz de estruturas ordenada */
-    puts("Estrutura ordenada por população");
+    puts("Estrutura ordenada por populaÃ§Ã£o");
     for(i=0; i<tamanho; i++)
-        printf("[ estado: %s \t população: %6d000 ]\n",
+        printf("[ estado: %s \t populaÃ§Ã£o: %6d000 ]\n",
                structs[i].estado, structs[i].pop);
     puts("===============================================");
     puts("Estrutura ordenada por estado");
-    /* reordena usando a função qsort */
+    /* reordena usando a funÃ§Ã£o qsort */
     qsort(structs, tamanho, sizeof(struct est_pop),
           struct_cmp_por_estado);
     /* imprime matriz de estruturas ordenada */
     for(i=0; i<tamanho; i++)
-        printf("[ estado: %s \t população: %6d000 ]\n",
+        printf("[ estado: %s \t populaÃ§Ã£o: %6d000 ]\n",
                structs[i].estado, structs[i].pop);
     puts("===============================================");
-    system("pause");
+    // system("pause");
     return 0;
 }

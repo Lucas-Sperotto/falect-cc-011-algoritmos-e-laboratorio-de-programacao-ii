@@ -1,16 +1,16 @@
 /* Prog30.c */
-/* Alocação dinâmica da matriz com calloc() */
+/* AlocaÃ§Ã£o dinÃ¢mica da matriz com calloc() */
 #include <stdio.h>
 #include <stdlib.h>
 
-float media(float *, int );/*protótipo */
+float media(float *, int );/*protÃ³tipo */
 
 int main()
 {
     float *notas , m;
     int tamanho, i;
 
-    puts("Qual é o número de notas? ");
+    puts("Qual Ã© o nÃºmero de notas? ");
     scanf("%d", &tamanho);
 
     notas = (float *)calloc(tamanho,sizeof(float));
@@ -22,16 +22,16 @@ int main()
     }
 
     m = media( notas, tamanho );
-    printf("Média das notas: %.2f\n", m);
+    printf("MÃ©dia das notas: %.2f\n", m);
 
     free(notas);
     notas = NULL;
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 
-/* Calcula a média dos valores da matriz */
+/* Calcula a mÃ©dia dos valores da matriz */
 float media(float *lista, int tamanho)
 {
     int i;

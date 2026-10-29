@@ -4,9 +4,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-/* FunÁ„o procura bin·ria para C-string
+/* Fun√ß√£o procura bin√°ria para C-string
  * procura entre MatrizOrdenada[inicio]..MatrizOrdenada[fim] pela chave.
- * retorna o Ìndice do elemento encontrado ou -1 se n„o foi encontrado */
+ * retorna o √≠ndice do elemento encontrado ou -1 se n√£o foi encontrado */
 int binarySearchStr(char *MatrizOrdenada[],int inicio,int fim,char*chave)
 {
     while (inicio <= fim)
@@ -17,14 +17,14 @@ int binarySearchStr(char *MatrizOrdenada[],int inicio,int fim,char*chave)
         if (cmp > 0)
             inicio = meio + 1; /* repete a procura a partir do meio */
         else if (cmp < 0)
-            fim = meio - 1; 	 /* repete a procura atÈ o meio */
+            fim = meio - 1; 	 /* repete a procura at√© o meio */
         else
-            return meio;     	 /* encontrado, retorna posiÁ„o */
+            return meio;     	 /* encontrado, retorna posi√ß√£o */
     }
-    return -1;    		 /* n„o foi encontrado */
+    return -1;    		 /* n√£o foi encontrado */
 }
 
-/* qsort - funÁ„o para comparar C-string (matriz char) */
+/* qsort - fun√ß√£o para comparar C-string (matriz char) */
 int cstring_cmp(const void *a, const void *b)
 {
     const char **pa = (const char **)a;
@@ -51,6 +51,6 @@ int main()
     procura = binarySearchStr(strings, 0, 5, "Carolina");
     printf("\nIndice de Carolina = %d\n",procura);
 
-    system("pause");
+    // system("pause");
     return 0;
 }
