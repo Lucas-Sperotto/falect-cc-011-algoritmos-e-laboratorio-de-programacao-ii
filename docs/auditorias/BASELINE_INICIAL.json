@@ -1,0 +1,1588 @@
+{
+  "commit": "04ac4094dba3c3812809dd433a7d3855c4bffdc9",
+  "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "flags": [
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-O0",
+    "-lm"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 8,
+      "sha256": "020c2606e8ed484089c2083e0be438b9d0736bee1558a6b76af0d58bd23f69cf",
+      "encoding": "binário"
+    },
+    {
+      "path": "AVALIACAO.md",
+      "bytes": 1598,
+      "sha256": "a251266bb60584c13850e5da2f5c233643dc89398aa9810e6431a5ff6c18db29",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "CRONOGRAMA.md",
+      "bytes": 1065,
+      "sha256": "aec2e24c3f51e03727d7701b1743d963e744681f5871fd5fc9c86522f8cb9e36",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "ESTRUTURA.md",
+      "bytes": 2898,
+      "sha256": "72c2d13664cebe4f539ce70a5bf63fd0c6af77ae2253ae6463e2edd81236471f",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "FAQ.md",
+      "bytes": 1339,
+      "sha256": "0cee3a526cc51c5d74c3a915e161c657ab4845c01708703f5a759c81774d90e8",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1065,
+      "sha256": "150624e6cc93983e8b2262ccbb05c9077329fff21271a0fbdb514cd9318634e9",
+      "encoding": "binário"
+    },
+    {
+      "path": "PERGUNTAS_PARA_CONTINUAR.md",
+      "bytes": 2753,
+      "sha256": "3641d0831de2036346244dfe1f788a34e96c2cf936568c7e9a3f4614b4e5021f",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "PLANO_DISCIPLINA.md",
+      "bytes": 3048,
+      "sha256": "4bd2f2d55bde797618d7639ea052fc9725e642a8641d340e376f8e1c5c5a02b4",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "POLITICA_GITHUB.md",
+      "bytes": 3882,
+      "sha256": "4a0bde9517defa46c4d859950e56fe1802ce277881405cb45f353436a7336a32",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "POLITICA_IA.md",
+      "bytes": 2322,
+      "sha256": "5e7cca53ed3e0422a74e3d91f0ab69bfc0e81b49080a92e1fe74cf758cb7eb63",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "PROMPTS_IA.md",
+      "bytes": 2007,
+      "sha256": "2e498a5c8190efc25134ce0a3dfec634afd7896eacae7ba35ae0f6056ac00212",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5273,
+      "sha256": "03cbcba8cce864601c17e7cd6a9172f3a9c1b2b3aa72befc583d056001f23b1b",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "REFERENCIAS.md",
+      "bytes": 911,
+      "sha256": "78123be96e5aaea05d713896dc0597782b71ce2e7fe83028e57530ef93da6a11",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "VSCODE_EXTENSOES.md",
+      "bytes": 1065,
+      "sha256": "1e68f8c1f34e2974264e6bf2bab30e37bb8040810e62bb08ac287a5e7d5bf369",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "atividades/README.md",
+      "bytes": 1460,
+      "sha256": "8024b5a4ceb8305b6a5690b4e1c9696f6b47a912256f1591cdc95af63b38083c",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "atividades/aula-01-pt1.md",
+      "bytes": 1316,
+      "sha256": "8a24f8159631a7a94e3c40a42749e2b050cf94372202451e6bd4f9e31ca79ea2",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "atividades/aula-01-pt2.md",
+      "bytes": 1551,
+      "sha256": "72eeede43944551644d374e67aee836d41ec878cbb65c2afe374c2c98d2c90b6",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "atividades/aula-02.md",
+      "bytes": 2017,
+      "sha256": "4bf6a37950e4f2733dd8657add7875d4116c01995dece2dee529af3843d5ef70",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "atividades/aula-08.md",
+      "bytes": 1713,
+      "sha256": "64059673c2d7086d0dac3f9b62fb61d4a9a264476948fbc83b12219830fde729",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "atividades/aula-10.md",
+      "bytes": 1961,
+      "sha256": "a05e4badb94b6723209c5b8dd94509bd2769e3daa8c81381809a823da519fb24",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "atividades/aula-11.md",
+      "bytes": 2136,
+      "sha256": "fbda5d6af7001aa3704833b946d787ff35d45319b9f7c0ffa28a80869ba70a43",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "atividades/aulas-03-e-04.md",
+      "bytes": 2151,
+      "sha256": "92629719a32505ded0d82ada72d2ecc55156f874fece2f2f8cd1c6fd48946300",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "atividades/aulas-05-e-06.md",
+      "bytes": 2331,
+      "sha256": "c5b3430e6b127f57c344b81d933c855d1073fac5a9e93e08961515a30392c0bd",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "atividades/aulas-06-e-07.md",
+      "bytes": 2785,
+      "sha256": "02b85afa78ebbdf2d48ad11f03a9921a7d3615e26234b701ced978dab2cf17d3",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "atividades/revisao-2026-09-21.md",
+      "bytes": 1101,
+      "sha256": "4a3710c16e2fa3950036d65941a88e2cb7a6d8ff3035c73dab4aded7a44c804a",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "aulas/Aula_1.pdf",
+      "bytes": 1089916,
+      "sha256": "33b87cfc443cfe9217a271582511acf5c51f43993025a1cf731b1d98a9645b19",
+      "encoding": "binário"
+    },
+    {
+      "path": "aulas/Aula_10.pdf",
+      "bytes": 1228535,
+      "sha256": "1c3ebc3deb8c2deedb1c8ce2b469b8b9917a3ab7f199c92d1f4c71d9454b94dc",
+      "encoding": "binário"
+    },
+    {
+      "path": "aulas/Aula_11.pdf",
+      "bytes": 1281416,
+      "sha256": "f16af0026a0285deb7a3c762f06e8a6800152d15eaf23c7bcee60657a42a94e5",
+      "encoding": "binário"
+    },
+    {
+      "path": "aulas/Aula_2.pdf",
+      "bytes": 939347,
+      "sha256": "d6f23973d2390413bec3509a688b3190e8f4f367836c8f9a2a1d9c8bfe88db02",
+      "encoding": "binário"
+    },
+    {
+      "path": "aulas/Aula_3.pdf",
+      "bytes": 980959,
+      "sha256": "924d49fcab3bbc81e9feeef7236461a5cd859cdef0625cacaa51aaceb2b49d2e",
+      "encoding": "binário"
+    },
+    {
+      "path": "aulas/Aula_4.pdf",
+      "bytes": 943287,
+      "sha256": "7b3f20792a23e71ad509a6037f85eb9f2e2fb0edaf199bd002748639c156f6a4",
+      "encoding": "binário"
+    },
+    {
+      "path": "aulas/Aula_5.pdf",
+      "bytes": 907180,
+      "sha256": "c3dd7e3a95a56efdc73925fb5540547882ba7cf572d3db1cfbce669508013534",
+      "encoding": "binário"
+    },
+    {
+      "path": "aulas/Aula_6.pdf",
+      "bytes": 1011378,
+      "sha256": "72f2f2049e9ba8bde1b7b60581673f6ce6c1b9913fb35de7a27dac9be6d772f3",
+      "encoding": "binário"
+    },
+    {
+      "path": "aulas/Aula_7.pdf",
+      "bytes": 1105810,
+      "sha256": "e868389bf277d0e9c3618df2c64efc94924b64f3aca19cddb82c1bea6fbd8278",
+      "encoding": "binário"
+    },
+    {
+      "path": "aulas/Aula_8.pdf",
+      "bytes": 1055224,
+      "sha256": "c391a391f2a8ec728ed0266609e89aa0ee83c8b9e6309487e6f613d824768dc0",
+      "encoding": "binário"
+    },
+    {
+      "path": "aulas/Aula_9.pdf",
+      "bytes": 842621,
+      "sha256": "7626e95bd5310eccec3981662c6171e2d8c5917cfad6f4788091b59fc30b3160",
+      "encoding": "binário"
+    },
+    {
+      "path": "aulas/README.md",
+      "bytes": 244,
+      "sha256": "0d81729e2fe3ede74a253a51be100d3da6c9457bc5ed77238987d7bd14b8ca9f",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "diretrizes_do_professor.md",
+      "bytes": 1647,
+      "sha256": "62820c944831f407d539ee323194d1e3956dab23cb2b5951f8c843eb9d69edd8",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "docs/MAPA_FONTES_C.md",
+      "bytes": 5518,
+      "sha256": "3c1b847cdda6a1d572d7deac541fa7560b3ed4838cc0618c00df0c0ccdfcfb50",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "docs/REVISAO_FONTES_C.md",
+      "bytes": 2727,
+      "sha256": "d8fc7bd6cf4cf0c44d7e9c5ca7a954a915660d2112b3c88bd509f4af2bf6eda0",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "docs/planos_old/README.md",
+      "bytes": 462,
+      "sha256": "141cd448d3d42a860db99df35c5a8a3d6748b5e769a2eb9835ad1e754b0091fe",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/Plano_de_Curso_AIA105D61-M_2023.2_01_.pdf",
+      "bytes": 55091,
+      "sha256": "ba465c385a6ab415774639f90125eaafa95c6b904689adf39816f70d3763bae9",
+      "encoding": "binário"
+    },
+    {
+      "path": "docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/Plano_de_Curso_AIA105D61_2021.2_01A_.pdf",
+      "bytes": 55630,
+      "sha256": "0a4e414f7ece677ec8ce42b636374950dc9af32253ba72a40556df7ea83ddc14",
+      "encoding": "binário"
+    },
+    {
+      "path": "docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/Plano_de_Curso_AIA105D61_2022.2_01A_.pdf",
+      "bytes": 54352,
+      "sha256": "5889a3aedeed3681dc1f2bb26b53c5886ea053c74747f9351c640448bbd56719",
+      "encoding": "binário"
+    },
+    {
+      "path": "docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/Plano_de_Curso_FALECT-CC-011_2024.1_01_.pdf",
+      "bytes": 54887,
+      "sha256": "8c3bd8f7afdd2ab8c107d735fbfb02ca988ff3b1d0f104c77371ad05eec8fcd8",
+      "encoding": "binário"
+    },
+    {
+      "path": "docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/Plano_de_Curso_FALECT-CC-011_2024.2_01_.pdf",
+      "bytes": 73640,
+      "sha256": "0935782f7200512701776c350cdbd6bfd193ecdcb8fa2909f551df866ab92559",
+      "encoding": "binário"
+    },
+    {
+      "path": "docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/Plano_de_Curso_FALECT-CC-011_2025.1_01_.pdf",
+      "bytes": 74052,
+      "sha256": "cf6de665804e643310a3a1a095aa2db8e7794564e1fd10e1f921dd119314364a",
+      "encoding": "binário"
+    },
+    {
+      "path": "docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/Plano_de_Curso_FALECT-CC-011_2025.2_01_.pdf",
+      "bytes": 72844,
+      "sha256": "9fd3dd884ebceeb593d6047f6a5116709163e80c193d37cba2ea0b2e81450b5f",
+      "encoding": "binário"
+    },
+    {
+      "path": "docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/Plano_de_Curso_FALECT-CC-011_2026.2_01_.pdf",
+      "bytes": 54622,
+      "sha256": "7708de2466b04fc2276316542ac0323cab2fb1ec18bbd3b67642d157753d0977",
+      "encoding": "binário"
+    },
+    {
+      "path": "docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/README.md",
+      "bytes": 939,
+      "sha256": "f081ab1212799ae4a275b89bc38f046e05f628dd97f75815be2f545bf14ca838",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/plano de curso.md",
+      "bytes": 3274,
+      "sha256": "d4ceba7bf984ad3421bb893aa01d9f0f82a76450433ca7e7ab08a21dacd7eaa5",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "docs/ppc/ppc_bcc_unemat_aia.pdf",
+      "bytes": 3899161,
+      "sha256": "3e10732af1e0154cf8d518803dce8a8bffb4cd24c3551ca58e43c54afa6f0fce",
+      "encoding": "binário"
+    },
+    {
+      "path": "ead/README.md",
+      "bytes": 338,
+      "sha256": "2ca2181d2f03da2024dd50b2521fcf8bcbe09c12ccec931ca8dfa195f3a94660",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "exemplos/README.md",
+      "bytes": 237,
+      "sha256": "4fb637db89f7d3cc19f293a166e7c049a296ec1be23bfccae08389b0ba1383b0",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "orientacoes-institucionais.md",
+      "bytes": 994,
+      "sha256": "cd349d511e174ccd935c3943d76203d90e6698170a4374d1c41dbb29889fcaea",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "rubricas/README.md",
+      "bytes": 197,
+      "sha256": "b48b8a634a8223f2f8ceba1d5cdcc107c462c1993e7631f5eba72f54dcf51b03",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "script.sh",
+      "bytes": 2454,
+      "sha256": "eb0eb1af7f559f37f041eddc102b011c509d125a8febe84b957dba04366af8df",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "scripts/verificar_fontes_c.py",
+      "bytes": 1204,
+      "sha256": "27647496a63c685c23e64d2fab51231ef224342601e02154962e319c4bb69a7b",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog1.c",
+      "bytes": 560,
+      "sha256": "7e3fc6812219c2aa6636e63f83b5b2f1fc6c9987e88baa667f562bac24effbbf",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog10.c",
+      "bytes": 709,
+      "sha256": "990940cc82264edea32bb020a81fb6d5889d95bca1afec37020b3604b81e2308",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog11.c",
+      "bytes": 862,
+      "sha256": "8cd943b1923636a6b10f73db58ad4b957f9788e6d30ad290ec8d8a1b3ee56339",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog12.c",
+      "bytes": 1102,
+      "sha256": "567ac2959b805d278fd6aa460889c0d60d8acc185207a19193e9dac6ceaf3b54",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog13.c",
+      "bytes": 268,
+      "sha256": "ac79651aad274e09dd3716d2fa0aa2df7201788207820782f6d587ef51b32add",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog14.c",
+      "bytes": 302,
+      "sha256": "7440e0f8e61ffed9f91e60815f3819296180f0ca023f0c88ec44a02008e1619e",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog15.c",
+      "bytes": 399,
+      "sha256": "4d97b36765771945406dba2d966a284de5e1d0ae6315b77a3bd79d46f2e7e303",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog16.c",
+      "bytes": 308,
+      "sha256": "38502752d21041d975eaae58647bab2562341f14ad754cbb4895a879c750707d",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog17.c",
+      "bytes": 317,
+      "sha256": "cb3d1761243b9e40af1aac1ffab16fbbb402c8fd36cb8b1169ed29212736e4bc",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog18.c",
+      "bytes": 441,
+      "sha256": "06781cee33f8cfadc72ac643fcee2871fd6bb643fb9535a2a30ae84690e1a441",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog19.c",
+      "bytes": 346,
+      "sha256": "6c35422263f04333383fd426151466a08088242b29cd19df7d2f494a9320229d",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog2.c",
+      "bytes": 448,
+      "sha256": "969900de5982fd783aaa5a147fe91581aed9210c4223fcdcab9b2c17aec842b8",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog20.c",
+      "bytes": 462,
+      "sha256": "6e9f2c1ec032f2a4216d391c98cc046146b2e93396f6c0a60267d3bec373aab1",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog21.c",
+      "bytes": 459,
+      "sha256": "b50d2382d69246cb765ee75bc9815946976fda3738ed080219e89cf984d242cd",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog22.c",
+      "bytes": 375,
+      "sha256": "5db3d9333f0476cb3ba690b9ac181131e0ff8849e16bb97f368071bef499d3a6",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog23.c",
+      "bytes": 434,
+      "sha256": "26866a40cb8a4fcf7a84e77bde9c6870b311a4433543dc77df5f9585f72c5c10",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog24.c",
+      "bytes": 1400,
+      "sha256": "bbda21df4d1337637ae9d255b157249157d9d4922f41adee589dfa537cc53dfe",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog25.c",
+      "bytes": 1800,
+      "sha256": "d0fc9bb297211099bfd727bb7fdbfa047c5dc6942ad7025fd0e1c095e95f05b5",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog3.c",
+      "bytes": 520,
+      "sha256": "4358fd3fa1c9362ea09dc3f7c8091d36c1913d50f5b047254417cc78100e1e37",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog4.c",
+      "bytes": 574,
+      "sha256": "f76febc793dbaa8af771fff2dd4a2870fc9f2c393cb95469e4e8d764a7a57b47",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog5.c",
+      "bytes": 701,
+      "sha256": "1c2315d61cd2a15e05758bbd6adfa73137873b0cb5da1ced98ae80e6afcb7de7",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog6.c",
+      "bytes": 708,
+      "sha256": "728e08c29cc46cc26b50008dc8a58f2f61c563242993ecd55028fdb4ed0f3a16",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog7.c",
+      "bytes": 597,
+      "sha256": "403428ba11b8f4cac8a6a9a724ae558ae332ee4d31cfe11efdd74bd88aba6194",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog8.c",
+      "bytes": 2279,
+      "sha256": "91b2a306f32d5808fe85fec430893b8ee8b13b3e58cdeeeb19ea857af1b6d35e",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog9.c",
+      "bytes": 2278,
+      "sha256": "e37a06b330ed4d878d22dbe696488e5154361e3d8302c39f737a9580e6b49de4",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog1.c",
+      "bytes": 466,
+      "sha256": "7a5b9fc3e2f0969d6b48eb06850c2731977f026716525d7ffba73371c62ad132",
+      "encoding": "CP1252 (português legível; conversão necessária)"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog10.c",
+      "bytes": 894,
+      "sha256": "555dbfd2c74160ae5f130df2d16c81dbb811c5b35983020f72467298bafa9ff9",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog11.c",
+      "bytes": 1070,
+      "sha256": "8b6b69912c12bea9a3dbdf227c8bd77b639954af524c4f555932fd65b8a2b54f",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog12.c",
+      "bytes": 1070,
+      "sha256": "8b6b69912c12bea9a3dbdf227c8bd77b639954af524c4f555932fd65b8a2b54f",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog13.c",
+      "bytes": 780,
+      "sha256": "a26cd924aebfcde8086123f659ddbf5e1c86aafe4ff69ab0f600438a3bba493c",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog14.c",
+      "bytes": 1668,
+      "sha256": "bd84d2653bf94ed62e137c981976fa1ef32c405a9e0d4e0f3c6fabe81deecc96",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog15.c",
+      "bytes": 1227,
+      "sha256": "47d8cca888f78b412506c4f2d4c5d341636223f12b87d1c14654bb4a9692f97c",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog16.c",
+      "bytes": 733,
+      "sha256": "bbec793a61dddb10c110ae1f23715c64d44147f563790079640151387517769f",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog17.c",
+      "bytes": 607,
+      "sha256": "34769eff217233c8352184d87ea0a6efb326dcc207cde6062c2f7e1114497d13",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog18.c",
+      "bytes": 919,
+      "sha256": "4f9f2d1a121aeffc951ca86d240844aa063d46522d00e2325bdcb85fb6f539ab",
+      "encoding": "CP1252 (português legível; conversão necessária)"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog19.c",
+      "bytes": 1436,
+      "sha256": "7c3abc679564e1eb1253d4b4c1b4ac1ed57ff74dc70d92e88c75922364491fd2",
+      "encoding": "CP1252 (português legível; conversão necessária)"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog2.c",
+      "bytes": 458,
+      "sha256": "15264cc51c46d4baedde356933f80f45d3ea9c8e605bc29365068dec74d824c5",
+      "encoding": "CP1252 (português legível; conversão necessária)"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog20.c",
+      "bytes": 1226,
+      "sha256": "35349a8593c1034399111e46ef271b106191d4a0c253e4c10b80b9d8cf03d00f",
+      "encoding": "CP1252 (português legível; conversão necessária)"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog3.c",
+      "bytes": 521,
+      "sha256": "38ce1047b01e4ebad40105f8655fcddc89112f432577b03e1c3433e417709202",
+      "encoding": "CP1252 (português legível; conversão necessária)"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog4.c",
+      "bytes": 669,
+      "sha256": "061cf55ba4fd91e51bf9dd7a797f395dc2ef579a23fe63f6407816c89142c4f3",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog5.c",
+      "bytes": 523,
+      "sha256": "ec379209c34d3521632efa238e63d82014d1c8c6782cf7e779c3bf482796cdd3",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog6.c",
+      "bytes": 626,
+      "sha256": "6838578999711f75e651162887fc6577f0a3139eefebb0a770d00bb072f274a4",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog7.c",
+      "bytes": 468,
+      "sha256": "da41dd12b9b97ec166fc29c6360f88b576f120d2736179c8bb5ef6872707c4c8",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog8.c",
+      "bytes": 712,
+      "sha256": "7b3de5f97f186cc997cb099060c8eb213fb0f810cd00df9373fb3583ee408890",
+      "encoding": "CP1252 (português legível; conversão necessária)"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog9.c",
+      "bytes": 713,
+      "sha256": "04a24919fad1d562a524fe415c766c1757a3c058530413ae03332445169546e5",
+      "encoding": "CP1252 (português legível; conversão necessária)"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/BitTest.c",
+      "bytes": 586,
+      "sha256": "ce662aad5f31fb10b5faa9d80f0c59e99be1d3f62b2787673625eb4941fbb3d3",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog1.c",
+      "bytes": 706,
+      "sha256": "dd0ed1eaf2ec04b76c6fe1c32889c172e280f24c542298eeadcb8383b322ce1e",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog10.c",
+      "bytes": 1102,
+      "sha256": "f6b013098b494a6101c68bd2560c8458f5b781f2a1a82cbbc95144c8e691391b",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog11.c",
+      "bytes": 330,
+      "sha256": "6f2f1950654d0b564a4e90c8fba1fada6bc05e7781f2ad135248952c82767b48",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog12.c",
+      "bytes": 498,
+      "sha256": "8a93b4524c72f8009dff9ec60f7d74f00426bbc357e5b71b6902fc5bae2ebed8",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog13.c",
+      "bytes": 993,
+      "sha256": "9524188471c51ce9d4b88bbe17ea87df9cdb51ea3c933a026b859ba30bd48ec0",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog2.c",
+      "bytes": 737,
+      "sha256": "a87b7c0507172dc7c1d6e80994a88377af10c40863f475d7d36b6095f057802a",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog3.c",
+      "bytes": 549,
+      "sha256": "f675687175ce338bfd024f9772c9180c284894c7bf6e1bfbb32487cd240ede21",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog4.c",
+      "bytes": 1104,
+      "sha256": "85879faaee7691a55f308b43edd487c229d723bccadff5722bdcd2628516de8a",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog5.c",
+      "bytes": 2247,
+      "sha256": "55eb0d3d376b60ab63cba09637c767e1b34229b9b115d4ae2fb54e976571f7e8",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog6.c",
+      "bytes": 588,
+      "sha256": "ad8e43c231938f8e34045258e4683c2c6373ec3a5ed88a4ba76752808f445c3f",
+      "encoding": "CP1252 (português legível; conversão necessária)"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog7.c",
+      "bytes": 584,
+      "sha256": "5869cdce768643cf386b959a40faf3f6561661a4ac9abefa049a20c696058463",
+      "encoding": "CP1252 (português legível; conversão necessária)"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog8.c",
+      "bytes": 247,
+      "sha256": "ec773bcaeb6389b227ac25d44aa56c8f2583be37afdfe70644670e261117a2c8",
+      "encoding": "CP1252 (português legível; conversão necessária)"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog9.c",
+      "bytes": 604,
+      "sha256": "b3a6f65a029cecad553463cfb84d76ee6106e6be91de527c91718582c358ff32",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog1.c",
+      "bytes": 321,
+      "sha256": "9d7f50c173530508f40385bc730f3923f14a5fdd3b63cddd016b1af8783b5275",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog10.c",
+      "bytes": 378,
+      "sha256": "865ed7a89be37904c235b86289efad14cc993313df09f1c169826b3c6894a904",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog11.c",
+      "bytes": 761,
+      "sha256": "528e8e02f255f087f0acdd894647e000735b70cc358eccb79444e7e151a35ffa",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog12.c",
+      "bytes": 798,
+      "sha256": "5e724e47ba5623f207e3b1d5832cb25e9c1b39860767b7ef40029b031a90538d",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog13.c",
+      "bytes": 1479,
+      "sha256": "b27e6fb17a102a7e5b406aeda6a1ca6fdc7526116a8bb4c5f5bc3ffc1302c85f",
+      "encoding": "CP1252 (português legível; conversão necessária)"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog14.c",
+      "bytes": 399,
+      "sha256": "c8de34a4e8b6369145f0d4b9316a66a53796df6e82bd783b252a0f76a6e99292",
+      "encoding": "CP1252 (português legível; conversão necessária)"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog15.c",
+      "bytes": 1253,
+      "sha256": "2c5f5452e2346f7dbe170f5c48ecbefc082353485a9948ee0ddc72e15cb0ea46",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog16.c",
+      "bytes": 1023,
+      "sha256": "b6d7b27de60f6963c1522d1ce514403c021db82d5afb00ef029801bfbb53bcf2",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog17.c",
+      "bytes": 1192,
+      "sha256": "c6114058b6573cfefb07d2b2561fc8a64708456f3c654c7aed05cde88aec22ac",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog18.c",
+      "bytes": 567,
+      "sha256": "2ed31a4a916976f9ff6bad9902c565bbb72c35e4e4c6801bd808255645864081",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog19.c",
+      "bytes": 454,
+      "sha256": "79add0eaf8f5d622918fae4f0966fd56fe1bb720327c4de9f316593775c83a26",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog2.c",
+      "bytes": 751,
+      "sha256": "9dfba98055540ba0f75608c13679c2dac02b16039896d58812239f7b19571b92",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog20.c",
+      "bytes": 890,
+      "sha256": "e1012bea67030b62332b0aa9a68db314329d2f30e869fbf87ba8bd4af9381df0",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog21.c",
+      "bytes": 830,
+      "sha256": "b29eec0551faa1e16a77283b87de47816c6e287d96e7d8860708e47aeab85a02",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog22.c",
+      "bytes": 899,
+      "sha256": "7239b4547d22a4847eea2ad023d3748d9964b0cb5d078bbdd2acfde788fbf793",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog23.c",
+      "bytes": 558,
+      "sha256": "94d3130e6f167c0195e0b51a2a3c8e0aa0ac7ca6ad99fb743b245920225dda98",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog24.c",
+      "bytes": 522,
+      "sha256": "8a629bd8537a69809f717b339babd53439a6ca860b79a095cca55429c5c2ef88",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog25.c",
+      "bytes": 757,
+      "sha256": "d2cbb73b4705a30fe2a1615a72fb823ef287c38a8e33331a543f637fba38d318",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog26.c",
+      "bytes": 1698,
+      "sha256": "b2f18a40dae1ece3c5f1e2ad3d128fc8ea1b91d83724c6f4e4dd0d3b02821611",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog27.c",
+      "bytes": 1804,
+      "sha256": "4d2ea8ce9b0985f4347969c5cbe363fcf6c02bc9b6a94432f97812a305dfc524",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog28.c",
+      "bytes": 2340,
+      "sha256": "68f0b22dae25fa13511f50f6d9651f0c7e7c4be12fc6f1637642f878b959a278",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog29.c",
+      "bytes": 333,
+      "sha256": "663dc4302f9a680fbab26e20750d15ebe9511c80fe9e0d8ba877603cfb88fc2e",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog3.c",
+      "bytes": 488,
+      "sha256": "c3d26c07805d30e610c7403d437e3cb3ab7767ff6f27eac00248c7891e94ad4e",
+      "encoding": "CP1252 (português legível; conversão necessária)"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog30.c",
+      "bytes": 839,
+      "sha256": "b3bd065533eabea7f4811f68ab034b58fe6ee007bd304c0fd788095f7d8d6db1",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog31.c",
+      "bytes": 1890,
+      "sha256": "3e1f0924363c19d08ca601e8cc95aa145716ce196e4b294d632a88789f172386",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog32.c",
+      "bytes": 376,
+      "sha256": "b78d6ff3d180ec2777d01f524d0de87ae4d1c9015a6f7d9153b947c3143245c7",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog33.c",
+      "bytes": 663,
+      "sha256": "638de29bb92bc88e992a2082c60374cfbe7491a5e86595d7baac9cbfc73bb8b2",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog34.c",
+      "bytes": 2242,
+      "sha256": "d39ee2b496055957a9a3f019309e575a68b295517528e667e077daa587daaaac",
+      "encoding": "CP1252 (português legível; conversão necessária)"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog35.c",
+      "bytes": 3079,
+      "sha256": "a62cd219f198532caaf53ca2969bbef513c9e8d88db00647b3fb22b3f51616c8",
+      "encoding": "CP1252 (português legível; conversão necessária)"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog4.c",
+      "bytes": 501,
+      "sha256": "4f27845ed72f73157bb56235162603728e6d44e0d91da2be34a2852dd1137cba",
+      "encoding": "CP1252 (português legível; conversão necessária)"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog5.c",
+      "bytes": 439,
+      "sha256": "44b59a3d3e73ecd6dcefff6e14d688b91ea270a3b19ba326cd721636a19ee054",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog6.c",
+      "bytes": 349,
+      "sha256": "4bebc20007ff26cecb9666f38c7bd7ea790a48d41ef43b13de926ba46dce5b58",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog7.c",
+      "bytes": 958,
+      "sha256": "d6bf66ba914701356f9116e330528400922e90e78c91ffb336073edf3924b9a9",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog8.c",
+      "bytes": 314,
+      "sha256": "107ec1e945621449362a0bc445ea7db6c97a4659b169846f133b8ca40e976fd0",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog9.c",
+      "bytes": 322,
+      "sha256": "a34704b965e5cf9b1d4fd8c0bc694bc635d3aeefbb51e6248823811776870dc4",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_9/Prog1.c",
+      "bytes": 306,
+      "sha256": "b2f2340239f3f13fa1dbf542bd45cd2f4722d832276fea361c9c5d6125e3828f",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_9/Prog2.c",
+      "bytes": 393,
+      "sha256": "292a9839df666a65f7de2efed7fd853e9a577c7095a5a9045f0adfc74097cb8c",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_9/Prog3.c",
+      "bytes": 959,
+      "sha256": "eed7bb7171fed825ef64ced9fe2dfbc2e6b2f447f3f5b46e2dab13fd70465364",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "src/Fontes_Aula_9/Prog4.c",
+      "bytes": 1958,
+      "sha256": "d88d4b5f15f9ff93a3343bf3e22b4808879349ab49cd38338379f5dfe2bedeb6",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "templates/README-atividade.md",
+      "bytes": 443,
+      "sha256": "abb1e6d249eba9c63ec6c28d429ceab2511b813d651379ecda6f393a5ab8726a",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "templates/README.md",
+      "bytes": 163,
+      "sha256": "86203024bb1c41de0c2d0a7e68c51ff0b333ca5f249cc3a0a34a2aa7c72748f1",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "templates/relatorio-sigaa.md",
+      "bytes": 400,
+      "sha256": "f4c596e305505ab2928ddc818c0075c3bf47a703448fc9aafda37aac043795ec",
+      "encoding": "UTF-8"
+    },
+    {
+      "path": "templates/resumo-encontro.md",
+      "bytes": 268,
+      "sha256": "3eb49e729724d8545b2606afc795f20fe4d14c5f11be827abec491836ad1ebfc",
+      "encoding": "UTF-8"
+    }
+  ],
+  "duplicates": [
+    [
+      "src/Fontes_Aula_10_e_11/Prog11.c",
+      "src/Fontes_Aula_10_e_11/Prog12.c"
+    ]
+  ],
+  "broken_links": [
+    {
+      "file": "PLANO_DISCIPLINA.md",
+      "target": "../../MAPA_FONTES_C.md"
+    },
+    {
+      "file": "PLANO_DISCIPLINA.md",
+      "target": "../../../atividades/README.md"
+    },
+    {
+      "file": "PLANO_DISCIPLINA.md",
+      "target": "../../../CRONOGRAMA.md"
+    },
+    {
+      "file": "PLANO_DISCIPLINA.md",
+      "target": "../../../README.md"
+    }
+  ],
+  "compilation": [
+    {
+      "path": "src/Fontes_Aula_1/Prog1.c",
+      "returncode": 0,
+      "warnings": 5,
+      "diagnostics": "src/Fontes_Aula_1/Prog1.c: In function ‘main’:\nsrc/Fontes_Aula_1/Prog1.c:17:19: warning: ‘nota0’ is used uninitialized [-Wuninitialized]\n   17 |     media =(nota0 + nota1 + nota2 + nota3 + nota4) / 5.0;\n      |             ~~~~~~^~~~~~~\nsrc/Fontes_Aula_1/Prog1.c:8:9: note: ‘nota0’ was declared here\n    8 |     int nota0, nota1, nota2, nota3, nota4;\n      |         ^~~~~\nsrc/Fontes_Aula_1/Prog1.c:17:19: warning: ‘nota1’ is used uninitialized [-Wuninitialized]\n   17 |     media =(nota0 + nota1 + nota2 + nota3 + nota4) / 5.0;\n      |             ~~~~~~^~~~~~~\nsrc/Fontes_Aula_1/Prog1.c:8:16: note: ‘nota1’ was declared here\n    8 |     int nota0, nota1, nota2, nota3, nota4;\n      |                ^~~~~\nsrc/Fontes_Aula_1/Prog1.c:17:27: warning: ‘nota2’ is used uninitialized [-Wuninitialized]\n   17 |     media =(nota0 + nota1 + nota2 + nota3 + nota4) / 5.0;\n      |             ~~~~~~~~~~~~~~^~~~~~~\nsrc/Fontes_Aula_1/Prog1.c:8:23: note: ‘nota2’ was declared here\n    8 |     int nota0, nota1, nota2, nota3, nota4;\n      |                       ^~~~~\nsrc/Fontes_Aula_1/Prog1.c:17:35: warning: ‘nota3’ is used uninitialized [-Wuninitialized]\n   17 |     media =(nota0 + nota1 + nota2 + nota3 + nota4) / 5.0;\n      |             ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\nsrc/Fontes_Aula_1/Prog1.c:8:30: note: ‘nota3’ was declared here\n    8 |     int nota0, nota1, nota2, nota3, nota4;\n      |                              ^~~~~\nsrc/Fontes_Aula_1/Prog1.c:17:43: warning: ‘nota4’ is used uninitialized [-Wuninitialized]\n   17 |     media =(nota0 + nota1 + nota2 + nota3 + nota4) / 5.0;\n      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\nsrc/Fontes_Aula_1/Prog1.c:8:37: note: ‘nota4’ was declared here\n    8 |     int nota0, nota1, nota2, nota3, nota4;\n      |                                     ^~~~~\n"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog10.c",
+      "returncode": 0,
+      "warnings": 2,
+      "diagnostics": "src/Fontes_Aula_1/Prog10.c: In function ‘main’:\nsrc/Fontes_Aula_1/Prog10.c:25:33: warning: format ‘%f’ expects argument of type ‘double’, but argument 2 has type ‘float (*)(float *, int)’ [-Wformat=]\n   25 |     printf(\"Média das notas: %.2f\\n\", media);\n      |                              ~~~^     ~~~~~\n      |                                 |     |\n      |                                 |     float (*)(float *, int)\n      |                                 double\nsrc/Fontes_Aula_1/Prog10.c:11:27: warning: variable ‘m’ set but not used [-Wunused-but-set-variable]\n   11 |     float notas[TAMANHO], m;\n      |                           ^\n"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog11.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog12.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog13.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog14.c",
+      "returncode": 0,
+      "warnings": 2,
+      "diagnostics": "src/Fontes_Aula_1/Prog14.c: In function ‘main’:\nsrc/Fontes_Aula_1/Prog14.c:10:5: warning: implicit declaration of function ‘gets’; did you mean ‘fgets’? [-Wimplicit-function-declaration]\n   10 |     gets(nome); /* lê texto do teclado */\n      |     ^~~~\n      |     fgets\n/usr/bin/ld: /tmp/ccRMCQD5.o: in function `main':\nProg14.c:(.text+0x3c): warning: the `gets' function is dangerous and should not be used.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog15.c",
+      "returncode": 0,
+      "warnings": 2,
+      "diagnostics": "src/Fontes_Aula_1/Prog15.c: In function ‘main’:\nsrc/Fontes_Aula_1/Prog15.c:10:5: warning: implicit declaration of function ‘gets’; did you mean ‘fgets’? [-Wimplicit-function-declaration]\n   10 |     gets(nome); /* lê texto do teclado */\n      |     ^~~~\n      |     fgets\n/usr/bin/ld: /tmp/ccUiiuOM.o: in function `main':\nProg15.c:(.text+0x3c): warning: the `gets' function is dangerous and should not be used.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog16.c",
+      "returncode": 0,
+      "warnings": 2,
+      "diagnostics": "src/Fontes_Aula_1/Prog16.c: In function ‘main’:\nsrc/Fontes_Aula_1/Prog16.c:11:5: warning: implicit declaration of function ‘gets’; did you mean ‘fgets’? [-Wimplicit-function-declaration]\n   11 |     gets(nome);\n      |     ^~~~\n      |     fgets\n/usr/bin/ld: /tmp/ccDTh7OY.o: in function `main':\nProg16.c:(.text+0x58): warning: the `gets' function is dangerous and should not be used.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog17.c",
+      "returncode": 0,
+      "warnings": 2,
+      "diagnostics": "src/Fontes_Aula_1/Prog17.c: In function ‘main’:\nsrc/Fontes_Aula_1/Prog17.c:11:5: warning: implicit declaration of function ‘gets’; did you mean ‘fgets’? [-Wimplicit-function-declaration]\n   11 |     gets(nome);\n      |     ^~~~\n      |     fgets\n/usr/bin/ld: /tmp/ccBCnjBR.o: in function `main':\nProg17.c:(.text+0x58): warning: the `gets' function is dangerous and should not be used.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog18.c",
+      "returncode": 0,
+      "warnings": 3,
+      "diagnostics": "src/Fontes_Aula_1/Prog18.c: In function ‘main’:\nsrc/Fontes_Aula_1/Prog18.c:13:5: warning: implicit declaration of function ‘gets’; did you mean ‘fgets’? [-Wimplicit-function-declaration]\n   13 |     gets(nome);\n      |     ^~~~\n      |     fgets\nsrc/Fontes_Aula_1/Prog18.c:19:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n   19 |                (unsigned)(nome+i), nome[i], (int)nome[i]);\n      |                ^\n/usr/bin/ld: /tmp/ccDbZCxU.o: in function `main':\nProg18.c:(.text+0x3c): warning: the `gets' function is dangerous and should not be used.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog19.c",
+      "returncode": 0,
+      "warnings": 2,
+      "diagnostics": "src/Fontes_Aula_1/Prog19.c: In function ‘main’:\nsrc/Fontes_Aula_1/Prog19.c:13:5: warning: implicit declaration of function ‘gets’; did you mean ‘fgets’? [-Wimplicit-function-declaration]\n   13 |     gets(nome);\n      |     ^~~~\n      |     fgets\n/usr/bin/ld: /tmp/cc0Ss87L.o: in function `main':\nProg19.c:(.text+0xb5): warning: the `gets' function is dangerous and should not be used.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog2.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog20.c",
+      "returncode": 0,
+      "warnings": 3,
+      "diagnostics": "src/Fontes_Aula_1/Prog20.c: In function ‘main’:\nsrc/Fontes_Aula_1/Prog20.c:13:5: warning: implicit declaration of function ‘gets’; did you mean ‘fgets’? [-Wimplicit-function-declaration]\n   13 |     gets(resp);\n      |     ^~~~\n      |     fgets\nsrc/Fontes_Aula_1/Prog20.c:15:17: warning: comparison between two arrays [-Warray-compare]\n   15 |     while (resp != resposta)\n      |                 ^~\nsrc/Fontes_Aula_1/Prog20.c:15:17: note: use ‘&resp[0] != &resposta[0]’ to compare the addresses\n/usr/bin/ld: /tmp/cckeryul.o: in function `main':\nProg20.c:(.text+0x4a): warning: the `gets' function is dangerous and should not be used.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog21.c",
+      "returncode": 0,
+      "warnings": 2,
+      "diagnostics": "src/Fontes_Aula_1/Prog21.c: In function ‘main’:\nsrc/Fontes_Aula_1/Prog21.c:13:5: warning: implicit declaration of function ‘gets’; did you mean ‘fgets’? [-Wimplicit-function-declaration]\n   13 |     gets(resp);\n      |     ^~~~\n      |     fgets\n/usr/bin/ld: /tmp/cc7Vzg9J.o: in function `main':\nProg21.c:(.text+0x4a): warning: the `gets' function is dangerous and should not be used.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog22.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog23.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog24.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_1/Prog24.c:7:10: fatal error: conio.h: No such file or directory\n    7 | #include <conio.h>      /* para getche() */\n      |          ^~~~~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog25.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_1/Prog25.c:6:10: fatal error: conio.h: No such file or directory\n    6 | #include <conio.h>      /* para getche() */\n      |          ^~~~~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog3.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog4.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog5.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog6.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog7.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog8.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_1/Prog9.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog1.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_10_e_11/Prog1.c:5:10: fatal error: conio.h: No such file or directory\n    5 | #include <conio.h>\n      |          ^~~~~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog10.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog11.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_10_e_11/Prog11.c:5:10: fatal error: conio.h: No such file or directory\n    5 | #include <conio.h> /* Para getch() */\n      |          ^~~~~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog12.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_10_e_11/Prog12.c:5:10: fatal error: conio.h: No such file or directory\n    5 | #include <conio.h> /* Para getch() */\n      |          ^~~~~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog13.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_10_e_11/Prog13.c:5:10: fatal error: conio.h: No such file or directory\n    5 | #include <conio.h> /* Para getch() */\n      |          ^~~~~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog14.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_10_e_11/Prog14.c:5:10: fatal error: conio.h: No such file or directory\n    5 | #include <conio.h> /* Para getch() */\n      |          ^~~~~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog15.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_10_e_11/Prog15.c:5:10: fatal error: conio.h: No such file or directory\n    5 | #include <conio.h> /* Para getch() */\n      |          ^~~~~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog16.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog17.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_10_e_11/Prog17.c:3:10: fatal error: io.h: No such file or directory\n    3 | #include <io.h> /* para read() e write() */\n      |          ^~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog18.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_10_e_11/Prog18.c:3:10: fatal error: io.h: No such file or directory\n    3 | #include <io.h> /* para read() e write() */\n      |          ^~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog19.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_10_e_11/Prog19.c:3:10: fatal error: io.h: No such file or directory\n    3 | #include <io.h> /* para read() e write() */\n      |          ^~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog2.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog20.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_10_e_11/Prog20.c:3:10: fatal error: io.h: No such file or directory\n    3 | #include <io.h> /* para read() e write() */\n      |          ^~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog3.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog4.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog5.c",
+      "returncode": 1,
+      "warnings": 3,
+      "diagnostics": "src/Fontes_Aula_10_e_11/Prog5.c: In function ‘main’:\nsrc/Fontes_Aula_10_e_11/Prog5.c:12:38: warning: left-hand operand of comma expression has no effect [-Wunused-value]\n   12 |     if( (fptr = fopen((\"TesteSTR.txt\",\"r\")) == NULL)\n      |                                      ^\nsrc/Fontes_Aula_10_e_11/Prog5.c:12:17: error: too few arguments to function ‘fopen’\n   12 |     if( (fptr = fopen((\"TesteSTR.txt\",\"r\")) == NULL)\n      |                 ^~~~~\nIn file included from src/Fontes_Aula_10_e_11/Prog5.c:3:\n/usr/include/stdio.h:264:14: note: declared here\n  264 | extern FILE *fopen (const char *__restrict __filename,\n      |              ^~~~~\nsrc/Fontes_Aula_10_e_11/Prog5.c:12:53: error: expected ‘)’ before ‘{’ token\n   12 |     if( (fptr = fopen((\"TesteSTR.txt\",\"r\")) == NULL)\n      |       ~                                             ^\n      |                                                     )\n   13 | {\n      | ~                                                    \nsrc/Fontes_Aula_10_e_11/Prog5.c:24:1: error: expected expression before ‘}’ token\n   24 | }\n      | ^\nsrc/Fontes_Aula_10_e_11/Prog5.c:9:10: warning: unused variable ‘str’ [-Wunused-variable]\n    9 |     char str[81];\n      |          ^~~\nsrc/Fontes_Aula_10_e_11/Prog5.c:8:11: warning: variable ‘fptr’ set but not used [-Wunused-but-set-variable]\n    8 |     FILE *fptr;  /* ponteiro para arquivo */\n      |           ^~~~\n"
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog6.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog7.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog8.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_10_e_11/Prog9.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/BitTest.c",
+      "returncode": 0,
+      "warnings": 1,
+      "diagnostics": "src/Fontes_Aula_3_e_4/BitTest.c: In function ‘main’:\nsrc/Fontes_Aula_3_e_4/BitTest.c:13:15: warning: variable ‘A’ set but not used [-Wunused-but-set-variable]\n   13 |     Int16Bits A;\n      |               ^\n"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog1.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog10.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog11.c",
+      "returncode": 0,
+      "warnings": 2,
+      "diagnostics": "src/Fontes_Aula_3_e_4/Prog11.c: In function ‘main’:\nsrc/Fontes_Aula_3_e_4/Prog11.c:15:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]\n   15 |     printf(\"%d\\n\", sizeof(union Numero));\n      |             ~^     ~~~~~~~~~~~~~~~~~~~~\n      |              |     |\n      |              int   long unsigned int\n      |             %ld\nsrc/Fontes_Aula_3_e_4/Prog11.c:16:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]\n   16 |     printf(\"%d\\n\", sizeof(x));\n      |             ~^     ~~~~~~~~~\n      |              |     |\n      |              int   long unsigned int\n      |             %ld\n"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog12.c",
+      "returncode": 0,
+      "warnings": 4,
+      "diagnostics": "src/Fontes_Aula_3_e_4/Prog12.c: In function ‘main’:\nsrc/Fontes_Aula_3_e_4/Prog12.c:18:33: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘int *’ [-Wformat=]\n   18 |     printf(\"Endereço de i  = %08X\\n\" , &exemplo.i );\n      |                              ~~~^      ~~~~~~~~~~\n      |                                 |      |\n      |                                 |      int *\n      |                                 unsigned int\n      |                              %08ls\nsrc/Fontes_Aula_3_e_4/Prog12.c:19:33: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘float *’ [-Wformat=]\n   19 |     printf(\"Endereço de f  = %08X\\n\" , &exemplo.f );\n      |                              ~~~^      ~~~~~~~~~~\n      |                                 |      |\n      |                                 |      float *\n      |                                 unsigned int\nsrc/Fontes_Aula_3_e_4/Prog12.c:20:33: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘double *’ [-Wformat=]\n   20 |     printf(\"Endereço de d  = %08X\\n\" , &exemplo.d );\n      |                              ~~~^      ~~~~~~~~~~\n      |                                 |      |\n      |                                 |      double *\n      |                                 unsigned int\nsrc/Fontes_Aula_3_e_4/Prog12.c:21:33: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘Num *’ [-Wformat=]\n   21 |     printf(\"Endereço de x  = %08X\\n\" , &exemplo   );\n      |                              ~~~^      ~~~~~~~~\n      |                                 |      |\n      |                                 |      Num *\n      |                                 unsigned int\n"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog13.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog2.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog3.c",
+      "returncode": 0,
+      "warnings": 1,
+      "diagnostics": "src/Fontes_Aula_3_e_4/Prog3.c: In function ‘main’:\nsrc/Fontes_Aula_3_e_4/Prog3.c:25:21: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘double’ [-Wformat=]\n   25 |     printf(\"Preço: %d\\n\", A.preco);\n      |                    ~^     ~~~~~~~\n      |                     |      |\n      |                     int    double\n      |                    %f\n"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog4.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog5.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_3_e_4/Prog5.c:5:10: fatal error: conio.h: No such file or directory\n    5 | #include <conio.h>  /* Para getch() */\n      |          ^~~~~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog6.c",
+      "returncode": 0,
+      "warnings": 1,
+      "diagnostics": "src/Fontes_Aula_3_e_4/Prog6.c: In function ‘main’:\nsrc/Fontes_Aula_3_e_4/Prog6.c:9:22: warning: variable ‘m3’ set but not used [-Wunused-but-set-variable]\n    9 |     enum Mes m1, m2, m3; /*Cria vari\\xe1veis do tipo enum Mes */\n      |                      ^~\n"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog7.c",
+      "returncode": 1,
+      "warnings": 2,
+      "diagnostics": "src/Fontes_Aula_3_e_4/Prog7.c:5:10: warning: useless storage class specifier in empty declaration\n    5 |          };\n      |          ^\nsrc/Fontes_Aula_3_e_4/Prog7.c: In function ‘main’:\nsrc/Fontes_Aula_3_e_4/Prog7.c:9:5: error: unknown type name ‘Mes’; use ‘enum’ keyword to refer to the type\n    9 |     Mes m1, m2, m3; /*Agora o nome do tipo \\xe9 Mes */\n      |     ^~~\n      |     enum \nsrc/Fontes_Aula_3_e_4/Prog7.c:9:17: warning: variable ‘m3’ set but not used [-Wunused-but-set-variable]\n    9 |     Mes m1, m2, m3; /*Agora o nome do tipo \\xe9 Mes */\n      |                 ^~\n"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog8.c",
+      "returncode": 0,
+      "warnings": 1,
+      "diagnostics": "src/Fontes_Aula_3_e_4/Prog8.c:11:3: warning: ‘uInit’ defined but not used [-Wunused-variable]\n   11 | } uInit = {123.456};\n      |   ^~~~~\n"
+    },
+    {
+      "path": "src/Fontes_Aula_3_e_4/Prog9.c",
+      "returncode": 0,
+      "warnings": 1,
+      "diagnostics": "src/Fontes_Aula_3_e_4/Prog9.c: In function ‘main’:\nsrc/Fontes_Aula_3_e_4/Prog9.c:20:37: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]\n   20 |     printf(\"sizeof(union intflo) = %d\\n\", sizeof(union intflo));\n      |                                    ~^     ~~~~~~~~~~~~~~~~~~~~\n      |                                     |     |\n      |                                     int   long unsigned int\n      |                                    %ld\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog1.c",
+      "returncode": 0,
+      "warnings": 3,
+      "diagnostics": "src/Fontes_Aula_5_6_7_e_8/Prog1.c: In function ‘main’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog1.c:10:30: warning: format ‘%p’ expects argument of type ‘void *’, but argument 2 has type ‘int *’ [-Wformat=]\n   10 |     printf(\"Endereço de i = %p\\n\", &i); /* %p para ponteiros */\n      |                             ~^     ~~\n      |                              |     |\n      |                              |     int *\n      |                              void *\n      |                             %ls\nsrc/Fontes_Aula_5_6_7_e_8/Prog1.c:11:30: warning: format ‘%p’ expects argument of type ‘void *’, but argument 2 has type ‘int *’ [-Wformat=]\n   11 |     printf(\"Endereço de j = %p\\n\", &j);\n      |                             ~^     ~~\n      |                              |     |\n      |                              |     int *\n      |                              void *\n      |                             %ls\nsrc/Fontes_Aula_5_6_7_e_8/Prog1.c:12:30: warning: format ‘%p’ expects argument of type ‘void *’, but argument 2 has type ‘int *’ [-Wformat=]\n   12 |     printf(\"Endereço de k = %p\\n\", &k);\n      |                             ~^     ~~\n      |                              |     |\n      |                              |     int *\n      |                              void *\n      |                             %ls\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog10.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog11.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog12.c",
+      "returncode": 0,
+      "warnings": 3,
+      "diagnostics": "src/Fontes_Aula_5_6_7_e_8/Prog12.c: In function ‘main’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog12.c:13:5: warning: implicit declaration of function ‘gets’; did you mean ‘fgets’? [-Wimplicit-function-declaration]\n   13 |     gets(str);\n      |     ^~~~\n      |     fgets\nsrc/Fontes_Aula_5_6_7_e_8/Prog12.c:22:38: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]\n   22 |         printf( \"\\nA sua posição é: %d\\n\", ptr-str);\n      |                                     ~^     ~~~~~~~\n      |                                      |        |\n      |                                      int      long int\n      |                                     %ld\n/usr/bin/ld: /tmp/ccCG3z14.o: in function `main':\nProg12.c:(.text+0x37): warning: the `gets' function is dangerous and should not be used.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog13.c",
+      "returncode": 0,
+      "warnings": 7,
+      "diagnostics": "src/Fontes_Aula_5_6_7_e_8/Prog13.c:7:5: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]\n    7 | int strlen(char *);\n      |     ^~~~~~\nsrc/Fontes_Aula_5_6_7_e_8/Prog13.c:5:1: note: ‘strlen’ is declared in header ‘<string.h>’\n    4 | #include <stdlib.h>\n  +++ |+#include <string.h>\n    5 | \nsrc/Fontes_Aula_5_6_7_e_8/Prog13.c:8:6: warning: conflicting types for built-in function ‘strcpy’; expected ‘char *(char *, const char *)’ [-Wbuiltin-declaration-mismatch]\n    8 | void strcpy(char *, char *);\n      |      ^~~~~~\nsrc/Fontes_Aula_5_6_7_e_8/Prog13.c:8:6: note: ‘strcpy’ is declared in header ‘<string.h>’\nsrc/Fontes_Aula_5_6_7_e_8/Prog13.c:9:5: warning: mismatch in argument 1 type of built-in function ‘strcmp’; expected ‘const char *’ [-Wbuiltin-declaration-mismatch]\n    9 | int strcmp(char *, char *);\n      |     ^~~~~~\nsrc/Fontes_Aula_5_6_7_e_8/Prog13.c:9:5: note: ‘strcmp’ is declared in header ‘<string.h>’\nsrc/Fontes_Aula_5_6_7_e_8/Prog13.c: In function ‘main’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog13.c:20:5: warning: implicit declaration of function ‘gets’; did you mean ‘fgets’? [-Wimplicit-function-declaration]\n   20 |     gets(nome);\n      |     ^~~~\n      |     fgets\nsrc/Fontes_Aula_5_6_7_e_8/Prog13.c:24:16: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n   24 |                (unsigned)(nome+i), nome[i], (int)nome[i]);\n      |                ^\nsrc/Fontes_Aula_5_6_7_e_8/Prog13.c: In function ‘strcpy’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog13.c:54:12: warning: suggest parentheses around assignment used as truth value [-Wparentheses]\n   54 |     while (*(dest++) = *(orig++));\n      |            ^\n/usr/bin/ld: /tmp/ccmOpHxe.o: in function `main':\nProg13.c:(.text+0x67): warning: the `gets' function is dangerous and should not be used.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog14.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_5_6_7_e_8/Prog14.c: In function ‘main’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog14.c:14:7: error: lvalue required as increment operand\n   14 |     s1++; /* ERRO. N\\xe3o podemos incrementar uma constante */\n      |       ^~\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog15.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_5_6_7_e_8/Prog15.c:7:10: fatal error: conio.h: No such file or directory\n    7 | #include <conio.h>      /* para getche() */\n      |          ^~~~~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog16.c",
+      "returncode": 0,
+      "warnings": 2,
+      "diagnostics": "src/Fontes_Aula_5_6_7_e_8/Prog16.c: In function ‘main’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog16.c:35:9: warning: implicit declaration of function ‘gets’; did you mean ‘fgets’? [-Wimplicit-function-declaration]\n   35 |         gets(nomes[n]);\n      |         ^~~~\n      |         fgets\n/usr/bin/ld: /tmp/ccSjqsSJ.o: in function `main':\nProg16.c:(.text+0x167): warning: the `gets' function is dangerous and should not be used.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog17.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_5_6_7_e_8/Prog17.c:5:10: fatal error: conio.h: No such file or directory\n    5 | #include <conio.h>\n      |          ^~~~~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog18.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog19.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_5_6_7_e_8/Prog19.c: In function ‘main’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog19.c:11:9: error: ‘gets’ undeclared (first use in this function); did you mean ‘fgets’?\n   11 |     p = gets;\n      |         ^~~~\n      |         fgets\nsrc/Fontes_Aula_5_6_7_e_8/Prog19.c:11:9: note: each undeclared identifier is reported only once for each function it appears in\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog2.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog20.c",
+      "returncode": 0,
+      "warnings": 1,
+      "diagnostics": "src/Fontes_Aula_5_6_7_e_8/Prog20.c:6:7: warning: type defaults to ‘int’ in declaration of ‘true’ [-Wimplicit-int]\n    6 | const true=1;\n      |       ^~~~\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog21.c",
+      "returncode": 0,
+      "warnings": 1,
+      "diagnostics": "src/Fontes_Aula_5_6_7_e_8/Prog21.c:6:7: warning: type defaults to ‘int’ in declaration of ‘true’ [-Wimplicit-int]\n    6 | const true=1;\n      |       ^~~~\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog22.c",
+      "returncode": 0,
+      "warnings": 1,
+      "diagnostics": "src/Fontes_Aula_5_6_7_e_8/Prog22.c:7:7: warning: type defaults to ‘int’ in declaration of ‘true’ [-Wimplicit-int]\n    7 | const true=1;\n      |       ^~~~\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog23.c",
+      "returncode": 1,
+      "warnings": 2,
+      "diagnostics": "src/Fontes_Aula_5_6_7_e_8/Prog23.c: In function ‘main’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog23.c:15:20: warning: dereferencing ‘void *’ pointer\n   15 |     printf(\"%d\\n\", *pv); /* ERRO de compilação */\n      |                    ^~~\nsrc/Fontes_Aula_5_6_7_e_8/Prog23.c:15:20: error: invalid use of void expression\nsrc/Fontes_Aula_5_6_7_e_8/Prog23.c:20:20: warning: dereferencing ‘void *’ pointer\n   20 |     printf(\"%f\\n\", *pv); /* ERRO de compilação */\n      |                    ^~~\nsrc/Fontes_Aula_5_6_7_e_8/Prog23.c:20:20: error: invalid use of void expression\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog24.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog25.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog26.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog27.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog28.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog29.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog3.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog30.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog31.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_5_6_7_e_8/Prog31.c:5:10: fatal error: conio.h: No such file or directory\n    5 | #include <conio.h> /* para getch() */\n      |          ^~~~~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog32.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog33.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog34.c",
+      "returncode": 1,
+      "warnings": 7,
+      "diagnostics": "src/Fontes_Aula_5_6_7_e_8/Prog34.c: In function ‘main’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog34.c:18:13: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘unsigned int *’ [-Wformat=]\n   18 |     scanf(\"%d\", &size);\n      |            ~^   ~~~~~\n      |             |   |\n      |             |   unsigned int *\n      |             int *\n      |            %d\nsrc/Fontes_Aula_5_6_7_e_8/Prog34.c: In function ‘aloca_array’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog34.c:41:9: warning: implicit declaration of function ‘getche’; did you mean ‘getchar’? [-Wimplicit-function-declaration]\n   41 |         getche();\n      |         ^~~~~~\n      |         getchar\nsrc/Fontes_Aula_5_6_7_e_8/Prog34.c: In function ‘init_array’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog34.c:49:5: warning: ‘register’ is not at beginning of declaration [-Wold-style-declaration]\n   49 |     unsigned register int i = 0;\n      |     ^~~~~~~~\nsrc/Fontes_Aula_5_6_7_e_8/Prog34.c:50:18: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]\n   50 |     for(i = 0; i < Size; i++)\n      |                  ^\nsrc/Fontes_Aula_5_6_7_e_8/Prog34.c: In function ‘print_array’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog34.c:59:5: warning: ‘register’ is not at beginning of declaration [-Wold-style-declaration]\n   59 |     unsigned register int i = 0;\n      |     ^~~~~~~~\nsrc/Fontes_Aula_5_6_7_e_8/Prog34.c:67:18: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]\n   67 |     for(i = 0; i < Size; i++)\n      |                  ^\nsrc/Fontes_Aula_5_6_7_e_8/Prog34.c: In function ‘destruir_array’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog34.c:78:38: warning: unused parameter ‘Size’ [-Wunused-parameter]\n   78 | void destruir_array(int **Array, int Size)\n      |                                  ~~~~^~~~\n/usr/bin/ld: /tmp/cci8tZQM.o: in function `aloca_array':\nProg34.c:(.text+0xff): undefined reference to `getche'\ncollect2: error: ld returned 1 exit status\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog35.c",
+      "returncode": 1,
+      "warnings": 14,
+      "diagnostics": "src/Fontes_Aula_5_6_7_e_8/Prog35.c: In function ‘main’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c:18:13: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘unsigned int *’ [-Wformat=]\n   18 |     scanf(\"%d\", &Lin);\n      |            ~^   ~~~~\n      |             |   |\n      |             |   unsigned int *\n      |             int *\n      |            %d\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c:20:13: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘unsigned int *’ [-Wformat=]\n   20 |     scanf(\"%d\", &Col);\n      |            ~^   ~~~~\n      |             |   |\n      |             |   unsigned int *\n      |             int *\n      |            %d\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c: In function ‘aloca_array’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c:41:5: warning: ‘register’ is not at beginning of declaration [-Wold-style-declaration]\n   41 |     unsigned register int i;\n      |     ^~~~~~~~\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c:47:9: warning: implicit declaration of function ‘getche’; did you mean ‘getchar’? [-Wimplicit-function-declaration]\n   47 |         getche();\n      |         ^~~~~~\n      |         getchar\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c:50:18: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]\n   50 |     for(i = 0; i < lin; i++)\n      |                  ^\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c: In function ‘init_array’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c:65:5: warning: ‘register’ is not at beginning of declaration [-Wold-style-declaration]\n   65 |     unsigned register int i = 0, j = 0;\n      |     ^~~~~~~~\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c:67:18: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]\n   67 |     for(i = 0; i < lin; i++)\n      |                  ^\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c:69:22: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]\n   69 |         for(j = 0; j < col; j++)\n      |                      ^\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c: In function ‘print_array’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c:79:5: warning: ‘register’ is not at beginning of declaration [-Wold-style-declaration]\n   79 |     unsigned register int i = 0, j = 0;\n      |     ^~~~~~~~\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c:87:18: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]\n   87 |     for(i = 0; i < lin; i++)\n      |                  ^\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c:89:22: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]\n   89 |         for(j = 0; j < col; j++)\n      |                      ^\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c: In function ‘destruir_array’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c:103:5: warning: ‘register’ is not at beginning of declaration [-Wold-style-declaration]\n  103 |     unsigned register int i = 0;\n      |     ^~~~~~~~\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c:111:18: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]\n  111 |     for(i = 0; i < lin; i++)\n      |                  ^\nsrc/Fontes_Aula_5_6_7_e_8/Prog35.c:101:48: warning: unused parameter ‘col’ [-Wunused-parameter]\n  101 | void destruir_array(int ***Array, int lin, int col)\n      |                                            ~~~~^~~\n/usr/bin/ld: /tmp/ccCM6zmk.o: in function `aloca_array':\nProg35.c:(.text+0x14f): undefined reference to `getche'\n/usr/bin/ld: Prog35.c:(.text+0x1b9): undefined reference to `getche'\ncollect2: error: ld returned 1 exit status\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog4.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog5.c",
+      "returncode": 0,
+      "warnings": 4,
+      "diagnostics": "src/Fontes_Aula_5_6_7_e_8/Prog5.c: In function ‘main’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog5.c:12:19: warning: format ‘%p’ expects argument of type ‘void *’, but argument 2 has type ‘int *’ [-Wformat=]\n   12 |     printf(\"&x = %p\\t  x = %d\\n\", &x , x);\n      |                  ~^               ~~\n      |                   |               |\n      |                   void *          int *\n      |                  %ls\nsrc/Fontes_Aula_5_6_7_e_8/Prog5.c:13:19: warning: format ‘%p’ expects argument of type ‘void *’, but argument 2 has type ‘int *’ [-Wformat=]\n   13 |     printf(\"&y = %p\\t  y = %d\\n\", &y , y);\n      |                  ~^               ~~\n      |                   |               |\n      |                   void *          int *\n      |                  %ls\nsrc/Fontes_Aula_5_6_7_e_8/Prog5.c:18:19: warning: format ‘%p’ expects argument of type ‘void *’, but argument 2 has type ‘int *’ [-Wformat=]\n   18 |     printf(\"px = %p\\t*px = %d\\n\", px,*px);\n      |                  ~^               ~~\n      |                   |               |\n      |                   void *          int *\n      |                  %ls\nsrc/Fontes_Aula_5_6_7_e_8/Prog5.c:19:19: warning: format ‘%p’ expects argument of type ‘void *’, but argument 2 has type ‘int *’ [-Wformat=]\n   19 |     printf(\"py = %p\\t*py = %d\\n\", py,*py);\n      |                  ~^               ~~\n      |                   |               |\n      |                   void *          int *\n      |                  %ls\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog6.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog7.c",
+      "returncode": 0,
+      "warnings": 11,
+      "diagnostics": "src/Fontes_Aula_5_6_7_e_8/Prog7.c: In function ‘main’:\nsrc/Fontes_Aula_5_6_7_e_8/Prog7.c:15:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long int’ [-Wformat=]\n   15 |         printf(\"py-px= %u\\n\", (py-px));/* Subtraçao */\n      |                        ~^     ~~~~~~~\n      |                         |        |\n      |                         |        long int\n      |                         unsigned int\n      |                        %lu\nsrc/Fontes_Aula_5_6_7_e_8/Prog7.c:17:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long int’ [-Wformat=]\n   17 |         printf(\"px-py= %u\\n\", (px-py));\n      |                        ~^     ~~~~~~~\n      |                         |        |\n      |                         |        long int\n      |                         unsigned int\n      |                        %lu\nsrc/Fontes_Aula_5_6_7_e_8/Prog7.c:19:19: warning: format ‘%p’ expects argument of type ‘void *’, but argument 2 has type ‘unsigned int *’ [-Wformat=]\n   19 |     printf(\"px = %p\", px);\n      |                  ~^   ~~\n      |                   |   |\n      |                   |   unsigned int *\n      |                   void *\n      |                  %ls\nsrc/Fontes_Aula_5_6_7_e_8/Prog7.c:21:22: warning: format ‘%p’ expects argument of type ‘void *’, but argument 2 has type ‘unsigned int **’ [-Wformat=]\n   21 |     printf(\", &px = %p\\n\", &px);        /* Op.Endereços */\n      |                     ~^     ~~~\n      |                      |     |\n      |                      |     unsigned int **\n      |                      void *\nsrc/Fontes_Aula_5_6_7_e_8/Prog7.c:23:19: warning: format ‘%p’ expects argument of type ‘void *’, but argument 2 has type ‘unsigned int *’ [-Wformat=]\n   23 |     printf(\"py = %p\", py);\n      |                  ~^   ~~\n      |                   |   |\n      |                   |   unsigned int *\n      |                   void *\n      |                  %ls\nsrc/Fontes_Aula_5_6_7_e_8/Prog7.c:25:22: warning: format ‘%p’ expects argument of type ‘void *’, but argument 2 has type ‘unsigned int **’ [-Wformat=]\n   25 |     printf(\", &py = %p\\n\", &py);\n      |                     ~^     ~~~\n      |                      |     |\n      |                      |     unsigned int **\n      |                      void *\nsrc/Fontes_Aula_5_6_7_e_8/Prog7.c:29:19: warning: format ‘%p’ expects argument of type ‘void *’, but argument 2 has type ‘unsigned int *’ [-Wformat=]\n   29 |     printf(\"py = %p\", py);\n      |                  ~^   ~~\n      |                   |   |\n      |                   |   unsigned int *\n      |                   void *\n      |                  %ls\nsrc/Fontes_Aula_5_6_7_e_8/Prog7.c:31:22: warning: format ‘%p’ expects argument of type ‘void *’, but argument 2 has type ‘unsigned int **’ [-Wformat=]\n   31 |     printf(\", &py = %p\\n\", &py);\n      |                     ~^     ~~~\n      |                      |     |\n      |                      |     unsigned int **\n      |                      void *\nsrc/Fontes_Aula_5_6_7_e_8/Prog7.c:35:19: warning: format ‘%p’ expects argument of type ‘void *’, but argument 2 has type ‘unsigned int *’ [-Wformat=]\n   35 |     printf(\"px = %p\", px);\n      |                  ~^   ~~\n      |                   |   |\n      |                   |   unsigned int *\n      |                   void *\n      |                  %ls\nsrc/Fontes_Aula_5_6_7_e_8/Prog7.c:37:22: warning: format ‘%p’ expects argument of type ‘void *’, but argument 2 has type ‘unsigned int **’ [-Wformat=]\n   37 |     printf(\", &px = %p\\n\", &px);\n      |                     ~^     ~~~\n      |                      |     |\n      |                      |     unsigned int **\n      |                      void *\nsrc/Fontes_Aula_5_6_7_e_8/Prog7.c:39:21: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long int’ [-Wformat=]\n   39 |     printf(\"px-py= %u\\n\", (px-py));\n      |                    ~^     ~~~~~~~\n      |                     |        |\n      |                     |        long int\n      |                     unsigned int\n      |                    %lu\n"
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog8.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_5_6_7_e_8/Prog9.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_9/Prog1.c",
+      "returncode": 1,
+      "warnings": 0,
+      "diagnostics": "src/Fontes_Aula_9/Prog1.c:6:10: fatal error: conio.h: No such file or directory\n    6 | #include <conio.h>\n      |          ^~~~~~~~~\ncompilation terminated.\n"
+    },
+    {
+      "path": "src/Fontes_Aula_9/Prog2.c",
+      "returncode": 0,
+      "warnings": 0,
+      "diagnostics": ""
+    },
+    {
+      "path": "src/Fontes_Aula_9/Prog3.c",
+      "returncode": 0,
+      "warnings": 1,
+      "diagnostics": "src/Fontes_Aula_9/Prog3.c: In function ‘main’:\nsrc/Fontes_Aula_9/Prog3.c:21:17: warning: format ‘%x’ expects argument of type ‘unsigned int *’, but argument 2 has type ‘int *’ [-Wformat=]\n   21 |         scanf(\"%x\",&num) ;\n      |                ~^  ~~~~\n      |                 |  |\n      |                 |  int *\n      |                 unsigned int *\n      |                %x\n"
+    },
+    {
+      "path": "src/Fontes_Aula_9/Prog4.c",
+      "returncode": 0,
+      "warnings": 2,
+      "diagnostics": "src/Fontes_Aula_9/Prog4.c: In function ‘main’:\nsrc/Fontes_Aula_9/Prog4.c:15:17: warning: format ‘%x’ expects argument of type ‘unsigned int *’, but argument 2 has type ‘short unsigned int *’ [-Wformat=]\n   15 |         scanf(\"%x %s %x\", &x1, op, &x2);\n      |                ~^         ~~~\n      |                 |         |\n      |                 |         short unsigned int *\n      |                 unsigned int *\n      |                %hx\nsrc/Fontes_Aula_9/Prog4.c:15:23: warning: format ‘%x’ expects argument of type ‘unsigned int *’, but argument 4 has type ‘short unsigned int *’ [-Wformat=]\n   15 |         scanf(\"%x %s %x\", &x1, op, &x2);\n      |                      ~^            ~~~\n      |                       |            |\n      |                       |            short unsigned int *\n      |                       unsigned int *\n      |                      %hx\n"
+    }
+  ]
+}
