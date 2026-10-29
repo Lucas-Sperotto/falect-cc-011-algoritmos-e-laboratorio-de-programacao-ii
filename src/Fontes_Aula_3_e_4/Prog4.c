@@ -1,3 +1,8 @@
+/*
+ * ID: A03-04-P04
+ * Aula: ../../atividades/aulas-03-e-04.md
+ * Objetivo: Mostra passagem de estruturas para funções por valor; mostra uma função que retorna uma estrutura.
+ */
 /* Prog4.c */
 /* Mostra passagem de estruturas para funções por valor */
 /* Mostra uma função que retorna uma estrutura */
@@ -12,21 +17,37 @@ typedef struct Venda
 
 Venda TotalVendas( Venda C, Venda D);/* Protótipo */
 
-int main()
+int main(void)
 {
     Venda A, B, Total;
 
     printf("Venda A\n=======\n");
     printf("Insira o número de peças: ");
-    scanf("%d", &A.pecas);
+    if (scanf("%d", &A.pecas) != 1) {
+        fputs("Entrada inválida.\n", stderr);
+        return EXIT_FAILURE;
+    }
     printf("Insira o preço: ");
-    scanf("%f", &A.preco);
+    if (scanf("%f", &A.preco) != 1) {
+        fputs("Entrada inválida.\n", stderr);
+        return EXIT_FAILURE;
+    }
 
     printf("\nVenda B\n=======\n");
     printf("Insira o número de peças: ");
-    scanf("%d", &B.pecas);
+    if (scanf("%d", &B.pecas) != 1) {
+        fputs("Entrada inválida.\n", stderr);
+        return EXIT_FAILURE;
+    }
     printf("Insira o preço: ");
-    scanf("%f", &B.preco);
+    if (scanf("%f", &B.preco) != 1) {
+        fputs("Entrada inválida.\n", stderr);
+        return EXIT_FAILURE;
+    }
+    /* Limita o domínio para impedir overflow na soma das peças. */
+    if (A.pecas < 0 || A.pecas > 1000000 ||
+        B.pecas < 0 || B.pecas > 1000000)
+        return EXIT_FAILURE;
     Total = TotalVendas( A,B);/* Estruturas como argumento e retorno */
 
     printf("\n\nVenda Total\n===========");

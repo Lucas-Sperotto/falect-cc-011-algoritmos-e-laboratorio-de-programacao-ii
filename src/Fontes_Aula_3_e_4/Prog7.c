@@ -1,24 +1,30 @@
+/*
+ * ID: A03-04-P07
+ * Aula: ../../atividades/aulas-03-e-04.md
+ * Objetivo: Mostra o uso de enumeraÃ§Ãµes.
+ */
 #include <stdio.h>
-/* Mostra o uso de enumerações */
+/* Mostra o uso de enumeraÃ§Ãµes */
 typedef enum Mes {Jan = 1, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out,
           Nov, Dez
-         };
+         } Mes;
 
-int main()
+int main(void)
 {
-    Mes m1, m2, m3; /*Agora o nome do tipo é Mes */
+    Mes m1, m2, m3; /*Agora o nome do tipo Ã© Mes */
 
     m1 = Abr; /*Atribui valores */
     m2 = Jun; /*Atribui valores */
 
-    m3 = m2 - m1; /*Operações aritméticas permitidas */
-    if (m1 < m2) /*Comparações permitidas */
+    m3 = m2 - m1; /*OperaÃ§Ãµes aritmÃ©ticas permitidas */
+    printf("DiferenÃ§a entre os meses: %d\n", m3);
+    if (m1 < m2) /*ComparaÃ§Ãµes permitidas */
     {
-        printf("Primeiro Mês é menor que o Segundo Mês");
+        printf("Primeiro MÃªs Ã© menor que o Segundo MÃªs");
     }
     else
     {
-        printf("Segundo Mês é menor que o Primeiro Mês");
+        printf("Segundo MÃªs Ã© menor que o Primeiro MÃªs");
     }
     return 0;
 }

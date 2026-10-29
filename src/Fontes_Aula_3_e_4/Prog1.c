@@ -1,3 +1,8 @@
+/*
+ * ID: A03-04-P01
+ * Aula: ../../atividades/aulas-03-e-04.md
+ * Objetivo: Cria uma estrutura para armazenar dados de um aluno.
+ */
 /* Prog1.c */
 /* Cria uma estrutura para armazenar dados de um aluno */
 #include <stdio.h>
@@ -10,7 +15,7 @@ struct Aluno		/*Inicio da definição da estrutura */
     float media;	/* Média */
 };				/* Fim da definição */
 
-int main()
+int main(void)
 {
     struct Aluno Jose; /* Declara uma variável do tipo struct Aluno */
 

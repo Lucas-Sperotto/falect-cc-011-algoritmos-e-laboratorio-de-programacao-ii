@@ -1,8 +1,13 @@
+/*
+ * ID: A03-04-P05
+ * Aula: ../../atividades/aulas-03-e-04.md
+ * Objetivo: Mostra uma matriz de estruturas.
+ */
 /* Prog5.c */
 /* Mostra uma matriz de estruturas */
-#include <stdio.h>  /* para gets(), printf(), scanf() */
-#include <stdlib.h> /* Para system(), atoi(), atof(), exit() */
-#include <conio.h>  /* Para getch() */
+#include <stdio.h>
+#include <stdlib.h>
+#include "../entrada_segura.h"
 
 #define ESC 27
 #define TRUE 1
@@ -21,83 +26,82 @@ typedef struct
     float preco;
 } Venda;
 
-void listavenda(void); /* Protótipo */
-void novavenda(void);  /* Protótipo */
+void listavenda(void);
+void novavenda(void);
 
-Venda vendas[50]; /* Cria matriz de estruturas */
-Venda Total= {{0,"",0},0,0.0}; /* Cria variável do tipo Venda */
+Venda vendas[50];
+Venda Total = {{0, "", 0}, 0, 0.0};
+int n = 0;
 
-
-int n=0;
-
-int main()
+int main(void)
 {
-    char ch;
-    while(TRUE)
+    char opcao[80];
+    while (TRUE)
     {
         printf("Digite E para entrar uma venda\n");
         printf("       L para listar as vendas\n");
-        printf("       ESC para terminar\n");
-
-        ch=getche();
-        printf("\n");
-        switch(ch)
+        printf("       ESC ou Q para terminar (confirme com Enter)\n");
+        /* getche() era específico de conio.h. Agora a opção é uma linha. */
+        if (!ler_linha(opcao, sizeof opcao))
+            break;
+        switch (opcao[0])
         {
-        case 'E':
-            novavenda();
-            break;
-        case 'L':
-            listavenda();
-            break;
-        case ESC: /* ESC não pode ser declarado com const */
-            exit(0);
-        default :
-            printf("Opcao invalida!!\n");
+        case 'E': novavenda(); break;
+        case 'L': listavenda(); break;
+        case ESC:
+        case 'Q': return 0;
+        default: printf("Opção inválida!\n"); break;
         }
-
     }
     // system("PAUSE");
     return 0;
 }
-void novavenda()
+
+void novavenda(void)
 {
     char temp[80];
+    Venda nova;
+    if (n >= 50)
+    {
+        puts("Limite de 50 vendas atingido.");
+        return;
+    }
+    /* gets() não limitava as strings. Só adiciona uma venda completa. */
     printf("Dia: ");
-    gets(temp);
-    vendas[n].diavenda.dia=atoi(temp);
-    printf("Mes: ");
-    gets(vendas[n].diavenda.mes);
+    if (!ler_linha(temp, sizeof temp) || sscanf(temp, "%d", &nova.diavenda.dia) != 1)
+        return;
+    printf("Mês: ");
+    if (!ler_linha(nova.diavenda.mes, sizeof nova.diavenda.mes))
+        return;
     printf("Ano: ");
-    gets(temp);
-    vendas[n].diavenda.ano=atoi(temp);
+    if (!ler_linha(temp, sizeof temp) || sscanf(temp, "%d", &nova.diavenda.ano) != 1)
+        return;
     printf("Peças: ");
-    gets(temp);
-    vendas[n].pecas=atoi(temp);
+    if (!ler_linha(temp, sizeof temp) || sscanf(temp, "%d", &nova.pecas) != 1 ||
+        nova.pecas < 0 || nova.pecas > 1000000)
+        return;
     printf("Preço: ");
-    gets(temp);
-    vendas[n].preco=atof(temp);
-    Total.pecas += vendas[n].pecas;
-    Total.preco += vendas[n++].preco;
+    if (!ler_linha(temp, sizeof temp) || sscanf(temp, "%f", &nova.preco) != 1)
+        return;
+    vendas[n++] = nova;
+    Total.pecas += nova.pecas;
+    Total.preco += nova.preco;
 }
 
-void listavenda()
+void listavenda(void)
 {
     int i;
-    if(!n)
+    if (!n)
     {
         printf("Lista vazia.\n");
         return;
     }
-
     printf("\n\nRelatório\n");
-    for (i=0; i<n; i++)
+    for (i = 0; i < n; i++)
     {
         printf("%2d de %10s de %4d", vendas[i].diavenda.dia,
                vendas[i].diavenda.mes, vendas[i].diavenda.ano);
-        printf("%10d", vendas[i].pecas);
-        printf("%20.2f\n", vendas[i].preco);
+        printf("%10d%20.2f\n", vendas[i].pecas, vendas[i].preco);
     }
-    printf("\nTotal");
-    printf("%29d", Total.pecas);
-    printf("%20.2f\n\n", Total.preco);
+    printf("\nTotal%29d%20.2f\n\n", Total.pecas, Total.preco);
 }
