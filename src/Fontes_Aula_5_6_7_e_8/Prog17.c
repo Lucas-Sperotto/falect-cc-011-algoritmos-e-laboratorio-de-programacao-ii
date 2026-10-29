@@ -47,6 +47,6 @@ int main()
             *(ptr+j) = *(ptr+j+1);
         *(ptr+LIN-1)=temp;
     }
-    system("pause");
+    // system("pause");
     return 0;
 }

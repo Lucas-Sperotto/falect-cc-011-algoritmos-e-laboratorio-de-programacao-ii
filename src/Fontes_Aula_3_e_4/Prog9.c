@@ -1,5 +1,5 @@
 /* Prog9.c */
-/* Mostra uni„o de estruturas */
+/* Mostra uni√£o de estruturas */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -28,7 +28,7 @@ int main(void)
 
     printf("unex.f         = %.2f\n", unex.f );
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 

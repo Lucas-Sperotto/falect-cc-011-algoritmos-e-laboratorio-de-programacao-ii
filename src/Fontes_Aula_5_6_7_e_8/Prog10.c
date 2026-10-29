@@ -1,17 +1,17 @@
 /* Prog10.c */
-/* Imprime os elementos de uma matriz usando notaÁ„o ponteiro */
+/* Imprime os elementos de uma matriz usando nota√ß√£o ponteiro */
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
     static int M[5]= {92,81,70,69,58};
-    int i, *p = M; /* cria e inicializa o ponteiro vari·vel */
+    int i, *p = M; /* cria e inicializa o ponteiro vari√°vel */
 
     for(i=0; i<5; i++)
-        printf("%d\n", *(p++)); /* NotaÁ„o ponteiro */
+        printf("%d\n", *(p++)); /* Nota√ß√£o ponteiro */
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 

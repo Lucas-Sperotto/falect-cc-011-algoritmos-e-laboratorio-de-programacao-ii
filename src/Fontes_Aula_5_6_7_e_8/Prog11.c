@@ -1,10 +1,10 @@
 /* Prog11.c */
-/* Mostra passagem de matrizes para funções usando ponteiros */
+/* Mostra passagem de matrizes para funÃ§Ãµes usando ponteiros */
 #include <stdio.h>
 #include <stdlib.h>
 #define TAMANHO 50
 
-float media(float *, int);/* protótipo */
+float media(float *, int);/* protÃ³tipo */
 
 int main()
 {
@@ -18,17 +18,17 @@ int main()
     }
     while( *(notas + i++) >= 0.0);
 
-    i--; /* remove o item de término */
+    i--; /* remove o item de tÃ©rmino */
 
     m = media( notas, i );
 
-    printf("Média das notas: %.2f\n", m);
+    printf("MÃ©dia das notas: %.2f\n", m);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 
-/* Calcula a média dos valores da matriz */
+/* Calcula a mÃ©dia dos valores da matriz */
 float media(float *lista, int tamanho)
 {
     int i;

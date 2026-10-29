@@ -7,10 +7,10 @@ int main()
 {
     int i,j,k;
 
-    printf("Endereço de i = %p\n", &i); /* %p para ponteiros */
-    printf("Endereço de j = %p\n", &j);
-    printf("Endereço de k = %p\n", &k);
+    printf("EndereÃ§o de i = %p\n", &i); /* %p para ponteiros */
+    printf("EndereÃ§o de j = %p\n", &j);
+    printf("EndereÃ§o de k = %p\n", &k);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
