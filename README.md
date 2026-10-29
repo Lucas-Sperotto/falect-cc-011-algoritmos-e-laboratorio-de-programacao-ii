@@ -69,3 +69,15 @@ O foco desta disciplina não é apenas “fazer funcionar”, mas compreender, j
 ## Fontes C e execução
 
 Os programas em `src/` são exemplos didáticos independentes, organizados nas pastas `Fontes_Aula_*`. Compile cada `.c` separadamente. As chamadas históricas `system("PAUSE")` foram **mantidas como comentários**, para evitar executar o comando do Windows. Consulte [orientações de revisão e compilação](docs/REVISAO_FONTES_C.md) antes de executar exemplos antigos.
+
+## Executar todos os exemplos C no WSL Ubuntu
+
+No terminal do VS Code integrado ao WSL, na raiz do repositório:
+
+```bash
+sudo apt update && sudo apt install -y build-essential coreutils findutils
+bash script.sh
+less build/execucao_fontes/relatorio.txt
+```
+
+Use `bash script.sh 5` para elevar o limite de execução de cada programa a cinco segundos. O script compila cada arquivo `.c` isoladamente, registra os erros de compilação e executa os programas compilados com entrada padrão fechada (`/dev/null`) e limite de tempo. O resumo é salvo em `build/execucao_fontes/relatorio.txt`; cada exemplo tem `compilacao.txt` e `saida.txt` separados. Programas interativos podem falhar ou esgotar o tempo, pois não recebem respostas de teclado. Exemplos que usam `conio.h` podem não compilar no Linux. Arquivos criados pelos programas ficam em pastas isoladas.
