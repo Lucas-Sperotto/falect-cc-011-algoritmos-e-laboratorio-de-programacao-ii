@@ -1,41 +1,15 @@
-# Cronograma-Base da Disciplina
+# Cronograma — Algoritmos e Laboratório de Programação II, 2026.2
 
-Este arquivo serve como matriz para organizar os 15 encontros da disciplina sem datas fixas. Ao copiar esta base para uma disciplina específica, ajuste os conteúdos conforme o PPC, a metodologia da oferta e a linguagem adotada.
+**Disciplina:** FALECT-CC-011 · **Turma:** 01 · **Carga horária:** 60 h · **Docente:** Lucas Kriesel Sperotto.
 
-## Regras de uso desta matriz
+Datas e tópicos conforme o plano de curso emitido pelo SIGAA para a oferta 2026.2.
 
-- manter 15 encontros;
-- não inserir datas nesta etapa;
-- identificar os encontros presenciais e, quando houver, as atividades EAD;
-- reservar 10 a 15 minutos ao final de cada encontro para resumo individual breve;
-- usar os vídeos EAD como preparação, reforço ou consolidação, e não como simples repetição da aula.
+| Módulo | Início | Fim | Conteúdo | Avaliação |
+|---|---|---|---|---|
+| 1 | 31/08/2026 | 04/09/2026 | Vetores, matrizes, strings e structs | 1ª unidade: 04/09, 19h |
+| 2 | 21/09/2026 | 25/09/2026 | Ponteiros e manipulação de arquivos | 2ª unidade: 25/09, 19h |
+| 3 | 27/10/2026 | 30/10/2026 | Prática de programação e algoritmos | 3ª unidade: 30/10, 19h |
 
-## Modelo
+A avaliação consiste em **três listas de exercícios, cada uma de 0 a 10 pontos**, com média final aritmética das três notas. As datas de entrega das atividades são divulgadas no SIGAA.
 
-| Encontro | Modalidade | Conteúdo central | Estratégia didática | Produto/entrega |
-| --- | --- | --- | --- | --- |
-| 1 | Presencial | Apresentação da disciplina e visão geral da unidade | Contextualização, alinhamento e diagnóstico | Diagnóstico inicial |
-| 2 | Presencial | [conteúdo] | Quadro, resolução guiada e discussão | Exercício breve |
-| 3 | Presencial | [conteúdo] | Quadro e prática supervisionada | Lista curta |
-| 4 | Presencial | [conteúdo] | Laboratório orientado | Prática 01 |
-| 5 | EAD ou Presencial | [conteúdo] | Vídeo curto e atividade objetiva, ou reforço presencial | Atividade 01 |
-| 6 | Presencial | [conteúdo] | Aula expositiva com foco em raciocínio | Exercício aplicado |
-| 7 | Presencial | [conteúdo] | Laboratório orientado | Prática 02 |
-| 8 | Presencial | [conteúdo] | Resolução de problemas e depuração | Prática 03 |
-| 9 | Presencial | [conteúdo] | Integração parcial dos conteúdos | Entrega parcial |
-| 10 | EAD ou Presencial | [conteúdo] | Vídeo curto e atividade objetiva, ou estudo orientado | Atividade 02 |
-| 11 | Presencial | [conteúdo] | Aula aplicada | Lista curta |
-| 12 | Presencial | [conteúdo] | Laboratório orientado | Prática 04 |
-| 13 | Presencial | [conteúdo] | Projeto, estudo de caso ou integração | Entrega parcial |
-| 14 | Presencial | [conteúdo] | Consolidação, revisão e refinamento | Versão final |
-| 15 | EAD ou Presencial | Fechamento da unidade/disciplina | Síntese, autoavaliação e devolutiva | Atividade final ou reflexão |
-
-## Sugestão para o resumo final do encontro
-
-O resumo individual breve pode seguir três perguntas fixas:
-
-1. O que eu compreendi hoje?
-2. Onde ainda tenho dúvida?
-3. O que preciso praticar antes do próximo encontro?
-
-Esse registro pode ser feito em texto curto, em Markdown, e depois ser usado como insumo de acompanhamento, revisão ou autoavaliação.
+Consulte [Plano da disciplina 2026.2](PLANO_DISCIPLINA.md), [Tarefas por aula](atividades/README.md) e o [índice dos planos](docs/planos_old/README.md). O calendário do SIGAA prevalece em caso de atualização institucional.
