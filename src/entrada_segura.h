@@ -24,8 +24,20 @@ static inline int ler_linha(char *destino, size_t capacidade)
         return 1;
     }
     ch = getchar();
-    if (ch == '\n' || (ch == EOF && !ferror(stdin)))
+    if (ch == '\n') {
+        size_t tamanho = strlen(destino);
+        if (tamanho > 0 && destino[tamanho - 1] == '\r')
+            destino[tamanho - 1] = '\0';
         return 1;
+    }
+    if (ch == EOF && !ferror(stdin))
+        return 1;
+    /* CRLF também pode começar logo após o último caractere que cabe. */
+    if (ch == '\r') {
+        ch = getchar();
+        if (ch == '\n')
+            return 1;
+    }
     while (ch != '\n' && ch != EOF)
         ch = getchar();
     destino[0] = '\0';

@@ -44,7 +44,7 @@ int main(void)
 float media(float lista[], int tamanho)
 {
     int i;
-    float m = 0.0;
+    double m = 0.0; /* Soma de float finitos pode exceder FLT_MAX. */
     for(i=0 ; i < tamanho ; i++)m += lista[i];
     return m/tamanho;
 }

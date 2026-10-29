@@ -13,7 +13,8 @@
 int main(void)
 {
 
-    float notas[TAMANHO] , media=0.0;
+    float notas[TAMANHO];
+    double media=0.0; /* Acumulação evita overflow com notas float finitas. */
     int i=0,j;
 
     /* O limite é verificado antes de escrever no vetor. */

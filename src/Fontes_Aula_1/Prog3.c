@@ -13,7 +13,8 @@
 int main(void)
 {
 
-    float notas[TAMANHO] , media=0.0;
+    float notas[TAMANHO];
+    double media=0.0; /* Acumulação evita overflow com notas float finitas. */
     int i;
 
     for( i=0 ; i < TAMANHO ; i++ )

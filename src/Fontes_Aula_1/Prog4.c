@@ -13,7 +13,8 @@
 int main(void)
 {
 
-    float notas[TAMANHO] , media=0.0;
+    float notas[TAMANHO];
+    double media=0.0; /* Acumulação evita overflow com notas float finitas. */
     int i=0,j;
 
     /* Histórico: o laço original não verificava o limite; compare Prog5.c.

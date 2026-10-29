@@ -7,6 +7,7 @@
 /* Mostra passagem de estruturas para funções por valor */
 /* Mostra uma função que retorna uma estrutura */
 #include <stdio.h>
+#include <math.h>
 #include <stdlib.h>
 
 typedef struct Venda
@@ -47,6 +48,11 @@ int main(void)
     /* Limita o domínio para impedir overflow na soma das peças. */
     if (A.pecas < 0 || A.pecas > 1000000 ||
         B.pecas < 0 || B.pecas > 1000000)
+        return EXIT_FAILURE;
+    /* Preços no domínio didático evitam overflow do total em float. */
+    if (!isfinite(A.preco) || !isfinite(B.preco) ||
+        A.preco < 0.0f || A.preco > 1000000000.0f ||
+        B.preco < 0.0f || B.preco > 1000000000.0f)
         return EXIT_FAILURE;
     Total = TotalVendas( A,B);/* Estruturas como argumento e retorno */
 

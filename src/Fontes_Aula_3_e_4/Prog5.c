@@ -6,6 +6,7 @@
 /* Prog5.c */
 /* Mostra uma matriz de estruturas */
 #include <stdio.h>
+#include <math.h>
 #include <stdlib.h>
 #include "../entrada_segura.h"
 
@@ -81,7 +82,8 @@ void novavenda(void)
         nova.pecas < 0 || nova.pecas > 1000000)
         return;
     printf("Preço: ");
-    if (!ler_linha(temp, sizeof temp) || sscanf(temp, "%f", &nova.preco) != 1)
+    if (!ler_linha(temp, sizeof temp) || sscanf(temp, "%f", &nova.preco) != 1 ||
+        !isfinite(nova.preco) || nova.preco < 0.0f || nova.preco > 1000000000.0f)
         return;
     vendas[n++] = nova;
     Total.pecas += nova.pecas;
