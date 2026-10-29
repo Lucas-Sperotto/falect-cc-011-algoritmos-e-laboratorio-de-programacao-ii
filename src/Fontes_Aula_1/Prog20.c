@@ -1,5 +1,5 @@
 /* Prog20.c */
-/* Mostra a comparaÁ„o entre strings */
+/* Mostra a compara√ß√£o entre strings */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -9,7 +9,7 @@ int main()
     char resposta[]="BRANCO";
     char resp[40];
 
-    printf("Qual È a cor do cavalo branco de Napole„o?");
+    printf("Qual √© a cor do cavalo branco de Napole√£o?");
     gets(resp);
 
     while (resp != resposta)
@@ -18,7 +18,7 @@ int main()
         gets(resp);
     }
     printf("Correto!\n");
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 

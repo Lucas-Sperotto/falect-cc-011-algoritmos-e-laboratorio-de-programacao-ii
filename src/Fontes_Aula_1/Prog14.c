@@ -7,9 +7,9 @@ int main()
 {
     char nome[80];
     printf("Digite o seu nome: ");
-    gets(nome); /* lê texto do teclado */
-    printf("Saudações %s.\n", nome);
-    system("PAUSE");
+    gets(nome); /* lÃª texto do teclado */
+    printf("SaudaÃ§Ãµes %s.\n", nome);
+    // system("PAUSE");
     return 0;
 }
 

@@ -8,7 +8,7 @@ int main()
     char nome[80];
     printf("Digite o seu nome: ");
     scanf("%s", nome);
-    printf("Saudações %s.\n", nome);
-    system("PAUSE");
+    printf("SaudaÃ§Ãµes %s.\n", nome);
+    // system("PAUSE");
     return 0;
 }
