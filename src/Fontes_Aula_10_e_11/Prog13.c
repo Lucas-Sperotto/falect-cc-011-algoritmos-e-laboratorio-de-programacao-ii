@@ -1,5 +1,5 @@
 /* Prog13.c */
-/* Lê estruturas do disco */
+/* LÃª estruturas do disco */
 #include <stdio.h> /* define FILE */
 #include <stdlib.h>
 #include <conio.h> /* Para getch() */
@@ -14,10 +14,10 @@ typedef struct Livro
 
 void PrintLivro(Livro livro)
 {
-    printf("\n\tTítulo: %s\n", livro.Titulo);
+    printf("\n\tTÃ­tulo: %s\n", livro.Titulo);
     printf("\tAutor : %s\n", livro.Autor);
     printf("\tNo.Reg: %hd\n", livro.NumReg);
-    printf("\tPreço : %.2lf\n", livro.Preco );
+    printf("\tPreÃ§o : %.2lf\n", livro.Preco );
 }
 
 int main()
@@ -31,6 +31,6 @@ int main()
     while(fread(&livro, sizeof(Livro),1,fptr)==1) PrintLivro(livro);
 
     fclose(fptr);
-    system("pause");
+    // system("pause");
     return 0;
 }
