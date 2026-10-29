@@ -1,16 +1,22 @@
+/*
+ * ID: A05-08-P29
+ * Aula: ../../atividades/aula-08.md
+ * Objetivo: Mostra o uso de malloc() para alocação dinâmica de memória.
+ */
 /* Prog29.c */
 /* mostra o uso de malloc() */
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+int main(void)
 {
     int *pi;
 
-    pi = (int *) malloc(sizeof(int));
+    pi = malloc(sizeof *pi);
+    if (pi == NULL) return 1;
 
     puts("Digite um número: ");
-    scanf("%d", pi);
+    if (scanf("%d", pi) != 1) { free(pi); return 1; }
     printf("\nVocê digitou o número %d\n", *pi);
 
     free(pi);

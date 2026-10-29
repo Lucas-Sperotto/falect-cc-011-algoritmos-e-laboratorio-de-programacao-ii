@@ -1,3 +1,8 @@
+/*
+ * ID: A01-P05
+ * Aula: ../../atividades/aula-01-pt1.md
+ * Objetivo: Calcula a média das notas de qualquer número de alunos.
+ */
 /* NotasF1.C */
 /* Calcula a média das notas de qualquer número de alunos */
 #include <stdio.h>
@@ -5,26 +10,30 @@
 
 #define TAMANHO 50
 
-int main()
+int main(void)
 {
 
-    float notas[TAMANHO] , media=0.0;
+    float notas[TAMANHO];
+    double media=0.0; /* Acumulação evita overflow com notas float finitas. */
     int i=0,j;
 
-    do
+    /* O limite é verificado antes de escrever no vetor. */
+    while (i < TAMANHO)
     {
-        if(i >= TAMANHO)
-        {
-            printf("BUFFER LOTADO.\n");
-            i++;
-            break;
-        }
         printf("Digite a nota do aluno %d ", i+1);
-        scanf("%f",&notas[i]);
+        if (scanf("%f", &notas[i]) != 1) {
+            fputs("Nota inválida.\n", stderr);
+            return 1;
+        }
+        if (notas[i] < 0.0)
+            break; /* A sentinela não entra no cálculo. */
+        i++;
     }
-    while( notas[i++] >= 0.0);
-
-    i--; /* remove o item de término */
+    if (i == TAMANHO) printf("BUFFER LOTADO.\n");
+    if (i == 0) {
+        fputs("Nenhuma nota informada.\n", stderr);
+        return 1;
+    }
 
     for(j=0 ; j < i ; j++)
         media += notas[j];

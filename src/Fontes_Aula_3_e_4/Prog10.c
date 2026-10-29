@@ -1,3 +1,8 @@
+/*
+ * ID: A03-04-P10
+ * Aula: ../../atividades/aulas-03-e-04.md
+ * Objetivo: Mostra união com estrutura.
+ */
 /* Prog10.c */
 /* Mostra união com estrutura */
 /* Imprime um caractere em binário */
@@ -27,7 +32,12 @@ int main(void)
 {
     Binario B;
     printf("Digite um caractere: ");
-    B.ch  = getchar();
+    int entrada = getchar();
+    if (entrada == EOF)
+        return EXIT_FAILURE;
+    B.ch = (unsigned char)entrada;
+    /* A sobreposição de união e ordem dos bitfields dependem do compilador.
+     * Para uma representação portátil, use máscaras e deslocamentos de B.ch. */
     printf("O caractere digitado é: %c\n", B.ch);
     printf("O valor em binário correspondente é: ");
 

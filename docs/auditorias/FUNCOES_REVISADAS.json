@@ -1,0 +1,954 @@
+[
+  {
+    "id": "A01-P01",
+    "path": "src/Fontes_Aula_1/Prog1.c",
+    "before": {},
+    "after": {
+      "scanf": 5
+    }
+  },
+  {
+    "id": "A01-P10",
+    "path": "src/Fontes_Aula_1/Prog10.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "scanf": 1
+    }
+  },
+  {
+    "id": "A01-P11",
+    "path": "src/Fontes_Aula_1/Prog11.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "scanf": 1
+    }
+  },
+  {
+    "id": "A01-P12",
+    "path": "src/Fontes_Aula_1/Prog12.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "scanf": 1
+    }
+  },
+  {
+    "id": "A01-P13",
+    "path": "src/Fontes_Aula_1/Prog13.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "scanf": 1
+    }
+  },
+  {
+    "id": "A01-P14",
+    "path": "src/Fontes_Aula_1/Prog14.c",
+    "before": {
+      "gets": 1
+    },
+    "after": {}
+  },
+  {
+    "id": "A01-P15",
+    "path": "src/Fontes_Aula_1/Prog15.c",
+    "before": {
+      "gets": 1
+    },
+    "after": {}
+  },
+  {
+    "id": "A01-P16",
+    "path": "src/Fontes_Aula_1/Prog16.c",
+    "before": {
+      "gets": 1
+    },
+    "after": {}
+  },
+  {
+    "id": "A01-P17",
+    "path": "src/Fontes_Aula_1/Prog17.c",
+    "before": {
+      "gets": 1
+    },
+    "after": {}
+  },
+  {
+    "id": "A01-P18",
+    "path": "src/Fontes_Aula_1/Prog18.c",
+    "before": {
+      "gets": 1
+    },
+    "after": {}
+  },
+  {
+    "id": "A01-P19",
+    "path": "src/Fontes_Aula_1/Prog19.c",
+    "before": {
+      "gets": 1,
+      "strcat": 1
+    },
+    "after": {
+      "strcat": 1
+    }
+  },
+  {
+    "id": "A01-P02",
+    "path": "src/Fontes_Aula_1/Prog2.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "scanf": 1
+    }
+  },
+  {
+    "id": "A01-P20",
+    "path": "src/Fontes_Aula_1/Prog20.c",
+    "before": {
+      "gets": 2
+    },
+    "after": {}
+  },
+  {
+    "id": "A01-P21",
+    "path": "src/Fontes_Aula_1/Prog21.c",
+    "before": {
+      "gets": 2
+    },
+    "after": {}
+  },
+  {
+    "id": "A01-P22",
+    "path": "src/Fontes_Aula_1/Prog22.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A01-P23",
+    "path": "src/Fontes_Aula_1/Prog23.c",
+    "before": {
+      "strcpy": 1
+    },
+    "after": {
+      "memmove": 1
+    }
+  },
+  {
+    "id": "A01-P24",
+    "path": "src/Fontes_Aula_1/Prog24.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "scanf": 1
+    }
+  },
+  {
+    "id": "A01-P25",
+    "path": "src/Fontes_Aula_1/Prog25.c",
+    "before": {
+      "gets": 2,
+      "strcpy": 1
+    },
+    "after": {
+      "scanf": 2,
+      "strcpy": 1
+    }
+  },
+  {
+    "id": "A01-P03",
+    "path": "src/Fontes_Aula_1/Prog3.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "scanf": 1
+    }
+  },
+  {
+    "id": "A01-P04",
+    "path": "src/Fontes_Aula_1/Prog4.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "scanf": 1
+    }
+  },
+  {
+    "id": "A01-P05",
+    "path": "src/Fontes_Aula_1/Prog5.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "scanf": 1
+    }
+  },
+  {
+    "id": "A01-P06",
+    "path": "src/Fontes_Aula_1/Prog6.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "scanf": 1
+    }
+  },
+  {
+    "id": "A01-P07",
+    "path": "src/Fontes_Aula_1/Prog7.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A01-P08",
+    "path": "src/Fontes_Aula_1/Prog8.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "scanf": 1
+    }
+  },
+  {
+    "id": "A01-P09",
+    "path": "src/Fontes_Aula_1/Prog9.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "scanf": 1
+    }
+  },
+  {
+    "id": "A10-11-P01",
+    "path": "src/Fontes_Aula_10_e_11/Prog1.c",
+    "before": {
+      "fopen": 1,
+      "fclose": 1
+    },
+    "after": {
+      "fopen": 1,
+      "fclose": 1
+    }
+  },
+  {
+    "id": "A10-11-P10",
+    "path": "src/Fontes_Aula_10_e_11/Prog10.c",
+    "before": {
+      "fopen": 2,
+      "fclose": 2,
+      "fread": 1,
+      "fwrite": 1,
+      "system": 1
+    },
+    "after": {
+      "fopen": 3,
+      "fclose": 4,
+      "fread": 1,
+      "fwrite": 1
+    }
+  },
+  {
+    "id": "A10-11-P11",
+    "path": "src/Fontes_Aula_10_e_11/Prog11.c",
+    "before": {
+      "gets": 2,
+      "scanf": 2,
+      "fopen": 1,
+      "fclose": 1,
+      "fwrite": 1
+    },
+    "after": {
+      "fopen": 1,
+      "fclose": 1,
+      "fwrite": 1
+    }
+  },
+  {
+    "id": "A10-11-P12",
+    "path": "src/Fontes_Aula_10_e_11/Prog12.c",
+    "before": {
+      "gets": 2,
+      "scanf": 2,
+      "fopen": 1,
+      "fclose": 1,
+      "fwrite": 1
+    },
+    "after": {
+      "fopen": 1,
+      "fclose": 1,
+      "fwrite": 1
+    }
+  },
+  {
+    "id": "A10-11-P13",
+    "path": "src/Fontes_Aula_10_e_11/Prog13.c",
+    "before": {
+      "fopen": 1,
+      "fclose": 1,
+      "fread": 1
+    },
+    "after": {
+      "fopen": 1,
+      "fclose": 1,
+      "fread": 1
+    }
+  },
+  {
+    "id": "A10-11-P14",
+    "path": "src/Fontes_Aula_10_e_11/Prog14.c",
+    "before": {
+      "gets": 2,
+      "scanf": 2,
+      "fopen": 1,
+      "fclose": 1,
+      "fread": 1,
+      "fwrite": 1,
+      "fseek": 1
+    },
+    "after": {
+      "fopen": 1,
+      "fclose": 1,
+      "fread": 1,
+      "fwrite": 1,
+      "fseek": 1
+    }
+  },
+  {
+    "id": "A10-11-P15",
+    "path": "src/Fontes_Aula_10_e_11/Prog15.c",
+    "before": {
+      "scanf": 1,
+      "fopen": 1,
+      "fclose": 1,
+      "fread": 1,
+      "fseek": 2
+    },
+    "after": {
+      "fopen": 1,
+      "fclose": 3,
+      "fread": 1,
+      "fseek": 2
+    }
+  },
+  {
+    "id": "A10-11-P16",
+    "path": "src/Fontes_Aula_10_e_11/Prog16.c",
+    "before": {
+      "fopen": 2,
+      "fclose": 2
+    },
+    "after": {
+      "fopen": 1,
+      "fclose": 1
+    }
+  },
+  {
+    "id": "A10-11-P17",
+    "path": "src/Fontes_Aula_10_e_11/Prog17.c",
+    "before": {
+      "read": 1,
+      "write": 3
+    },
+    "after": {
+      "read": 1,
+      "write": 1
+    }
+  },
+  {
+    "id": "A10-11-P18",
+    "path": "src/Fontes_Aula_10_e_11/Prog18.c",
+    "before": {
+      "open": 1,
+      "read": 1,
+      "write": 3,
+      "close": 1
+    },
+    "after": {
+      "open": 1,
+      "read": 1,
+      "write": 1,
+      "close": 1
+    }
+  },
+  {
+    "id": "A10-11-P19",
+    "path": "src/Fontes_Aula_10_e_11/Prog19.c",
+    "before": {
+      "open": 1,
+      "read": 1,
+      "write": 3,
+      "close": 1
+    },
+    "after": {
+      "fwrite": 1,
+      "memmove": 1,
+      "open": 1,
+      "read": 1,
+      "close": 1
+    }
+  },
+  {
+    "id": "A10-11-P02",
+    "path": "src/Fontes_Aula_10_e_11/Prog2.c",
+    "before": {
+      "fopen": 1,
+      "fclose": 1
+    },
+    "after": {
+      "fopen": 1,
+      "fclose": 1
+    }
+  },
+  {
+    "id": "A10-11-P20",
+    "path": "src/Fontes_Aula_10_e_11/Prog20.c",
+    "before": {
+      "open": 2,
+      "read": 1,
+      "write": 4,
+      "close": 2
+    },
+    "after": {
+      "open": 2,
+      "read": 1,
+      "write": 1,
+      "close": 3
+    }
+  },
+  {
+    "id": "A10-11-P03",
+    "path": "src/Fontes_Aula_10_e_11/Prog3.c",
+    "before": {
+      "fopen": 1,
+      "fclose": 1
+    },
+    "after": {
+      "fopen": 1,
+      "fclose": 1
+    }
+  },
+  {
+    "id": "A10-11-P04",
+    "path": "src/Fontes_Aula_10_e_11/Prog4.c",
+    "before": {
+      "fopen": 1,
+      "fclose": 1,
+      "system": 1
+    },
+    "after": {
+      "fopen": 2,
+      "fclose": 2
+    }
+  },
+  {
+    "id": "A10-11-P05",
+    "path": "src/Fontes_Aula_10_e_11/Prog5.c",
+    "before": {
+      "fopen": 1,
+      "fclose": 1
+    },
+    "after": {
+      "fopen": 1,
+      "fclose": 1
+    }
+  },
+  {
+    "id": "A10-11-P06",
+    "path": "src/Fontes_Aula_10_e_11/Prog6.c",
+    "before": {
+      "scanf": 1,
+      "fopen": 1,
+      "fclose": 1
+    },
+    "after": {
+      "scanf": 1,
+      "fopen": 1,
+      "fclose": 1
+    }
+  },
+  {
+    "id": "A10-11-P07",
+    "path": "src/Fontes_Aula_10_e_11/Prog7.c",
+    "before": {
+      "fscanf": 1,
+      "fopen": 1,
+      "fclose": 1
+    },
+    "after": {
+      "fscanf": 1,
+      "fopen": 1,
+      "fclose": 1
+    }
+  },
+  {
+    "id": "A10-11-P08",
+    "path": "src/Fontes_Aula_10_e_11/Prog8.c",
+    "before": {
+      "fopen": 1,
+      "fclose": 1
+    },
+    "after": {
+      "fopen": 1,
+      "fclose": 1
+    }
+  },
+  {
+    "id": "A10-11-P09",
+    "path": "src/Fontes_Aula_10_e_11/Prog9.c",
+    "before": {
+      "fopen": 1,
+      "fclose": 1
+    },
+    "after": {
+      "fopen": 1,
+      "fclose": 1
+    }
+  },
+  {
+    "id": "A03-04-BITTEST",
+    "path": "src/Fontes_Aula_3_e_4/BitTest.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A03-04-P01",
+    "path": "src/Fontes_Aula_3_e_4/Prog1.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A03-04-P10",
+    "path": "src/Fontes_Aula_3_e_4/Prog10.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A03-04-P11",
+    "path": "src/Fontes_Aula_3_e_4/Prog11.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A03-04-P12",
+    "path": "src/Fontes_Aula_3_e_4/Prog12.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A03-04-P13",
+    "path": "src/Fontes_Aula_3_e_4/Prog13.c",
+    "before": {
+      "strcpy": 1
+    },
+    "after": {
+      "strcpy": 1
+    }
+  },
+  {
+    "id": "A03-04-P02",
+    "path": "src/Fontes_Aula_3_e_4/Prog2.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A03-04-P03",
+    "path": "src/Fontes_Aula_3_e_4/Prog3.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A03-04-P04",
+    "path": "src/Fontes_Aula_3_e_4/Prog4.c",
+    "before": {
+      "scanf": 4
+    },
+    "after": {
+      "scanf": 4
+    }
+  },
+  {
+    "id": "A03-04-P05",
+    "path": "src/Fontes_Aula_3_e_4/Prog5.c",
+    "before": {
+      "gets": 5
+    },
+    "after": {
+      "sscanf": 4
+    }
+  },
+  {
+    "id": "A03-04-P06",
+    "path": "src/Fontes_Aula_3_e_4/Prog6.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A03-04-P07",
+    "path": "src/Fontes_Aula_3_e_4/Prog7.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A03-04-P08",
+    "path": "src/Fontes_Aula_3_e_4/Prog8.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A03-04-P09",
+    "path": "src/Fontes_Aula_3_e_4/Prog9.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A05-08-P01",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog1.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A05-08-P10",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog10.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A05-08-P11",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog11.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "scanf": 1
+    }
+  },
+  {
+    "id": "A05-08-P12",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog12.c",
+    "before": {
+      "gets": 1
+    },
+    "after": {}
+  },
+  {
+    "id": "A05-08-P13",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog13.c",
+    "before": {
+      "gets": 3,
+      "strcpy": 3
+    },
+    "after": {}
+  },
+  {
+    "id": "A05-08-P14",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog14.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A05-08-P15",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog15.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "sscanf": 1
+    }
+  },
+  {
+    "id": "A05-08-P16",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog16.c",
+    "before": {
+      "gets": 1
+    },
+    "after": {}
+  },
+  {
+    "id": "A05-08-P17",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog17.c",
+    "before": {
+      "system": 1
+    },
+    "after": {}
+  },
+  {
+    "id": "A05-08-P18",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog18.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A05-08-P19",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog19.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A05-08-P02",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog2.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "scanf": 1
+    }
+  },
+  {
+    "id": "A05-08-P20",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog20.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "scanf": 1
+    }
+  },
+  {
+    "id": "A05-08-P21",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog21.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "scanf": 1
+    }
+  },
+  {
+    "id": "A05-08-P22",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog22.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "scanf": 1
+    }
+  },
+  {
+    "id": "A05-08-P23",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog23.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A05-08-P24",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog24.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A05-08-P25",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog25.c",
+    "before": {
+      "qsort": 1
+    },
+    "after": {
+      "qsort": 1
+    }
+  },
+  {
+    "id": "A05-08-P26",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog26.c",
+    "before": {
+      "qsort": 1
+    },
+    "after": {
+      "qsort": 1
+    }
+  },
+  {
+    "id": "A05-08-P27",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog27.c",
+    "before": {
+      "qsort": 1
+    },
+    "after": {
+      "qsort": 1
+    }
+  },
+  {
+    "id": "A05-08-P28",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog28.c",
+    "before": {
+      "qsort": 2
+    },
+    "after": {
+      "qsort": 2
+    }
+  },
+  {
+    "id": "A05-08-P29",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog29.c",
+    "before": {
+      "scanf": 1,
+      "malloc": 1,
+      "free": 1
+    },
+    "after": {
+      "scanf": 1,
+      "malloc": 1,
+      "free": 2
+    }
+  },
+  {
+    "id": "A05-08-P03",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog3.c",
+    "before": {
+      "scanf": 2
+    },
+    "after": {
+      "scanf": 2
+    }
+  },
+  {
+    "id": "A05-08-P30",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog30.c",
+    "before": {
+      "scanf": 2,
+      "calloc": 1,
+      "free": 1
+    },
+    "after": {
+      "scanf": 2,
+      "calloc": 1,
+      "free": 2
+    }
+  },
+  {
+    "id": "A05-08-P31",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog31.c",
+    "before": {
+      "gets": 4,
+      "malloc": 1
+    },
+    "after": {
+      "malloc": 1,
+      "free": 2
+    }
+  },
+  {
+    "id": "A05-08-P32",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog32.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A05-08-P33",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog33.c",
+    "before": {
+      "strcpy": 2,
+      "strcat": 2
+    },
+    "after": {
+      "strcpy": 1,
+      "memcpy": 1
+    }
+  },
+  {
+    "id": "A05-08-P34",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog34.c",
+    "before": {
+      "scanf": 1,
+      "malloc": 1,
+      "free": 1
+    },
+    "after": {
+      "scanf": 1,
+      "malloc": 1,
+      "free": 1
+    }
+  },
+  {
+    "id": "A05-08-P35",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog35.c",
+    "before": {
+      "scanf": 2,
+      "malloc": 2,
+      "free": 2
+    },
+    "after": {
+      "scanf": 2,
+      "malloc": 2,
+      "free": 4
+    }
+  },
+  {
+    "id": "A05-08-P04",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog4.c",
+    "before": {
+      "scanf": 2
+    },
+    "after": {
+      "scanf": 2
+    }
+  },
+  {
+    "id": "A05-08-P05",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog5.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A05-08-P06",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog6.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A05-08-P07",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog7.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A05-08-P08",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog8.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A05-08-P09",
+    "path": "src/Fontes_Aula_5_6_7_e_8/Prog9.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A09-P01",
+    "path": "src/Fontes_Aula_9/Prog1.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A09-P02",
+    "path": "src/Fontes_Aula_9/Prog2.c",
+    "before": {},
+    "after": {}
+  },
+  {
+    "id": "A09-P03",
+    "path": "src/Fontes_Aula_9/Prog3.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {}
+  },
+  {
+    "id": "A09-P04",
+    "path": "src/Fontes_Aula_9/Prog4.c",
+    "before": {
+      "scanf": 1
+    },
+    "after": {
+      "sscanf": 1
+    }
+  }
+]

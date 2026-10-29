@@ -1,38 +1,59 @@
+/*
+ * ID: A01-P25
+ * Aula: ../../atividades/aula-02.md
+ * Objetivo: Imprime um cartão de Natal.
+ */
 /* Prog25.c */
 /* Imprime um cartão de natal */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <conio.h>	/* para getche() */
+#include "../entrada_segura.h"
+/* Histórico: conio.h/getche(); no terminal ISO C, confirme com ENTER. */
 
-int main()
+int main(void)
 {
     char Nome[81], Mensagem[39], sEsquerdo, sDireito, Contorno[42];
     int Tamanho, Lado1=0, me=20, Direito, ns, i, fim, Lado, j;
 
     printf("\nDestinatario: ");
-    gets(Nome);
+    /* Histórico: gets(Nome); não verificava a capacidade. */
+    if (!ler_linha(Nome, sizeof Nome)) {
+        fputs("Entrada ausente ou longa demais.\n", stderr);
+        return 1;
+    }
     printf("\nMensagem dentro da arvore: ");
-    gets(Mensagem);
-    Tamanho=strlen(Mensagem);
+    /* Histórico: gets(Mensagem); não verificava a capacidade. */
+    if (!ler_linha(Mensagem, sizeof Mensagem)) {
+        fputs("Entrada ausente ou longa demais.\n", stderr);
+        return 1;
+    }
+    Tamanho=(int)strlen(Mensagem);
     printf("\nSinal interno direito:");
-    sDireito=getche();
+    if (scanf(" %c", &sDireito) != 1) {
+        fputs("Sinal não informado.\n", stderr);
+        return 1;
+    } /* Histórico: sDireito=getche(); */
     printf("\nSinal interno esquerdo:");
-    sEsquerdo=getche();
+    if (scanf(" %c", &sEsquerdo) != 1) {
+        fputs("Sinal não informado.\n", stderr);
+        return 1;
+    } /* Histórico: sEsquerdo=getche(); */
     Direito=38-Tamanho;
     Contorno[0]='/';
     ns=Direito/2;
     for(i=1; i<=ns ; i++) Contorno[i]=sEsquerdo;
+    /* Mensagem tem até 38 bytes e a composição completa cabe em 42. */
     strcpy(&Contorno[i], Mensagem);
-    fim=strlen(Contorno);
+    fim=(int)strlen(Contorno);
     for(i=fim; i < fim+ns ; i++) Contorno[i]=sDireito;
     Contorno[i]='\\';
     Contorno[i+1]='\0';
-    fim=strlen(Contorno);
+    fim=(int)strlen(Contorno);
 
     /* Impressão da árvore */
     printf("\n");
-    for(i=0; i < (80-strlen(Nome))/2; i++) printf(" ");
+    for(i=0; i < (80-(int)strlen(Nome))/2; i++) printf(" ");
     printf("%s\n\n\n",Nome);
     for(i=1; i<=36; i++)
     {
@@ -56,6 +77,7 @@ int main()
     for(i=0; i<me+15; i++) printf(" ");
     printf("FELIZ NATAL\n");
     for(i=0; i<me+11; i++) printf(" ");
+    /* O ano faz parte da mensagem histórica do material. */
     printf("E UM PROSPERO 2008!\n");
     // system("PAUSE");
     return 0;

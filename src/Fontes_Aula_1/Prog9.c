@@ -1,9 +1,14 @@
+/*
+ * ID: A01-P09
+ * Aula: ../../atividades/aula-01-pt2.md
+ * Objetivo: Jogo-da-velha: mostra matriz de duas dimensões inicializada.
+ */
 /* JogoDaVelha1.C */
 /* Jogo-da-velha. Mostra matriz de duas dimensões inicializada */
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+int main(void)
 {
     const char pt='.';
     unsigned char m[3][3]= /* Matriz de duas dimensões inicializada */
@@ -60,7 +65,11 @@ int main()
         }
 
         printf("Coordenadas: ");
-        scanf("%d%d", &lin, &col);
+        if (scanf("%d%d", &lin, &col) != 2 ||
+            lin < 0 || lin >= 3 || col < 0 || col >= 3) {
+            fputs("Coordenadas inválidas: use índices de 0 a 2.\n", stderr);
+            return 1;
+        }
 
         if(m[lin][col] == '.') /* Casa livre ? */
         {

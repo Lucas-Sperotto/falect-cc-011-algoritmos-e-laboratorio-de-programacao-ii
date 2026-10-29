@@ -1,9 +1,14 @@
+/*
+ * ID: A01-P02
+ * Aula: ../../atividades/aula-01-pt1.md
+ * Objetivo: Calcula a média de cinco notas (usa matriz).
+ */
 /* Notas.C */
 /* Calcula a média de 5 notas (usa matriz) */
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+int main(void)
 {
     int notas[5];
     int i;
@@ -12,7 +17,10 @@ int main()
     for( i=0 ; i < 5 ; i++ )
     {
         printf("Digite a nota do aluno %d ", i+1);
-        scanf("%d",&notas[i]);
+        if (scanf("%d", &notas[i]) != 1) {
+            fputs("Entrada inválida.\n", stderr);
+            return 1;
+        }
         media += notas[i];
     }
 

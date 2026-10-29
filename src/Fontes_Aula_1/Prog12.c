@@ -1,3 +1,8 @@
+/*
+ * ID: A01-P12
+ * Aula: ../../atividades/aula-01-pt2.md
+ * Objetivo: Mostra matriz de duas dimensões como argumento de função.
+ */
 /* Histograma.C */
 /* Mostra matriz de duas dimensões como argumento de função */
 #include <stdio.h>
@@ -7,7 +12,7 @@
 
 void histograma( int [][MES], int);/* protótipo */
 
-int main()
+int main(void)
 {
     int pecas[FUNC][MES], i, j;
 
@@ -15,7 +20,10 @@ int main()
         for(j=0; j<MES ; j++)
         {
             printf("Funcionário: %d\tmês %d: ", i+1, j+1);
-            scanf("%d", &pecas[i][j]);
+            if (scanf("%d", &pecas[i][j]) != 1 || pecas[i][j] < 0) {
+                fputs("Quantidade inválida.\n", stderr);
+                return 1;
+            }
         }
     histograma(pecas,FUNC);
     // system("PAUSE");
@@ -24,23 +32,26 @@ int main()
 /* Imprime um histograma horizontal */
 void histograma( int pecas[][MES], int nfunc)
 {
-    const float MAXBARRA=50.0;
-    int max=0,temp=0, i, j, tam;
+    const double MAXBARRA=50.0;
+    long long max=0, temp;
+    int i, j, tam;
 
     for(i=0; i<nfunc; i++)
     {
+        temp=0; /* Total de cada funcionário, sem acumular os anteriores. */
         for(j=0; j<MES ; j++)
             temp += pecas[i][j];
         if(max < temp)	max=temp;
     }
 
-    temp=0;
     for( i=0 ; i<nfunc; i++)
     {
+        temp=0;
         for( j=0; j<MES ; j++) temp += pecas[i][j];
-        printf("%2d - %5d:", i+1, temp);
+        printf("%2d - %5lld:", i+1, temp);
 
-        tam = (int)((float)temp/(float)max*MAXBARRA);
+        /* Sem produção, todas as barras têm tamanho zero. */
+        tam = max == 0 ? 0 : (int)((double)temp/(double)max*MAXBARRA);
 
         for(j=0; j<tam; j++) printf("*");
         printf("\n");

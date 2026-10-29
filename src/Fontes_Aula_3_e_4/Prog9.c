@@ -1,3 +1,8 @@
+/*
+ * ID: A03-04-P09
+ * Aula: ../../atividades/aulas-03-e-04.md
+ * Objetivo: Mostra união de estruturas.
+ */
 /* Prog9.c */
 /* Mostra união de estruturas */
 #include <stdio.h>
@@ -17,7 +22,7 @@ int main(void)
         float   f;
     } unex;
 
-    printf("sizeof(union intflo) = %d\n", sizeof(union intflo));
+    printf("sizeof(union intflo) = %zu\n", sizeof(union intflo));
     unex.x.n1 = 734;
     unex.x.n2 = 333;
 

@@ -1,30 +1,28 @@
-/*Prog9.c */
-/*Conta caracteres do arquivo em modo bin·rio */
-#include <stdio.h> /* define FILE */
+/*
+ * ID: A10-11-P09
+ * Aula: ../../atividades/aula-10.md
+ * Objetivo: Conta os bytes de um arquivo aberto em modo bin√°rio.
+ */
+/* Prog9.c ‚Äî conta bytes em modo bin√°rio. */
+#include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 
-int main(int argc,char **argv)
+int main(int argc, char **argv)
 {
-    FILE *fptr;  /* ponteiro para arquivo */
-    short int ch;
-    int cont=0;
-
-    if(argc != 2)
-    {
-        puts("Forma de uso: C:\\>FileCont nomearq");
-        exit(1);
+    FILE *fptr;
+    int ch, status = 0;
+    size_t cont = 0;
+    if (argc != 2) { fprintf(stderr, "Uso: %s nomearq\n", argv[0]); return 1; }
+    fptr = fopen(argv[1], "rb");
+    if (fptr == NULL) { perror(argv[1]); return 1; }
+    /* Linux n√£o traduz CRLF em modo texto; cada fgetc conta um byte. */
+    while ((ch = fgetc(fptr)) != EOF) {
+        if (cont == SIZE_MAX) { status = 1; break; }
+        cont++;
     }
-
-    if( (fptr = fopen(argv[1],"rb")) == NULL)
-    {
-        puts("N„o foi possÌvel abrir o arquivo");
-        exit(1);
-    }
-
-    while((ch=fgetc(fptr)) != EOF)  /*LÍ um caractere do arquivo */
-        cont++;          /*incrementa contador de caracteres */
-    printf("O tamanho do arquivo È %d bytes.\n", cont);
-    fclose(fptr);
-
-    return 0;
+    if (ferror(fptr)) status = 1;
+    if (fclose(fptr) == EOF) status = 1;
+    if (!status) printf("O tamanho do arquivo √© %zu bytes.\n", cont);
+    return status;
 }

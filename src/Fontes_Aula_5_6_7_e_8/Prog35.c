@@ -1,25 +1,31 @@
+/*
+ * ID: A05-08-P35
+ * Aula: ../../atividades/aula-08.md
+ * Objetivo: Mostra aloca√ß√£o, inicializa√ß√£o e libera√ß√£o din√¢mica de matrizes.
+ */
 /* Prog35.c */
-/* AlocaÁ„o de Matrizes */
+/* Aloca√ß√£o de Matrizes */
 #include <stdio.h>
 #include <stdlib.h>
 
-int **aloca_array(int, int);               /* FunÁ„o para reservar a mÈmÛria do array                     */
-void init_array(int **, int, int);         /* FunÁ„o para preencher o array com valores aleatÛrios        */
-void print_array(int **, int, int);        /* FunÁ„o para printar o array na tela                         */
-void destruir_array(int ***, int, int);    /* FunÁ„o para liberar o espaÁo alocado com a funÁ„o free()    */
+int **aloca_array(int, int);               /* Fun√ß√£o para reservar a mem√≥ria do array                     */
+void init_array(int **, int, int);         /* Fun√ß√£o para preencher o array com valores aleat√≥rios        */
+void print_array(int **, int, int);        /* Fun√ß√£o para printar o array na tela                         */
+void destruir_array(int ***, int, int);    /* Fun√ß√£o para liberar o espa√ßo alocado com a fun√ß√£o free()    */
 
 
-int main()
+int main(void)
 {
-    unsigned int Lin, Col;
+    int Lin, Col;
     int **Mat; /*Cria o ponteiro para o array */
 
-    printf("\nInforme o n˙mero de linhas do array: ");
-    scanf("%d", &Lin);
-    printf("\nInforme o n˙mero de colunas do array: ");
-    scanf("%d", &Col);
+    printf("\nInforme o n√∫mero de linhas do array: ");
+    if (scanf("%d", &Lin) != 1 || Lin <= 0 || Lin > 1000) return 1;
+    printf("\nInforme o n√∫mero de colunas do array: ");
+    if (scanf("%d", &Col) != 1 || Col <= 0 || Col > 1000) return 1;
 
-    Mat = (int **)aloca_array(Lin, Col);
+    Mat = aloca_array(Lin, Col);
+    if (Mat == NULL) return 1;
 
     init_array(Mat, Lin, Col);
 
@@ -32,28 +38,31 @@ int main()
     return 0;
 }
 
-/* funÁ„o reserva a memÛria usando a funÁ„o malloc e */
+/* fun√ß√£o reserva a mem√≥ria usando a fun√ß√£o malloc e */
 /* testa se o ponteiro foi corretamente alocado      */
 /* deve-se reservar um vetor de ponteiros para alocar as linhas */
 /* para cada linha se aloca um vetor com os elementos das colunas */
 int **aloca_array(int lin, int col)
 {
-    unsigned register int i;
-    int **Array = (int **)malloc(lin * sizeof(int*));
+    int i;
+    int **Array;
+    if (lin <= 0 || col <= 0 || lin > 1000 || col > 1000) return NULL;
+    Array = malloc((size_t)lin * sizeof *Array);
 
     if(Array == NULL)
     {
-        printf("\tERRO!\n\n**N„o foi Possivel Alocar\n");
-        getche();
+        printf("\tERRO!\n\n**N√£o foi Possivel Alocar\n");
         exit(1);
     }
     for(i = 0; i < lin; i++)
     {
-        Array[i] = (int *)malloc(col * sizeof(int));
+        Array[i] = malloc((size_t)col * sizeof *Array[i]);
         if(Array[i] == NULL)
         {
-            printf("\tERRO!\n\n**N„o foi Possivel Alocar\n");
-            getche();
+            printf("\tERRO!\n\n**N√£o foi Possivel Alocar\n");
+                /* Libera as linhas anteriores se a aloca√ß√£o for parcial. */
+            while (i > 0) free(Array[--i]);
+            free(Array);
             exit(1);
         }
     }
@@ -62,7 +71,7 @@ int **aloca_array(int lin, int col)
 
 void init_array(int **Array, int lin, int col)
 {
-    unsigned register int i = 0, j = 0;
+    int i = 0, j = 0;
 
     for(i = 0; i < lin; i++)
     {
@@ -73,14 +82,14 @@ void init_array(int **Array, int lin, int col)
     }
 }
 
-/* funÁ„o testa se o ponteiro existe antes de imprimir */
+/* fun√ß√£o testa se o ponteiro existe antes de imprimir */
 void print_array(int **Array, int lin, int col)
 {
-    unsigned register int i = 0, j = 0;
+    int i = 0, j = 0;
 
     if(Array == NULL)
     {
-        printf("\tERRO!\n\n**N„o foi Possivel Imprimir: Ponteiro NULL\n");
+        printf("\tERRO!\n\n**N√£o foi Possivel Imprimir: Ponteiro NULL\n");
         return;
     }
 
@@ -94,17 +103,18 @@ void print_array(int **Array, int lin, int col)
     }
 }
 
-/* funÁ„o testa se o ponteiro existe antes de destruir */
-/* destroi ponteiro chamando a funÁ„o free() e depois  */
+/* fun√ß√£o testa se o ponteiro existe antes de destruir */
+/* destroi ponteiro chamando a fun√ß√£o free() e depois  */
 /* coloca o ponteiro como NULL para evitar que seja    */
-/* usado em outras partes do cÛdigo                    */
+/* usado em outras partes do c√≥digo                    */
 void destruir_array(int ***Array, int lin, int col)
 {
-    unsigned register int i = 0;
+    int i = 0;
 
-    if(Array == NULL)
+    (void)col; /* O n√∫mero de colunas n√£o √© necess√°rio para free. */
+    if(Array == NULL || *Array == NULL)
     {
-        printf("\tERRO!\n\n**N„o foi Possivel Destruir: Ponteiro NULL\n");
+        printf("\tERRO!\n\n**N√£o foi Possivel Destruir: Ponteiro NULL\n");
         return;
     }
 

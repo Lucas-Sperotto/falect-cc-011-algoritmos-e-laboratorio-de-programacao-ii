@@ -1,19 +1,24 @@
+/*
+ * ID: A05-08-P14
+ * Aula: ../../atividades/aulas-06-e-07.md
+ * Objetivo: Mostra o uso de ponteiros para cadeias de caracteres.
+ */
 /* Prog14.c */
 /* Mostra o uso de ponteiro para cadeias de caracteres */
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+int main(void)
 {
-    char s1[] = "Saudações!";
-    char *s2 = "Saudações!";
+    char s1[] = "SaudaÃ§Ãµes!";
+    const char *s2 = "SaudaÃ§Ãµes!";
 
-    printf("%p\n", s1);
-    printf("%p\n", s2);
+    printf("%p\n", (void *)s1);
+    printf("%p\n", (void *)s2);
 
-    s1++; /* ERRO. Não podemos incrementar uma constante */
+    /* s1++;  ERRO intencional: o nome do array nÃ£o Ã© uma variÃ¡vel ponteiro. */
     s2++; /* OK */
 
-    printf("%s\n", s2); /* Imprime: Saudações */
+    printf("%s\n", s2); /* Imprime: audaÃ§Ãµes! */
     return 0;
 }

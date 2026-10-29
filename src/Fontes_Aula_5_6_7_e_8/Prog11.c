@@ -1,3 +1,8 @@
+/*
+ * ID: A05-08-P11
+ * Aula: ../../atividades/aulas-05-e-06.md
+ * Objetivo: Mostra a passagem de vetores para funções utilizando ponteiros.
+ */
 /* Prog11.c */
 /* Mostra passagem de matrizes para funções usando ponteiros */
 #include <stdio.h>
@@ -6,19 +11,22 @@
 
 float media(float *, int);/* protótipo */
 
-int main()
+int main(void)
 {
     float notas[TAMANHO] , m;
     int i=0;
 
-    do
+    while (i < TAMANHO)
     {
         printf("Digite a nota do aluno %d ", i+1);
-        scanf("%f", notas + i);
+        if (scanf("%f", notas+i) != 1) return 1;
+        if (*(notas+i) < 0.0) break;
+        i++;
     }
-    while( *(notas + i++) >= 0.0);
-
-    i--; /* remove o item de término */
+    if (i == 0) {
+        puts("Nenhuma nota informada.");
+        return 0;
+    }
 
     m = media( notas, i );
 
@@ -32,7 +40,7 @@ int main()
 float media(float *lista, int tamanho)
 {
     int i;
-    float m=0.0;
+    double m=0.0; /* Soma de float finitos pode exceder FLT_MAX. */
     for(i=0; i < tamanho ; i++) m += *(lista++);
     return  m/tamanho ;
 }

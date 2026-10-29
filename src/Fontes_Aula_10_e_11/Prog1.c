@@ -1,18 +1,22 @@
-/* Prog1.c */
-/* Grava um caractere por vez num arquivo */
-#include <stdio.h> /* define FILE */
+/*
+ * ID: A10-11-P01
+ * Aula: ../../atividades/aula-10.md
+ * Objetivo: Grava um caractere por vez em um arquivo texto.
+ */
+/* Prog1.c — grava um caractere por vez em arquivo texto. */
+#include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
 
 int main(void)
 {
-    FILE *fptr;  /* ponteiro para arquivo */
-    char ch;
-
-    fptr=fopen("ArqText.txt","w");/*abre arq.p/gravar em modo texto */
-    while((ch=getche()) != '\r')  /*L� um caractere do teclado */
-        fputc(ch,fptr);         /*grava caractere no arquivo */
-    fclose(fptr);
-
-    return 0;
+    FILE *fptr = fopen("ArqText.txt", "w");
+    int ch, status = 0;
+    if (fptr == NULL) { perror("ArqText.txt"); return 1; }
+    /* Enter termina a linha no terminal Linux; EOF também encerra a entrada. */
+    while ((ch = getchar()) != EOF && ch != '\n' && ch != '\r') {
+        if (fputc(ch, fptr) == EOF) { status = 1; break; }
+    }
+    if (ferror(stdin)) status = 1;
+    if (fclose(fptr) == EOF) status = 1;
+    return status;
 }

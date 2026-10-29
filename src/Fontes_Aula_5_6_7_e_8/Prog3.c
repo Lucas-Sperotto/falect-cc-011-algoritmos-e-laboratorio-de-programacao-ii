@@ -1,19 +1,24 @@
+/*
+ * ID: A05-08-P03
+ * Aula: ../../atividades/aulas-05-e-06.md
+ * Objetivo: Fun√ß√£o Troca.
+ */
 /* Prog3.c */
-/* FunÁ„o Troca */
+/* Fun√ß√£o Troca */
 #include <stdio.h>
 #include <stdlib.h>
 
-void troca(int, int); /* protÛtipo */
+void troca(int, int); /* prot√≥tipo */
 
-int main()
+int main(void)
 {
     int v1, v2;
 
     printf("\nInsira o Primeiro Valor: ");
-    scanf("%d", &v1);
+    if (scanf("%d", &v1) != 1) return 1;
 
     printf("\nInsira o Segundo Valor: ");
-    scanf("%d", &v2);
+    if (scanf("%d", &v2) != 1) return 1;
 
     troca(v1, v2);
 

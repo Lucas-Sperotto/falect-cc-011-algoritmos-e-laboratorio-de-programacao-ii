@@ -1,14 +1,20 @@
+/*
+ * ID: A05-08-P17
+ * Aula: ../../atividades/aulas-06-e-07.md
+ * Objetivo: Movimenta uma imagem na tela utilizando ponteiros e matrizes.
+ */
 /* Prog17.c */
 /* movimenta imagem na tela */
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
+#include "../entrada_segura.h"
 #define LIN 10
 #define COL 5
 
-int main()
+int main(void)
 {
     int cont, j, k;
+    char linha[8];
     char *ptr[LIN];
     char *temp;
 
@@ -22,12 +28,12 @@ int main()
         { 0, 0, 0, 0, 0},
         { 0, 0, 0, 0, 0},
         { 0, 0, 0, 0, 0},
-        { 0, 0, '\x1E' , 0, 0} ,
-        { 0, '\x1E','\xDB', '\x1E',0 }
+        { 0, 0, '^' , 0, 0} ,
+        { 0, '^','#', '^',0 }
     };
 
     static char terra[]=
-    { '\xCD' ,'\xCD', '\xCD' ,'\xCD' ,'\xCD' ,'\0'};
+    { '=' ,'=', '=' ,'=' ,'=' ,'\0'};
 
     for(cont=0; cont<LIN; cont++)
         *(ptr+cont)=*(foguet+cont);
@@ -40,8 +46,9 @@ int main()
             printf("\n");
         }
         printf("%s\n",terra);
-        getch();
-        system("cls"); /* Limpa a tela */
+        /* Avança por linha, sem depender de conio.h nem executar "cls". */
+        if (!ler_linha(linha, sizeof linha)) return 0;
+        putchar('\n');
         temp=*ptr;
         for(j=0; j<LIN-1; j++)
             *(ptr+j) = *(ptr+j+1);

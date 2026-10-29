@@ -1,9 +1,14 @@
+/*
+ * ID: A03-04-P02
+ * Aula: ../../atividades/aulas-03-e-04.md
+ * Objetivo: Cria uma estrutura para armazenar dados de um aluno.
+ */
 /* Prog2.c */
 /* Cria uma estrutura para armazenar dados de um aluno */
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+int main(void)
 {
     struct Aluno		/*Inicio da definição da estrutura */
     {

@@ -1,12 +1,17 @@
+/*
+ * ID: A01-P23
+ * Aula: ../../atividades/aula-02.md
+ * Objetivo: Mostra o uso de strcpy().
+ */
 /* Prog23.c */
-/* Mostra o uso de strcpy() */
+/* Remove caractere: memmove() permite as áreas sobrepostas do exemplo. */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 void strdel(char[], int); /*Protótipo */
 
-int main()
+int main(void)
 {
     char str[] = "Carrta";
 
@@ -21,5 +26,9 @@ int main()
 /* Apaga um caractere de uma cadeia */
 void strdel(char str[], int pos)
 {
-    strcpy(str+pos, str+pos+1);
+    size_t tamanho = strlen(str);
+    if (pos < 0 || (size_t)pos >= tamanho)
+        return;
+    /* Histórico: strcpy(str+pos, str+pos+1) sobrepunha origem e destino. */
+    memmove(str+pos, str+pos+1, tamanho-(size_t)pos);
 }

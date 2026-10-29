@@ -1,89 +1,80 @@
-/* Prog4.c */
-/* Calculadora bit-a-bit */
+/*
+ * ID: A09-P04
+ * Aula: ../../aulas/aula-09.md
+ * Objetivo: Calculadora bit-a-bit
+ */
+/* Prog4.c — calculadora de 16 bits; complemento usa "FFFF ~ 0". */
 #include <stdio.h>
 #include <stdlib.h>
-void pbin(unsigned short);
-void pline(void);
-int main()
-{
-    char op[3]; /* aceita dois char para deslocamento */
-    unsigned short x1, x2;
+#include <errno.h>
+#include <limits.h>
+#include "../entrada_segura.h"
 
-    while(1)
-    {
-        printf("\n\nDigite uma expressăo (ex. 'FF00 & A23C'):");
-        scanf("%x %s %x", &x1, op, &x2);
-        switch( op[0] )
-        {
-        case '&' :
-            pbin(x1);
-            printf(" & (and)\n");
-            pbin(x2);
-            pline();
-            pbin(x1 & x2);
-            break;
-        case '|' :
-            pbin(x1);
-            printf(" | (or)\n");
-            pbin(x2);
-            pline();
-            pbin(x1 | x2);
-            break;
+void pbin(unsigned short num);
+void pline(void);
+
+int main(void)
+{
+    char op[3], linha[128], sx1[40], sx2[40], extra[2], *fim;
+    unsigned short x1, x2;
+    for (;;) {
+        printf("\n\nDigite uma expressão (ex. 'FF00 & A23C'; EOF para sair): ");
+        /* Tokens limitados; strtoul detecta valores fora da faixa, inclusive
+         * aqueles que uma conversão numérica scanf não consegue representar. */
+        if (!ler_linha(linha, sizeof linha)) return feof(stdin) ? 0 : 1;
+        if (sscanf(linha, "%39s %2s %39s %1s", sx1, op, sx2, extra) != 3) return 1;
+        errno = 0;
+        unsigned long valor = strtoul(sx1, &fim, 16);
+        if (fim == sx1 || *fim != '\0' || sx1[0] == '-' || errno || valor > 0xFFFFUL || valor > USHRT_MAX)
+            return 1;
+        x1 = (unsigned short)valor;
+        errno = 0;
+        valor = strtoul(sx2, &fim, 16);
+        if (fim == sx2 || *fim != '\0' || sx2[0] == '-' || errno || valor > 0xFFFFUL || valor > USHRT_MAX)
+            return 1;
+        x2 = (unsigned short)valor;
+        pbin(x1);
+        switch (op[0]) {
+        case '&':
+            printf(" & (and)\n"); pbin(x2); pline(); pbin(x1 & x2); break;
+        case '|':
+            printf(" | (or)\n"); pbin(x2); pline(); pbin(x1 | x2); break;
         case '^':
-            pbin(x1);
-            printf(" ^ (xor)\n");
-            pbin(x2);
-            pline();
-            pbin(x1 ^ x2);
-            break;
+            printf(" ^ (xor)\n"); pbin(x2); pline(); pbin(x1 ^ x2); break;
         case '>':
-            pbin(x1);
-            printf(" >> %d\n", x2);
-            pline();
-            pbin(x1 >> x2);
-            break;
         case '<':
-            pbin(x1);
-            printf(" << %d\n", x2);
-            pline();
-            pbin(x1 << x2);
+            /* A saída tem 16 bits; contagens maiores não pertencem ao exemplo. */
+            if (x2 >= 16 || op[1] != op[0]) {
+                puts("Deslocamento inválido (use de 0 a 15).");
+                return 1;
+            }
+            printf(" %s %u\n", op, (unsigned int)x2); pline();
+            pbin((unsigned short)(op[0] == '>'
+                ? (unsigned int)x1 >> x2 : (unsigned int)x1 << x2));
             break;
         case '~':
-            pbin(x1);
-            printf(" ~ (complemento)\n");
-            pline();
-            pbin(~x1);
-            break;
+            printf(" ~ (complemento)\n"); pline(); pbin((unsigned short)~x1); break;
         default:
-            printf("Operador invalido.\n");
+            puts("Operador inválido."); return 1;
         }
     }
     // system("pause");
-    return 0;
+    return ferror(stdin) ? 1 : 0;
 }
 
-
-/* pbin() */
-/* imprime número em binario */
 void pbin(unsigned short num)
 {
-    unsigned short mask;
-    short j, bit;
-    mask = 0x8000;
-    printf("%04X\t\t",num);
-    for(j=0; j<16; j++)
-    {
-        bit = (mask & num) ? 1:0;
-        printf("%d",bit);
-        if(j == 7) printf("--");
+    unsigned short mask = 0x8000;
+    printf("%04X\t\t", (unsigned int)num);
+    for (int j = 0; j < 16; j++) {
+        printf("%d", (mask & num) ? 1 : 0);
+        if (j == 7) printf("--");
         mask >>= 1;
     }
     printf("\n");
 }
 
-/* pline() */
-void pline()
+void pline(void)
 {
-    printf("--------------------");
-    printf("--------------------\n");
+    puts("----------------------------------------");
 }

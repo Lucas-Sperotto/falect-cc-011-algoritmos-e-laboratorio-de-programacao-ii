@@ -1,22 +1,22 @@
-/* Prog3.c */
-/* Lê um caractere por vez de um arquivo */
-#include <stdio.h> /* define FILE */
+/*
+ * ID: A10-11-P03
+ * Aula: ../../atividades/aula-10.md
+ * Objetivo: LÃª caracteres de um arquivo texto, verificando se o arquivo foi aberto corretamente.
+ */
+/* Prog3.c â€” lÃª um caractere por vez, verificando a abertura. */
+#include <stdio.h>
 #include <stdlib.h>
 
 int main(void)
 {
-    FILE *fptr;  /* ponteiro para arquivo */
-    short int ch;
-
-    if( (fptr = fopen("ArqText.txt","r")) == NULL)
-    {
-        puts("Não foi possível abrir o arquivo");
-        exit(1);
+    FILE *fptr = fopen("ArqText.txt", "r");
+    /* fgetc() retorna int para representar tanto um byte quanto EOF. */
+    int ch, status = 0;
+    if (fptr == NULL) { perror("ArqText.txt"); return 1; }
+    while ((ch = fgetc(fptr)) != EOF) {
+        if (putchar(ch) == EOF) { status = 1; break; }
     }
-
-    while((ch=fgetc(fptr)) != EOF)  /*Lê um caractere do arquivo */
-        printf("%c",ch);          /*imprime o caractere no vídeo */
-    fclose(fptr);
-
-    return 0;
+    if (ferror(fptr)) status = 1;
+    if (fclose(fptr) == EOF) status = 1;
+    return status;
 }

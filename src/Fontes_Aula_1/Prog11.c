@@ -1,3 +1,8 @@
+/*
+ * ID: A01-P11
+ * Aula: ../../atividades/aula-01-pt2.md
+ * Objetivo: Ordena os valores da matriz.
+ */
 /* OrdenaNum.C */
 /* Ordena os valores da matriz */
 #include <stdio.h>
@@ -6,14 +11,17 @@
 
 void ordena(int[], int);/* protótipo */
 
-int main()
+int main(void)
 {
     int Tab[TAMANHO], i, j;
 
     for(i=0; i<TAMANHO ; i++)
     {
         printf("Digite número ou zero para terminar: ");
-        scanf("%d", &Tab[i]);
+        if (scanf("%d", &Tab[i]) != 1) {
+            fputs("Entrada inválida.\n", stderr);
+            return 1;
+        }
 
         if( !Tab[i] ) break;
     }

@@ -1,46 +1,35 @@
-# Revisão dos fontes C — codificação e portabilidade
+# Revisão dos fontes C — codificação, portabilidade e execução
 
-## Escopo
+A revisão de 29/10/2026 cobre os **98 fontes** e mantém seus caminhos e nomes. Os cabeçalhos têm ID global, referência para aula Markdown e objetivo. Consulte o [mapa completo](MAPA_FONTES_C.md), o [diagnóstico inicial](auditorias/CODEX_AUDITORIA_INICIAL.md), o [registro das alterações](auditorias/CODEX_IMPLEMENTATION_LOG.md) e os [resultados reais](auditorias/TEST_REPORT.md).
 
-A pasta `src/` contém **98 arquivos `.c`** distribuídos em `Fontes_Aula_1`, `Fontes_Aula_3_e_4`, `Fontes_Aula_5_6_7_e_8`, `Fontes_Aula_9` e `Fontes_Aula_10_e_11`.
+## Codificação e pausas históricas
 
-Esta revisão preserva a lógica dos exemplos didáticos e deixa as chamadas históricas `system("PAUSE");` / `system("pause");` **na mesma linha, mas comentadas**:
+A inspeção local identificou **17 arquivos CP1252**, convertidos para UTF-8 com português legível. A afirmação da revisão remota anterior de que não havia problemas de codificação não se confirmou nos bytes locais; o [baseline](auditorias/BASELINE_INICIAL.json) preserva esse diagnóstico. Textos alterados usam UTF-8/LF. PDFs originais permanecem intactos.
+
+As chamadas históricas de pausa foram mantidas como comentários, por exemplo:
 
 ```c
 // system("PAUSE");
 ```
 
-O comando é específico do ambiente Windows e não é necessário para a execução no terminal; a instrução comentada não é compilada nem executada.
+`gets()` foi substituída por leitura de linha limitada; `conio.h`, `getch()` e `getche()` deram lugar à entrada padrão com confirmação por Enter. Os exemplos de erro intencional preservam a explicação histórica em comentários, com execução limitada ou operação válida identificada.
 
-## Codificação de caracteres
-
-- Padronizar novos textos e comentários como **UTF-8**; configurar o editor para UTF-8 e preferir finais de linha LF em arquivos novos.
-- A leitura dos 98 fontes pelo serviço de arquivos do GitHub não identificou os indicadores comuns de texto corrompido (caractere de substituição `�`, sequências `Ã` e `Â` e controles C1).
-- Isso **não garante** que toda acentuação original esteja linguisticamente correta; revisar termos e mensagens conforme o contexto.
-- Não converter automaticamente strings e comentários apenas por suspeita de codificação: isso pode destruir conteúdo legítimo. O verificador abaixo inspeciona marcadores conhecidos.
-
-## Compilação e execução
-
-Cada exemplo tem sua própria função `main`; **não** compilar todos os fontes em um único executável:
+## Compilação e testes
 
 ```bash
-gcc -std=c11 -Wall -Wextra src/Fontes_Aula_1/Prog8.c -o /tmp/aula-prog8
-/tmp/aula-prog8
-```
-
-Alguns códigos são exemplos históricos e podem apresentar erros, comportamentos indefinidos ou dependências **não portáveis**, independentemente da remoção da pausa. Em especial, fontes que incluem `<conio.h>` ou usam `getche()` / `getch()` exigem revisão ou ambiente compatível. Não há declaração de que os 98 programas compilaram ou passaram em testes de execução.
-
-## Verificação automatizada
-
-```bash
+bash script.sh
+bash script.sh --executar
+bash script.sh --executar --sanitizers
 python3 scripts/verificar_fontes_c.py
+python3 -m unittest discover -s tests -v
 ```
 
-O script verifica a leitura UTF-8, possíveis artefatos de codificação e chamadas de pausa que ainda estejam ativas. Mensagens de possíveis artefatos devem ser revisadas manualmente. A verificação estática não substitui compilação, testes de execução nem avaliação dos conceitos apresentados.
+O primeiro comando somente compila, um executável por fonte, em C11 com advertências habilitadas. A execução usa exclusivamente cenários revisados no [manifesto](../scripts/cenarios_fontes_c.json), com stdin/argumentos definidos, asserções, diretórios temporários, timeout, limites e logs. A versão instrumentada usa ASan e UBSan; o relatório não equipara compilação bem-sucedida à correção do programa.
 
-## Diretriz para futuras edições
+O verificador estático confere UTF-8, marcadores suspeitos, ausência de pausas ativas, catálogo, IDs e referências. Ele não substitui revisão nem execução. Os testes da infraestrutura verificam timeout, captura de entradas/saídas, isolamento de fixtures, revisão de cenários, compilação sem execução e fronteiras do leitor limitado.
 
-1. Preservar a linha original de pausa ao comentá-la; não apagá-la nem substituí-la por outra pausa.
-2. Manter os exemplos separados, com suas finalidades didáticas.
-3. Fazer correções de acentuação apenas quando o texto original e a correção pretendida forem inequívocos.
-4. Validar compilação e comportamento de cada programa alterado quando houver mudanças além de comentários.
+## Limites didáticos preservados
+
+O formato binário de structs é local à ABI; campos de bits e representação por uniões dependem da implementação. Os exemplos POSIX exigem Linux/WSL ou plataforma compatível. A sequência de aulas permanece reconhecível; nenhum conjunto foi convertido em biblioteca ou projeto único.
+
+`scanf` numérico remanescente verifica retorno e limites de domínio, mas pressupõe tokens representáveis nos tipos: endurecer toda a entrada contra números arbitrariamente grandes exigiria outra revisão com `strtol`/`strtof`. Precisão de ponto flutuante e comportamento pseudoaleatório continuam sujeitos às características da plataforma. O relatório de testes explicita os casos efetivamente executados e os limites de cobertura.

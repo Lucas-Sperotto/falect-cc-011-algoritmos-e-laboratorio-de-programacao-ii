@@ -1,13 +1,18 @@
+/*
+ * ID: A05-08-P21
+ * Aula: ../../atividades/aulas-06-e-07.md
+ * Objetivo: Mostra a inicialização de um vetor de ponteiros para funções.
+ */
 /* Prog21.c */
 /* Mostra uma matriz de ponteiros para função */
 #include <stdio.h>
 #include <stdlib.h>
 
-const true=1;
+const int true=1;
 
 void func0(void), func1(void), func2(void);/* Protótipos */
 
-int main()
+int main(void)
 {
     void (*ptrf[3])(void)= { func0,func1,func2}; /*Matriz inicializada*/
 
@@ -18,7 +23,7 @@ int main()
         printf("1 - FECHAR\n");
         printf("2 - SALVAR\n");
         printf("\nEscolha um item: ");
-        scanf("%d", &i);
+        if (scanf("%d", &i) != 1) return 1;
         if(i < 0 || i > 2) break;
 
         (*ptrf[i])(); /* Chama função */

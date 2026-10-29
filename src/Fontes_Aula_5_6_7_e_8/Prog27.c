@@ -1,3 +1,8 @@
+/*
+ * ID: A05-08-P27
+ * Aula: ../../atividades/aulas-06-e-07.md
+ * Objetivo: Mostra a ordenação e a busca binária em vetores de strings.
+ */
 /* Prog27.c */
 /* Algoritmo qsort e binarySearch com C-string */
 #include <stdio.h>
@@ -27,15 +32,16 @@ int binarySearchStr(char *MatrizOrdenada[],int inicio,int fim,char*chave)
 /* qsort - função para comparar C-string (matriz char) */
 int cstring_cmp(const void *a, const void *b)
 {
-    const char **pa = (const char **)a;
-    const char **pb = (const char **)b;
+    char *const *pa = a;
+    char *const *pb = b;
     return strcmp(*pa, *pb);
-    /* strcmp -1 se a < b, 1 se a>b e 0 se a==b*/
+    /* strcmp retorna valor negativo, positivo ou zero, respectivamente. */
 }
 
-int main()
+int main(void)
 {
-    unsigned int tamanho, i, procura;
+    unsigned int tamanho, i;
+    int procura;
     char *strings[] = { "Zuleima", "Andre", "Carolina",
                         "Beto", "Fabio", "Denise"
                       };

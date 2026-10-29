@@ -1,3 +1,8 @@
+/*
+ * ID: A03-04-BITTEST
+ * Aula: ../../atividades/aulas-03-e-04.md
+ * Objetivo: Bits 0 a 7
+ */
 
 typedef struct
 {
@@ -8,7 +13,7 @@ typedef struct
     unsigned short Piscante: 1; /* Bits 15 */
 } Int16Bits;
 
-int main()
+int main(void)
 {
     Int16Bits A;
     A.CodAscii = 'A';
@@ -16,6 +21,9 @@ int main()
     A.Intenso = 1;      /* Intensificada a cor de frente */
     A.CorFundo = 0;     /* Preto para a cor de fundo */
     A.Piscante = 1;     /* Escolhe atributos piscante */
+    /* A disposição dos campos de bits depende da implementação. */
+    (void)A;
+    return 0;
 }
 
 

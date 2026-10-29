@@ -1,3 +1,8 @@
+/*
+ * ID: A03-04-P11
+ * Aula: ../../atividades/aulas-03-e-04.md
+ * Objetivo: Mostra o uso do operador sizeof().
+ */
 /* Prog11.c */
 /* Mostra o uso do operador sizeof() */
 #include <stdio.h>
@@ -12,8 +17,8 @@ union Numero
 
 int main(void)
 {
-    printf("%d\n", sizeof(union Numero));
-    printf("%d\n", sizeof(x));
+    printf("%zu\n", sizeof(union Numero));
+    printf("%zu\n", sizeof(x));
 
     // system("PAUSE");
     return 0;

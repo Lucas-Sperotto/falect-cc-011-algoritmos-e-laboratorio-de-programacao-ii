@@ -1,22 +1,33 @@
+/*
+ * ID: A01-P18
+ * Aula: ../../atividades/aula-02.md
+ * Objetivo: Mostra o uso de strlen().
+ */
 /* Prog18.c */
 /* Mostra o uso de strlen() */
 #include <stdio.h>
 #include <stdlib.h>
+#include "../entrada_segura.h"
 #include <string.h>
 
-int main()
+int main(void)
 {
-    int len, i;
+    size_t len, i;
     char nome[80];
 
     printf("Digite o seu nome: ");
-    gets(nome);
+    /* Histórico: gets(nome); não limita a entrada e saiu do padrão C11. */
+    if (!ler_linha(nome, sizeof nome)) {
+        fputs("Entrada ausente ou longa demais.\n", stderr);
+        return 1;
+    }
 
     len=strlen(nome);
 
-    for(i=0; i<len + 4; i++)
-        printf("Endereço = %u\tChar  = %c\tDec   = %d\n",
-               (unsigned)(nome+i), nome[i], (int)nome[i]);
+    /* Exibe a string e seu terminador; posições seguintes não são texto. */
+    for(i=0; i<=len; i++)
+        printf("Endereço = %p\tChar  = %c\tDec   = %d\n",
+               (void *)(nome+i), nome[i], (int)(unsigned char)nome[i]);
 
     // system("PAUSE");
     return 0;

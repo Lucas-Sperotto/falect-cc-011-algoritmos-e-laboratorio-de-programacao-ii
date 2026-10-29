@@ -1,3 +1,8 @@
+/*
+ * ID: A03-04-P13
+ * Aula: ../../atividades/aulas-03-e-04.md
+ * Objetivo: Mostra o uso de uniões anônimas.
+ */
 /*Prog13.c */
 /* Mostra o uso de uniões anônimas */
 #include <stdio.h>
@@ -19,7 +24,7 @@ typedef struct
 
 void Print(UniaoLiteral);
 
-int main()
+int main(void)
 {
     UniaoLiteral A;
     A.Tipo=StrType;

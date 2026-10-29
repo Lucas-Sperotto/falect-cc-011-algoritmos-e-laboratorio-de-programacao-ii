@@ -1,8 +1,16 @@
-/* Prog30.c */
+/*
+ * ID: A05-08-P31
+ * Aula: ../../atividades/aula-08.md
+ * Objetivo: Mostra a implementação de uma lista encadeada de livros.
+ */
+/* Prog31.c */
 /* Mostra a implementação de uma lista ligada */
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h> /* para getch() */
+#include <errno.h>
+#include <limits.h>
+#include <math.h>
+#include "../entrada_segura.h"
 
 typedef struct Livro
 {
@@ -15,72 +23,93 @@ typedef struct Livro
 
 Livro *primeiro, *atual, *NovoLivro;
 
-void GetLivro()
+int GetLivro(void)
 {
-    char temp[80];
-    NovoLivro = (Livro *)malloc(sizeof(Livro));
-    if( primeiro == (Livro *)NULL)
+    char temp[80], *fim;
+    long registro;
+    NovoLivro = malloc(sizeof *NovoLivro);
+    if (NovoLivro == NULL) return 0;
+    /* Só encadeia o livro depois de completar todas as leituras. */
+    printf("Digite titulo: ");
+    if (!ler_linha(NovoLivro->Titulo, sizeof NovoLivro->Titulo)) goto falha;
+    printf("Digite autor: ");
+    if (!ler_linha(NovoLivro->Autor, sizeof NovoLivro->Autor)) goto falha;
+    printf("Digite o número do registro: ");
+    if (!ler_linha(temp, sizeof temp)) goto falha;
+    errno = 0;
+    registro = strtol(temp, &fim, 10);
+    if (errno || fim == temp || *fim || registro < INT_MIN || registro > INT_MAX)
+        goto falha;
+    NovoLivro->NumReg = (int)registro;
+    printf("Digite o preço: ");
+    if (!ler_linha(temp, sizeof temp)) goto falha;
+    errno = 0;
+    NovoLivro->Preco = strtod(temp, &fim);
+    if (errno || fim == temp || *fim || !isfinite(NovoLivro->Preco)) goto falha;
+    NovoLivro->Proximo = NULL;
+    if (primeiro == NULL)
         primeiro = atual = NovoLivro;
     else
     {
         atual = primeiro;
-        while( atual->Proximo != (Livro *)NULL)
-            atual = atual->Proximo;/* procura novo item */
+        while (atual->Proximo != NULL)
+            atual = atual->Proximo;
         atual->Proximo = NovoLivro;
         atual = NovoLivro;
     }
-    printf("Digite titulo: ");
-    gets(atual->Titulo);
-    printf("Digite autor: ");
-    gets(atual->Autor);
-    printf("Digite o número do registro: ");
-    gets(temp);
-    atual->NumReg = atoi(temp);
-    printf("Digite o preço: ");
-    gets(temp);
-    atual->Preco = atof(temp);
-    atual->Proximo=(Livro *)NULL;
+    return 1;
+falha:
+    free(NovoLivro);
+    NovoLivro = NULL;
+    return 0;
 }
 
-void PrintLivro()
+void PrintLivro(void)
 {
-    if( primeiro == (Livro *)NULL)
+    if (primeiro == NULL)
     {
         puts("Lista vazia");
         return;
     }
-
     atual = primeiro;
-
     do
     {
-        printf( "Título: %s\n", atual->Titulo);
-        printf( "Autor : %s\n" , atual->Autor);
-        printf( "No.Reg: %d\n" , atual->NumReg);
-        printf( "Preço : %.2f\n\n" , atual->Preco);
+        printf("Título: %s\n", atual->Titulo);
+        printf("Autor : %s\n", atual->Autor);
+        printf("No.Reg: %d\n", atual->NumReg);
+        printf("Preço : %.2f\n\n", atual->Preco);
         atual = atual->Proximo;
     }
-    while(atual != NULL);
+    while (atual != NULL);
 }
 
-int main()
+void LiberaLivros(void)
 {
-    char ch;
-    primeiro = (Livro *) NULL; /* sem dados ainda */
+    while (primeiro != NULL)
+    {
+        atual = primeiro;
+        primeiro = primeiro->Proximo;
+        free(atual);
+    }
+    atual = NovoLivro = NULL;
+}
 
+int main(void)
+{
+    char resposta[8];
+    primeiro = NULL;
     do
     {
-        GetLivro();
+        if (!GetLivro()) { LiberaLivros(); return 1; }
         puts("\nInserir outro livro (s/n)? ");
-        ch = getch();
+        if (!ler_linha(resposta, sizeof resposta)) break;
     }
-    while( (ch != 'n') && (ch != 'N'));
+    while (resposta[0] != 'n' && resposta[0] != 'N');
 
     puts("\nLISTA DOS LIVROS CADASTRADOS");
     puts("============================");
-
     PrintLivro();
-
+    LiberaLivros();
     // system("PAUSE");
     return 0;
 }

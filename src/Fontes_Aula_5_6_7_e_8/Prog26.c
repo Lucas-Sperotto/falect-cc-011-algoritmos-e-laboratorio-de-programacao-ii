@@ -1,3 +1,8 @@
+/*
+ * ID: A05-08-P26
+ * Aula: ../../atividades/aulas-06-e-07.md
+ * Objetivo: Mostra a ordenação e a busca binária em vetores de números inteiros.
+ */
 /* Prog26.c */
 /* Algoritmo qsort e binarySearch com inteiros */
 #include <stdio.h>
@@ -26,21 +31,23 @@ int compara(const void *a, const void *b)
 {
     const int *pa = (const int *)a; /* modifica o tipo do ponteiro */
     const int *pb = (const int *)b; /* modifica o tipo do ponteiro */
-    return *pa  - *pb; 	/* Retorna negativo se a<b e positivo se a > b  */
+    return (*pa > *pb) - (*pa < *pb); 	/* Retorna negativo se a<b e positivo se a > b  */
 }
 
-int main()
+int main(void)
 {
-    unsigned int tamanho, i, procura;
+    unsigned int tamanho, i;
+    int procura;
 
     int tab[]= { 234, 760, 162, 890, -23, 914, 567, 888, 398, -45};
+    tamanho = sizeof(tab)/sizeof(int);
     printf("\nMatriz Original\n");
-    for(i=0; i< 8; i++) printf("%d\n", tab[i]);
+    for(i=0; i< tamanho; i++) printf("%d\n", tab[i]);
     tamanho = sizeof(tab)/sizeof(int);
 
     qsort(tab, tamanho, sizeof(int), compara);
     printf("\nMatriz Ordenada\n");
-    for(i=0; i< 8; i++) printf("%d\n", tab[i]);
+    for(i=0; i< tamanho; i++) printf("%d\n", tab[i]);
 
     procura = binarySearchInt(tab, 0, tamanho - 1, 567);
     printf("\n\nIndice de 567 = %d\n",procura);
