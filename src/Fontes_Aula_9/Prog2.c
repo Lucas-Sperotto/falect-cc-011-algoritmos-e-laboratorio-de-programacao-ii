@@ -1,8 +1,13 @@
+/*
+ * ID: A09-P02
+ * Aula: ../../aulas/aula-09.md
+ * Objetivo: todos os bits ligados
+ */
 /* Prog2.c */
 #include <stdio.h>
 #include <stdlib.h>
 
-int palavra()
+int palavra(void)
 {
     unsigned int n = ~0; /* todos os bits ligados */
     int i;
@@ -11,10 +16,10 @@ int palavra()
     return i;
 }
 
-int main()
+int main(void)
 {
     int t = palavra();
-    printf("O tamanho da palavra dessa máquina é %d bits.\n", t);
+    printf("O tamanho de unsigned int nessa máquina é %d bits.\n", t);
     // system("pause");
     return 0;
 }

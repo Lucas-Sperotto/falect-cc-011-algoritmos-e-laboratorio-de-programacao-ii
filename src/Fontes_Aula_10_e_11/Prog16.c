@@ -1,33 +1,28 @@
-/* Prog16.c */
-/* Imprime esse arquivo na impressora */
-#include <stdio.h> /* define FILE */
+/*
+ * ID: A10-11-P16
+ * Aula: ../../atividades/aula-11.md
+ * Objetivo: Envia o conteúdo de um arquivo para uma impressora.
+ */
+/* Prog16.c — envia linhas a um destino de saída. */
+#include <stdio.h>
 #include <stdlib.h>
 
-int main()
+int main(void)
 {
-
     char buff[80];
-    FILE *fptr, *fprn; /* ponteiro para arquivo */
-
-    if((fptr = fopen("FilePrint.C","r"))==NULL)
-    {
-        puts("Arquivo FilePrint.C não foi encontrado");
-        exit(1);
+    int status = 0;
+    FILE *fptr = fopen("FilePrint.C", "r");
+    /* Histórico: fopen("PRN", "w") acessava a impressora no Windows.
+     * No Linux, PRN seria apenas um arquivo comum; usamos a saída padrão.
+     * Para imprimir, o estudante pode redirecionar a saída conscientemente. */
+    FILE *fprn = stdout;
+    if (fptr == NULL) { perror("FilePrint.C"); return 1; }
+    while (fgets(buff, sizeof buff, fptr) != NULL) {
+        if (fputs(buff, fprn) == EOF) { status = 1; break; }
     }
-
-    if((fprn = fopen("PRN","w"))==NULL) /* Abre arquivo impressora */
-    {
-        puts("Impressora indisponivel.");
-        exit(1);
-    }
-
-    while(!feof(fptr))
-    {
-        fgets(buff,80,fptr); /*Lê uma linha de texto */
-        fputs(buff,fprn);    /*Imprime na impressora */
-    }
-    fclose(fptr);
-    fclose(fprn);
+    if (ferror(fptr)) status = 1;
+    if (fclose(fptr) == EOF) status = 1;
+    if (fflush(fprn) == EOF) status = 1;
     // system("pause");
-    return 0;
+    return status;
 }

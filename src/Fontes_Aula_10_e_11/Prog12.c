@@ -1,50 +1,70 @@
-/* Prog11.c */
-/* Grava estruturas em disco */
-#include <stdio.h> /* define FILE */
+/*
+ * ID: A10-11-P12
+ * Aula: ../../atividades/aula-11.md
+ * Objetivo: Mostra a gravação de estruturas em um arquivo binário.
+ */
+/* Prog12.c — grava estruturas em disco. */
+#include <stdio.h>
 #include <stdlib.h>
-#include <conio.h> /* Para getch() */
+#include <string.h>
+#include <limits.h>
+#include <errno.h>
+#include <math.h>
+#include "../entrada_segura.h"
 
-typedef struct Livro
-{
+/* Formato didático nativo: padding, endian e tamanhos dependem da ABI.
+ * Leia somente arquivos gerados por estes exemplos na mesma plataforma. */
+typedef struct Livro {
     char Titulo[50];
     char Autor[50];
     short NumReg;
     double Preco;
 } Livro;
 
-Livro GetLivro()
+/* gets() foi removida em C11; cada campo recebe uma linha limitada. */
+int GetLivro(Livro *livro)
 {
-    Livro livro;
+    char linha[80], *fim;
+    long registro;
+    memset(livro, 0, sizeof *livro);
     printf("\n\tDigite o título: ");
-    gets(livro.Titulo);
+    if (!ler_linha(livro->Titulo, sizeof livro->Titulo)) return 0;
     printf("\tDigite o nome do autor: ");
-    gets(livro.Autor);
+    if (!ler_linha(livro->Autor, sizeof livro->Autor)) return 0;
     printf("\tDigite o número do registro: ");
-    scanf("%hd",&livro.NumReg);
+    if (!ler_linha(linha, sizeof linha)) return 0;
+    errno = 0;
+    registro = strtol(linha, &fim, 10);
+    if (fim == linha || *fim != '\0' || errno || registro < SHRT_MIN || registro > SHRT_MAX)
+        return 0;
+    livro->NumReg = (short)registro;
     printf("\tDigite o preço: ");
-    scanf("%lf", &livro.Preco);
-    rewind(stdin);
-    return livro;
+    if (!ler_linha(linha, sizeof linha)) return 0;
+    errno = 0;
+    livro->Preco = strtod(linha, &fim);
+    return fim != linha && *fim == '\0' && errno == 0 && isfinite(livro->Preco);
 }
 
-int main()
+int main(void)
 {
     Livro livro;
-    char resp;
-    FILE *fptr; /* ponteiro para arquivo */
-
-    if((fptr = fopen("Livros.Dat","wb"))==NULL) exit(1);
-
-    do
-    {
-        livro = GetLivro();
-        if(fwrite(&livro,sizeof(Livro),1,fptr)!=1) break;
+    char resp[3];
+    int status = 0;
+    FILE *fptr = fopen("Livros.Dat", "wb");
+    if (fptr == NULL) { perror("Livros.Dat"); return 1; }
+    do {
+        if (!GetLivro(&livro)) {
+            fputs("Entrada incompleta ou inválida.\n", stderr); status = 1; break;
+        }
+        if (fwrite(&livro, sizeof livro, 1, fptr) != 1) { status = 1; break; }
         printf("Mais um livro (s/n)? ");
-        resp = getche();
-    }
-    while(resp != 'n' && resp != 'N');
+        /* EOF após um registro completo também encerra a gravação. */
+        if (!ler_linha(resp, sizeof resp)) break;
+    } while (resp[0] != 'n' && resp[0] != 'N');
 
-    fclose(fptr);
+    if (ferror(stdin)) status = 1;
+
+    if (fclose(fptr) == EOF) status = 1;
     // system("pause");
-    return 0;
+    return status;
 }
