@@ -8,13 +8,13 @@ union Numero
     char str[32];
     int i;
     float f;
-} x; /* Cria vari·vel */
+} x; /* Cria vari√°vel */
 
 int main(void)
 {
     printf("%d\n", sizeof(union Numero));
     printf("%d\n", sizeof(x));
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

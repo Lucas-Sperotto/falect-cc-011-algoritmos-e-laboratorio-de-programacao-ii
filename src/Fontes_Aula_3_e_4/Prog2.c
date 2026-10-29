@@ -5,14 +5,14 @@
 
 int main()
 {
-    struct Aluno		/*Inicio da definição da estrutura */
+    struct Aluno		/*Inicio da definiÃ§Ã£o da estrutura */
     {
-        int nmat;		/* Número da matrícula */
+        int nmat;		/* NÃºmero da matrÃ­cula */
         float nota[3];	/* Notas */
-        float media;	/* Média */
-    };  			      /* Fim da definição */
+        float media;	/* MÃ©dia */
+    };  			      /* Fim da definiÃ§Ã£o */
 
-    struct Aluno Jose; /* Declara uma variável do tipo struct Aluno */
+    struct Aluno Jose; /* Declara uma variÃ¡vel do tipo struct Aluno */
 
     Jose.nmat	= 456;
     Jose.nota[0]= 7.5;
@@ -20,9 +20,9 @@ int main()
     Jose.nota[2]= 8.4;
     Jose.media	= (Jose.nota[0] + Jose.nota[1] + Jose.nota[2])/3.0;
 
-    printf("Matrícula: %d\n", Jose.nmat);
-    printf("Média    : %.2f\n", Jose.media);
+    printf("MatrÃ­cula: %d\n", Jose.nmat);
+    printf("MÃ©dia    : %.2f\n", Jose.media);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

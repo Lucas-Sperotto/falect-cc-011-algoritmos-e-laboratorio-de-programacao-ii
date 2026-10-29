@@ -21,10 +21,10 @@ int main()
 {
     static Venda A = { 20, 110.0, {7,"Novembro",2001} };
 
-    printf("Peças: %d\n", A.pecas);
-    printf("Preço: %d\n", A.preco);
+    printf("PeÃ§as: %d\n", A.pecas);
+    printf("PreÃ§o: %d\n", A.preco);
     printf("Data : %d de %s de %d\n",
            A.diavenda.dia, A.diavenda.mes, A.diavenda.ano);
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }

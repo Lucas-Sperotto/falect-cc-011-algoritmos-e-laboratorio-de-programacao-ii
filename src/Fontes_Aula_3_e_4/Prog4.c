@@ -1,6 +1,6 @@
 /* Prog4.c */
-/* Mostra passagem de estruturas para funções por valor */
-/* Mostra uma função que retorna uma estrutura */
+/* Mostra passagem de estruturas para funÃ§Ãµes por valor */
+/* Mostra uma funÃ§Ã£o que retorna uma estrutura */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -10,30 +10,30 @@ typedef struct Venda
     float preco;
 } Venda;
 
-Venda TotalVendas( Venda C, Venda D);/* Protótipo */
+Venda TotalVendas( Venda C, Venda D);/* ProtÃ³tipo */
 
 int main()
 {
     Venda A, B, Total;
 
     printf("Venda A\n=======\n");
-    printf("Insira o número de peças: ");
+    printf("Insira o nÃºmero de peÃ§as: ");
     scanf("%d", &A.pecas);
-    printf("Insira o preço: ");
+    printf("Insira o preÃ§o: ");
     scanf("%f", &A.preco);
 
     printf("\nVenda B\n=======\n");
-    printf("Insira o número de peças: ");
+    printf("Insira o nÃºmero de peÃ§as: ");
     scanf("%d", &B.pecas);
-    printf("Insira o preço: ");
+    printf("Insira o preÃ§o: ");
     scanf("%f", &B.preco);
     Total = TotalVendas( A,B);/* Estruturas como argumento e retorno */
 
     printf("\n\nVenda Total\n===========");
-    printf("\nTotal de peças: %d." , Total.pecas );
-    printf("\nPreço total   : %.2f\n" , Total.preco );
+    printf("\nTotal de peÃ§as: %d." , Total.pecas );
+    printf("\nPreÃ§o total   : %.2f\n" , Total.preco );
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 

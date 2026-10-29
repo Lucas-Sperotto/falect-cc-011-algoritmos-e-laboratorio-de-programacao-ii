@@ -1,5 +1,5 @@
 /*Prog13.c */
-/* Mostra o uso de uniıes anÙnimas */
+/* Mostra o uso de uni√µes an√¥nimas */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>	/* Para strcpy() */
@@ -32,7 +32,7 @@ int main()
     A.int_valor=345;
     Print(A);
 
-    system("PAUSE");
+    // system("PAUSE");
     return 0;
 }
 void Print(UniaoLiteral x)
