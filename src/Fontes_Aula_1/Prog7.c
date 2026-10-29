@@ -1,11 +1,18 @@
+/*
+ * ID: A01-P07
+ * Aula: ../../atividades/aula-01-pt2.md
+ * Objetivo: Imprime 50 combinações de jogos para a Mega-Sena.
+ */
 /* Loteria.C */
 /* Imprime 50 combinações de jogos para a Sena */
 #include <stdio.h>
 #include <stdlib.h>
 #define JOGOS 50
 #define N 6
+/* As dezenas são independentes e podem repetir: exercício de matrizes
+ * e rand(), sem validação das regras de uma aposta real. */
 
-int main()
+int main(void)
 {
     int matriz[JOGOS][N], k, j;
 

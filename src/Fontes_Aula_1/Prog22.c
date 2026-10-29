@@ -1,11 +1,17 @@
+/*
+ * ID: A01-P22
+ * Aula: ../../atividades/aula-02.md
+ * Objetivo: Testa a função strcmp().
+ */
 /* Prog22.c */
 /* Testa a função strcmp() */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-int main()
+int main(void)
 {
+    /* Apenas o sinal do resultado é definido; a magnitude pode variar. */
     printf("%d\n", strcmp("A", "A"));
     printf("%d\n", strcmp("A", "B"));
     printf("%d\n", strcmp("B", "A"));

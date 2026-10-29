@@ -1,3 +1,8 @@
+/*
+ * ID: A01-P10
+ * Aula: ../../atividades/aula-01-pt2.md
+ * Objetivo: Mostra a passagem de matrizes para funções como argumento.
+ */
 /* Prog10.C */
 /* Mostra a passagem de matrizes para funções como argumento */
 #include <stdio.h>
@@ -6,23 +11,31 @@
 
 float media(float[], int); /*Protótipo*/
 
-int main()
+int main(void)
 {
     float notas[TAMANHO], m;
     int i=0;
 
-    do
+    /* O limite é verificado antes de escrever no vetor. */
+    while (i < TAMANHO)
     {
         printf("Digite a nota do aluno %d ", i+1);
-        scanf("%f",&notas[i]);
+        if (scanf("%f", &notas[i]) != 1) {
+            fputs("Nota inválida.\n", stderr);
+            return 1;
+        }
+        if (notas[i] < 0.0)
+            break; /* A sentinela não entra no cálculo. */
+        i++;
     }
-    while( notas[i++] >= 0.0);
-
-    i--; /* remove o item de término */
+    if (i == 0) {
+        fputs("Nenhuma nota informada.\n", stderr);
+        return 1;
+    }
 
     m = media(notas, i);
 
-    printf("Média das notas: %.2f\n", media);
+    printf("Média das notas: %.2f\n", m);
 
     // system("PAUSE");
     return 0;
