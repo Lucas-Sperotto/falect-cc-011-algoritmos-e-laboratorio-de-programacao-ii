@@ -10,6 +10,8 @@ Repositório de apoio à disciplina, com programas em linguagem C, materiais de 
 - **Módulo 1:** 31/08 a 04/09/2026 — vetores, matrizes, strings e structs.
 - **Módulo 2:** 21/09 a 25/09/2026 — ponteiros e manipulação de arquivos.
 - **Módulo 3:** 27/10 a 30/10/2026 — prática de programação e algoritmos.
+
+**[Aulas](aulas/README.md):** uma página por aula, com a transcrição integral dos slides, explicações complementares, os programas C relacionados e exemplos de execução reais.
 - **Avaliação:** três listas de exercícios de até 10 pontos, com média aritmética simples.
 
 Consulte o [plano de curso 2026.2](PLANO_DISCIPLINA.md), [cronograma](CRONOGRAMA.md) e o [arquivo histórico de planos](docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/README.md). O [PDF oficial de 2026.2](docs/planos_old/algoritmos-e-laboratorio-de-programacao-ii/Plano_de_Curso_FALECT-CC-011_2026.2_01_.pdf) está preservado no histórico.
@@ -78,11 +80,17 @@ python3 scripts/verificar_fontes_c.py
 python3 -m unittest discover -s tests -v
 ```
 
+Para conferir as páginas das aulas (figuras, trechos de código, exemplos de execução, matriz e *links*):
+
+```bash
+python3 scripts/documentacao_aulas.py validar
+```
+
 ## Mapa dos códigos
 
 | Aula(s) | Pasta | Arquivos C |
 |---|---|---:|
-| Aula 1 | [`src/Fontes_Aula_1/`](src/Fontes_Aula_1) | 25 |
+| Aulas 1 e 2 | [`src/Fontes_Aula_1/`](src/Fontes_Aula_1) | 25 |
 | Aulas 10 e 11 | [`src/Fontes_Aula_10_e_11/`](src/Fontes_Aula_10_e_11) | 20 |
 | Aulas 3 e 4 | [`src/Fontes_Aula_3_e_4/`](src/Fontes_Aula_3_e_4) | 14 |
 | Aulas 5, 6, 7 e 8 | [`src/Fontes_Aula_5_6_7_e_8/`](src/Fontes_Aula_5_6_7_e_8) | 35 |
@@ -94,7 +102,7 @@ python3 -m unittest discover -s tests -v
 ## Organização do repositório
 
 - `src/`: exemplos em linguagem C distribuídos por aula;
-- `aulas/`: roteiros e materiais de aula;
+- `aulas/`: PDFs originais e uma página por aula, com transcrição, explicações e exemplos ([índice](aulas/README.md));
 - `atividades/`: atividades e práticas;
 - `ead/`: recursos e atividades a distância;
 - `exemplos/`: materiais complementares;

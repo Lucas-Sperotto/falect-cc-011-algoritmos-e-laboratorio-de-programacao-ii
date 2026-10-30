@@ -2,6 +2,8 @@
 
 **Origem:** enunciados das tarefas individuais no SIGAA (transcrição das capturas de tela).
 
+**Material das aulas:** [Aula 5](../aulas/aula-05/README.md) (Prog01–Prog07) e [Aula 6](../aulas/aula-06/README.md) (Prog08–Prog13): transcrição dos slides, explicações e exemplos de execução.
+
 ## Entrega
 
 Enviar em um único arquivo `.zip` ou `.rar` os códigos-fonte `.c` trabalhados em aula, conforme as orientações do SIGAA. Os arquivos originais do professor ficam em `src/`; os arquivos enviados devem corresponder ao trabalho solicitado.
