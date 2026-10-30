@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P18
- * Aula: ../../atividades/aulas-06-e-07.md
+ * Aula: ../../aulas/aula-07/README.md
  * Objetivo: Mostra o uso de ponteiros para funções.
  */
 /* Prog18.c */

@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P23
- * Aula: ../../atividades/aulas-06-e-07.md
+ * Aula: ../../aulas/aula-07/README.md
  * Objetivo: Mostra o uso e as limitações de ponteiros do tipo void.
  */
 /* Prog23.c */

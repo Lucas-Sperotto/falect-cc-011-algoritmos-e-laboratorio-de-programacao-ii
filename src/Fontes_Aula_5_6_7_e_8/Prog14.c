@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P14
- * Aula: ../../atividades/aulas-06-e-07.md
+ * Aula: ../../aulas/aula-06/README.md
  * Objetivo: Mostra o uso de ponteiros para cadeias de caracteres.
  */
 /* Prog14.c */

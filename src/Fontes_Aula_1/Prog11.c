@@ -1,6 +1,6 @@
 /*
  * ID: A01-P11
- * Aula: ../../atividades/aula-01-pt2.md
+ * Aula: ../../aulas/aula-01/README.md
  * Objetivo: Ordena os valores da matriz.
  */
 /* OrdenaNum.C */

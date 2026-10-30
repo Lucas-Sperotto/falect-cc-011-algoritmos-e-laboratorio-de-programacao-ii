@@ -1,6 +1,6 @@
 /*
  * ID: A03-04-P06
- * Aula: ../../atividades/aulas-03-e-04.md
+ * Aula: ../../aulas/aula-04/README.md
  * Objetivo: Mostra o uso de enumerações.
  */
 #include <stdio.h>

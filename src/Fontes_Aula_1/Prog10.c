@@ -1,6 +1,6 @@
 /*
  * ID: A01-P10
- * Aula: ../../atividades/aula-01-pt2.md
+ * Aula: ../../aulas/aula-01/README.md
  * Objetivo: Mostra a passagem de matrizes para funções como argumento.
  */
 /* Prog10.C */

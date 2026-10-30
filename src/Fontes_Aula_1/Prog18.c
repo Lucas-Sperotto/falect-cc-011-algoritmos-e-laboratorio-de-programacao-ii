@@ -1,6 +1,6 @@
 /*
  * ID: A01-P18
- * Aula: ../../atividades/aula-02.md
+ * Aula: ../../aulas/aula-02/README.md
  * Objetivo: Mostra o uso de strlen().
  */
 /* Prog18.c */

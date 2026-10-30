@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P15
- * Aula: ../../atividades/aulas-06-e-07.md
+ * Aula: ../../aulas/aula-06/README.md
  * Objetivo: Imprime o dia da semana a partir de uma data utilizando um vetor de ponteiros.
  */
 /* Prog15.c */

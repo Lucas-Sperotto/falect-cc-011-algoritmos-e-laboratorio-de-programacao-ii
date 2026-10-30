@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P07
- * Aula: ../../atividades/aula-10.md
+ * Aula: ../../aulas/aula-10/README.md
  * Objetivo: Lê dados formatados de um arquivo utilizando fscanf().
  */
 /* Prog7.c — lê dados formatados do arquivo. */

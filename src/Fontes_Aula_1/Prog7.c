@@ -1,6 +1,6 @@
 /*
  * ID: A01-P07
- * Aula: ../../atividades/aula-01-pt2.md
+ * Aula: ../../aulas/aula-01/README.md
  * Objetivo: Imprime 50 combinações de jogos para a Mega-Sena.
  */
 /* Loteria.C */

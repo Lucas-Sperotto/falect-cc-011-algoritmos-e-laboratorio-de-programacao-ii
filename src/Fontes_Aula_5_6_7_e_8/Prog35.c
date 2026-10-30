@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P35
- * Aula: ../../atividades/aula-08.md
+ * Aula: ../../aulas/aula-08/README.md
  * Objetivo: Mostra alocação, inicialização e liberação dinâmica de matrizes.
  */
 /* Prog35.c */

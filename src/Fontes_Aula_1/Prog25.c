@@ -1,6 +1,6 @@
 /*
  * ID: A01-P25
- * Aula: ../../atividades/aula-02.md
+ * Aula: ../../aulas/aula-02/README.md
  * Objetivo: Imprime um cartão de Natal.
  */
 /* Prog25.c */

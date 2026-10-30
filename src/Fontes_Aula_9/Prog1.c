@@ -1,6 +1,6 @@
 /*
  * ID: A09-P01
- * Aula: ../../aulas/aula-09.md
+ * Aula: ../../aulas/aula-09/README.md
  * Objetivo: Mostra o uso do operador de complemento ~
  */
 /* Prog1.c — complemento dos bytes digitados, até X ou EOF. */

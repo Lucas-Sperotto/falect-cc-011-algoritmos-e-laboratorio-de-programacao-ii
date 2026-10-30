@@ -1,6 +1,6 @@
 /*
  * ID: A09-P02
- * Aula: ../../aulas/aula-09.md
+ * Aula: ../../aulas/aula-09/README.md
  * Objetivo: todos os bits ligados
  */
 /* Prog2.c */

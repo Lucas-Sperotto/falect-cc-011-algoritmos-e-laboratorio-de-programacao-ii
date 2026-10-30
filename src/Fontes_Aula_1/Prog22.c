@@ -1,6 +1,6 @@
 /*
  * ID: A01-P22
- * Aula: ../../atividades/aula-02.md
+ * Aula: ../../aulas/aula-02/README.md
  * Objetivo: Testa a função strcmp().
  */
 /* Prog22.c */

@@ -1,6 +1,6 @@
 /*
  * ID: A01-P17
- * Aula: ../../atividades/aula-02.md
+ * Aula: ../../aulas/aula-02/README.md
  * Objetivo: Mostra o uso da aritmética com endereços.
  */
 /* Prog17.c */

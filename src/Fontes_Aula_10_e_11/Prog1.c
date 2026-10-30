@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P01
- * Aula: ../../atividades/aula-10.md
+ * Aula: ../../aulas/aula-10/README.md
  * Objetivo: Grava um caractere por vez em um arquivo texto.
  */
 /* Prog1.c — grava um caractere por vez em arquivo texto. */

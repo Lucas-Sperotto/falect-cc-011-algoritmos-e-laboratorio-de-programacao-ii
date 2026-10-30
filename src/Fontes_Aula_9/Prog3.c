@@ -1,6 +1,6 @@
 /*
  * ID: A09-P03
- * Aula: ../../aulas/aula-09.md
+ * Aula: ../../aulas/aula-09/README.md
  * Objetivo: um no bit mais significativo e zero nos outros
  */
 /* Prog3.c — converte hexadecimal em binário. */

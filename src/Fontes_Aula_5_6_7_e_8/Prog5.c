@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P05
- * Aula: ../../atividades/aulas-05-e-06.md
+ * Aula: ../../aulas/aula-05/README.md
  * Objetivo: Mostra o uso de ponteiros declarados dentro da função main().
  */
 /* Prog5.c */

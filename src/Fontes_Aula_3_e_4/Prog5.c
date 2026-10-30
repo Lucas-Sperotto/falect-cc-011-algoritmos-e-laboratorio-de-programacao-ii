@@ -1,6 +1,6 @@
 /*
  * ID: A03-04-P05
- * Aula: ../../atividades/aulas-03-e-04.md
+ * Aula: ../../aulas/aula-03/README.md
  * Objetivo: Mostra uma matriz de estruturas.
  */
 /* Prog5.c */

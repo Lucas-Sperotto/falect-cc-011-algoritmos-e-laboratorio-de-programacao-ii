@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P09
- * Aula: ../../atividades/aula-10.md
+ * Aula: ../../aulas/aula-10/README.md
  * Objetivo: Conta os bytes de um arquivo aberto em modo binário.
  */
 /* Prog9.c — conta bytes em modo binário. */

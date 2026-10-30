@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P10
- * Aula: ../../atividades/aula-10.md
+ * Aula: ../../aulas/aula-10/README.md
  * Objetivo: Copia arquivos utilizando as funções fread() e fwrite().
  */
 /* Prog10.c — copia com fread/fwrite e exibe os bytes sem comandos Windows. */

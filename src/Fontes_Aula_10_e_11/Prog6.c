@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P06
- * Aula: ../../atividades/aula-10.md
+ * Aula: ../../aulas/aula-10/README.md
  * Objetivo: Grava dados formatados em um arquivo utilizando fprintf().
  */
 /* Prog6.c — grava dados formatados; título sem espaços, até 29 bytes. */

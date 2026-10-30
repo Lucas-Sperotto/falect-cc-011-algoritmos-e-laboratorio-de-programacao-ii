@@ -1,6 +1,6 @@
 /*
  * ID: A03-04-BITTEST
- * Aula: ../../atividades/aulas-03-e-04.md
+ * Aula: ../../aulas/aula-03/README.md
  * Objetivo: Bits 0 a 7
  */
 

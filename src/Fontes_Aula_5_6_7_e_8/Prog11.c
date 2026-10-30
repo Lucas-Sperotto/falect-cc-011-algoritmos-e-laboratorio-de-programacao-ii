@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P11
- * Aula: ../../atividades/aulas-05-e-06.md
+ * Aula: ../../aulas/aula-06/README.md
  * Objetivo: Mostra a passagem de vetores para funções utilizando ponteiros.
  */
 /* Prog11.c */

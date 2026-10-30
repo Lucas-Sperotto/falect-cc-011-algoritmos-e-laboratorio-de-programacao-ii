@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P04
- * Aula: ../../atividades/aula-10.md
+ * Aula: ../../aulas/aula-10/README.md
  * Objetivo: Grava strings em um arquivo texto.
  */
 /* Prog4.c — grava strings e exibe o arquivo com a biblioteca C. */

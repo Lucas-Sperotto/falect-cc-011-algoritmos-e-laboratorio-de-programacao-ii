@@ -1,6 +1,6 @@
 /*
  * ID: A01-P12
- * Aula: ../../atividades/aula-01-pt2.md
+ * Aula: ../../aulas/aula-01/README.md
  * Objetivo: Mostra matriz de duas dimensões como argumento de função.
  */
 /* Histograma.C */

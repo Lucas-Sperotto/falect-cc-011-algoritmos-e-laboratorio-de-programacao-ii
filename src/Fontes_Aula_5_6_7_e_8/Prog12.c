@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P12
- * Aula: ../../atividades/aulas-05-e-06.md
+ * Aula: ../../aulas/aula-06/README.md
  * Objetivo: Procura um caractere em uma string utilizando ponteiros.
  */
 /* Prog12.c */

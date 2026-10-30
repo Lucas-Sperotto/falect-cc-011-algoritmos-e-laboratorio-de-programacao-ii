@@ -1,6 +1,6 @@
 /*
  * ID: A03-04-P03
- * Aula: ../../atividades/aulas-03-e-04.md
+ * Aula: ../../aulas/aula-03/README.md
  * Objetivo: Mostra estruturas aninhadas.
  */
 /* Prog3.c */

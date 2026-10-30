@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P19
- * Aula: ../../atividades/aula-11.md
+ * Aula: ../../aulas/aula-11/README.md
  * Objetivo: Procura uma sequência de caracteres em um arquivo utilizando operações de baixo nível.
  */
 /* Prog19.c — busca frase com janela de bytes e contexto limitado. */

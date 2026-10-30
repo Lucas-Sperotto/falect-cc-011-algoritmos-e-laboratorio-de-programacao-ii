@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P13
- * Aula: ../../atividades/aulas-05-e-06.md
+ * Aula: ../../aulas/aula-06/README.md
  * Objetivo: Implementa funções para manipulação de strings utilizando ponteiros.
  */
 /* Prog13.c */

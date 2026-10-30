@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P02
- * Aula: ../../atividades/aula-10.md
+ * Aula: ../../aulas/aula-10/README.md
  * Objetivo: Lê um caractere por vez de um arquivo texto.
  */
 /* Prog2.c — lê um caractere por vez, verificando a abertura. */

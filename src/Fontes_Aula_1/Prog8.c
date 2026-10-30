@@ -1,6 +1,6 @@
 /*
  * ID: A01-P08
- * Aula: ../../atividades/aula-01-pt2.md
+ * Aula: ../../aulas/aula-01/README.md
  * Objetivo: Jogo-da-velha: mostra matriz de duas dimensões.
  */
 /* JogoDaVelha.C */

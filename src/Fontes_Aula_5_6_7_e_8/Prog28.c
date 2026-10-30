@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P28
- * Aula: ../../atividades/aulas-06-e-07.md
+ * Aula: ../../aulas/aula-07/README.md
  * Objetivo: Mostra a ordenação de estruturas por diferentes campos utilizando qsort().
  */
 /* Prog28.c */

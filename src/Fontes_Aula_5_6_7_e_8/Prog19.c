@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P19
- * Aula: ../../atividades/aulas-06-e-07.md
+ * Aula: ../../aulas/aula-07/README.md
  * Objetivo: Mostra a passagem de ponteiros para funções como argumentos.
  */
 /* Prog19.c */

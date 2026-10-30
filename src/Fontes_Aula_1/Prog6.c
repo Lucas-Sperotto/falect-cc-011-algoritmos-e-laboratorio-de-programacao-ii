@@ -1,6 +1,6 @@
 /*
  * ID: A01-P06
- * Aula: ../../atividades/aula-01-pt2.md
+ * Aula: ../../aulas/aula-01/README.md
  * Objetivo: Imprime o número de dias do ano até uma data especificada.
  */
 /* NumDias.C */

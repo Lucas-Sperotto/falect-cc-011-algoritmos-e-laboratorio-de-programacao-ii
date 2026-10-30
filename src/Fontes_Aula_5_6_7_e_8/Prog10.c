@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P10
- * Aula: ../../atividades/aulas-05-e-06.md
+ * Aula: ../../aulas/aula-06/README.md
  * Objetivo: Imprime os elementos de um vetor utilizando incremento de ponteiros.
  */
 /* Prog10.c */

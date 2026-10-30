@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P21
- * Aula: ../../atividades/aulas-06-e-07.md
+ * Aula: ../../aulas/aula-07/README.md
  * Objetivo: Mostra a inicialização de um vetor de ponteiros para funções.
  */
 /* Prog21.c */

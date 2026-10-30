@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P16
- * Aula: ../../atividades/aula-11.md
+ * Aula: ../../aulas/aula-11/README.md
  * Objetivo: Envia o conteúdo de um arquivo para uma impressora.
  */
 /* Prog16.c — envia linhas a um destino de saída. */
