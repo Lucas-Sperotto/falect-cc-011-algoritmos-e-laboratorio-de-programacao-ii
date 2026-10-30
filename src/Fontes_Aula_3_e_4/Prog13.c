@@ -1,6 +1,6 @@
 /*
  * ID: A03-04-P13
- * Aula: ../../atividades/aulas-03-e-04.md
+ * Aula: ../../aulas/aula-04/README.md
  * Objetivo: Mostra o uso de uniões anônimas.
  */
 /*Prog13.c */

@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P13
- * Aula: ../../atividades/aula-11.md
+ * Aula: ../../aulas/aula-11/README.md
  * Objetivo: Lê estruturas de dados armazenadas em um arquivo binário.
  */
 /* Prog13.c — lê estruturas do disco. */

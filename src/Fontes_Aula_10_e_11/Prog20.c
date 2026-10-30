@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P20
- * Aula: ../../atividades/aula-11.md
+ * Aula: ../../aulas/aula-11/README.md
  * Objetivo: Copia o conteúdo de um arquivo para outro utilizando operações de baixo nível.
  */
 /* Prog20.c — cópia binária com read/write e descritores POSIX. */

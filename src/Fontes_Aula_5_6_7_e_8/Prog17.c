@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P17
- * Aula: ../../atividades/aulas-06-e-07.md
+ * Aula: ../../aulas/aula-06/README.md
  * Objetivo: Movimenta uma imagem na tela utilizando ponteiros e matrizes.
  */
 /* Prog17.c */

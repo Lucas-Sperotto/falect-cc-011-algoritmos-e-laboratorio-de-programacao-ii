@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P05
- * Aula: ../../atividades/aula-10.md
+ * Aula: ../../aulas/aula-10/README.md
  * Objetivo: Lê um arquivo texto linha por linha.
  */
 /* Prog5.c — lê linha a linha do arquivo. */

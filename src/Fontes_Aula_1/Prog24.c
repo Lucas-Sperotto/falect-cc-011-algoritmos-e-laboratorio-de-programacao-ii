@@ -1,6 +1,6 @@
 /*
  * ID: A01-P24
- * Aula: ../../atividades/aula-02.md
+ * Aula: ../../aulas/aula-02/README.md
  * Objetivo: Imprime o dia da semana a partir de uma data.
  */
 /* Prog24.c */

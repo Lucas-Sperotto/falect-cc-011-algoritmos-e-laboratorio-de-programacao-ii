@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P14
- * Aula: ../../atividades/aula-11.md
+ * Aula: ../../aulas/aula-11/README.md
  * Objetivo: Grava e lê estruturas em um arquivo binário.
  */
 /* Prog14.c — grava e lê estruturas em disco. */

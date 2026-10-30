@@ -1,6 +1,6 @@
 /*
  * ID: A03-04-P11
- * Aula: ../../atividades/aulas-03-e-04.md
+ * Aula: ../../aulas/aula-04/README.md
  * Objetivo: Mostra o uso do operador sizeof().
  */
 /* Prog11.c */

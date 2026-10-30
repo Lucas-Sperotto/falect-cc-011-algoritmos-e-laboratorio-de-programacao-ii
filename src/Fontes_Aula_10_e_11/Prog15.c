@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P15
- * Aula: ../../atividades/aula-11.md
+ * Aula: ../../aulas/aula-11/README.md
  * Objetivo: Mostra o uso das funções fseek() e ftell() para posicionamento e acesso a registros em arquivos.
  */
 /* Prog15.c — fseek/ftell e acesso ao registro solicitado. */

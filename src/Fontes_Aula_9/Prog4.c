@@ -1,6 +1,6 @@
 /*
  * ID: A09-P04
- * Aula: ../../aulas/aula-09.md
+ * Aula: ../../aulas/aula-09/README.md
  * Objetivo: Calculadora bit-a-bit
  */
 /* Prog4.c — calculadora de 16 bits; complemento usa "FFFF ~ 0". */

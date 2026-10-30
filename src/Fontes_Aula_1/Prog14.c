@@ -1,6 +1,6 @@
 /*
  * ID: A01-P14
- * Aula: ../../atividades/aula-02.md
+ * Aula: ../../aulas/aula-02/README.md
  * Objetivo: Mostra leitura de string com gets().
  */
 /* Prog14.c */

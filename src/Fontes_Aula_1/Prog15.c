@@ -1,6 +1,6 @@
 /*
  * ID: A01-P15
- * Aula: ../../atividades/aula-02.md
+ * Aula: ../../aulas/aula-02/README.md
  * Objetivo: Mostra impressão de string com puts().
  */
 /* Prog15.c */

@@ -1,6 +1,6 @@
 /*
  * ID: A03-04-P02
- * Aula: ../../atividades/aulas-03-e-04.md
+ * Aula: ../../aulas/aula-03/README.md
  * Objetivo: Cria uma estrutura para armazenar dados de um aluno.
  */
 /* Prog2.c */

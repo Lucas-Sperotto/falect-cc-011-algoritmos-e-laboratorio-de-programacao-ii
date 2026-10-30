@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P31
- * Aula: ../../atividades/aula-08.md
+ * Aula: ../../aulas/aula-08/README.md
  * Objetivo: Mostra a implementação de uma lista encadeada de livros.
  */
 /* Prog31.c */

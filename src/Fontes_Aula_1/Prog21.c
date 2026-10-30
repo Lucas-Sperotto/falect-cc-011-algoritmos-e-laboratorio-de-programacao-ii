@@ -1,6 +1,6 @@
 /*
  * ID: A01-P21
- * Aula: ../../atividades/aula-02.md
+ * Aula: ../../aulas/aula-02/README.md
  * Objetivo: Mostra o uso de strcmp().
  */
 /* Prog21.c */

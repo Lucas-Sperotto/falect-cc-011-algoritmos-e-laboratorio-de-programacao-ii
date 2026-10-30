@@ -1,6 +1,6 @@
 /*
  * ID: A01-P02
- * Aula: ../../atividades/aula-01-pt1.md
+ * Aula: ../../aulas/aula-01/README.md
  * Objetivo: Calcula a média de cinco notas (usa matriz).
  */
 /* Notas.C */

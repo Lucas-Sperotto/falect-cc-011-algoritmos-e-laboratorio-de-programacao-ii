@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P33
- * Aula: ../../atividades/aula-08.md
+ * Aula: ../../aulas/aula-08/README.md
  * Objetivo: Mostra a utilização de argumentos da linha de comando para configurar teclas de função.
  */
 /* Prog33.c */

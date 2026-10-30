@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P11
- * Aula: ../../atividades/aula-11.md
+ * Aula: ../../aulas/aula-11/README.md
  * Objetivo: Grava estruturas de dados em um arquivo binário.
  */
 /* Prog11.c — grava estruturas em disco. */

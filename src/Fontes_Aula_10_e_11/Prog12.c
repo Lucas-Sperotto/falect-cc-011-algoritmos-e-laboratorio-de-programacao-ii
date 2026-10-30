@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P12
- * Aula: ../../atividades/aula-11.md
+ * Aula: ../../aulas/aula-11/README.md
  * Objetivo: Mostra a gravação de estruturas em um arquivo binário.
  */
 /* Prog12.c — grava estruturas em disco. */

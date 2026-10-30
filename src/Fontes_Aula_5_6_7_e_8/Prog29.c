@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P29
- * Aula: ../../atividades/aula-08.md
+ * Aula: ../../aulas/aula-08/README.md
  * Objetivo: Mostra o uso de malloc() para alocação dinâmica de memória.
  */
 /* Prog29.c */

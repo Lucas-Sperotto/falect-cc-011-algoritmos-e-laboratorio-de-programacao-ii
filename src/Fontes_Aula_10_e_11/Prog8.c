@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P08
- * Aula: ../../atividades/aula-10.md
+ * Aula: ../../aulas/aula-10/README.md
  * Objetivo: Conta os caracteres de um arquivo aberto em modo texto.
  */
 /* Prog8.c — conta bytes em modo texto. */

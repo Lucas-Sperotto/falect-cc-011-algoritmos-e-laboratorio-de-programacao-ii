@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P18
- * Aula: ../../atividades/aula-11.md
+ * Aula: ../../aulas/aula-11/README.md
  * Objetivo: Lê e imprime o conteúdo de um arquivo utilizando operações de baixo nível.
  */
 /* Prog18.c — lê e imprime todos os bytes usando operações POSIX. */

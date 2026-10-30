@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P06
- * Aula: ../../atividades/aulas-05-e-06.md
+ * Aula: ../../aulas/aula-05/README.md
  * Objetivo: Mostra a inicialização do ponteiro.
  */
 /* Prog6.c */

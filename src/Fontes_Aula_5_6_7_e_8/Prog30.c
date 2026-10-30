@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P30
- * Aula: ../../atividades/aula-08.md
+ * Aula: ../../aulas/aula-08/README.md
  * Objetivo: Mostra alocação dinâmica de vetores utilizando calloc().
  */
 /* Prog30.c */

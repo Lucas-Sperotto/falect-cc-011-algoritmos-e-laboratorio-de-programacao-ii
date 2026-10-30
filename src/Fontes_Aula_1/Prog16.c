@@ -1,6 +1,6 @@
 /*
  * ID: A01-P16
- * Aula: ../../atividades/aula-02.md
+ * Aula: ../../aulas/aula-02/README.md
  * Objetivo: Mostra o uso de strings inicializadas.
  */
 /* Prog16.c */

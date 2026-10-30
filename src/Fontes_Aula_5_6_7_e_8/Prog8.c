@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P08
- * Aula: ../../atividades/aulas-05-e-06.md
+ * Aula: ../../aulas/aula-06/README.md
  * Objetivo: Imprime os elementos de um vetor utilizando a notação de índices.
  */
 /* Prog8.c */

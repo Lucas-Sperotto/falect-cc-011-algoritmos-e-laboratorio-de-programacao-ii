@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P17
- * Aula: ../../atividades/aula-11.md
+ * Aula: ../../aulas/aula-11/README.md
  * Objetivo: Mostra operações de entrada e saída de baixo nível utilizando stdin e stdout.
  */
 /* Prog17.c — stdin/stdout com operações POSIX de baixo nível. */

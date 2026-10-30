@@ -1,6 +1,6 @@
 /*
  * ID: A10-11-P03
- * Aula: ../../atividades/aula-10.md
+ * Aula: ../../aulas/aula-10/README.md
  * Objetivo: Lê caracteres de um arquivo texto, verificando se o arquivo foi aberto corretamente.
  */
 /* Prog3.c — lê um caractere por vez, verificando a abertura. */

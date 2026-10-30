@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P07
- * Aula: ../../atividades/aulas-05-e-06.md
+ * Aula: ../../aulas/aula-05/README.md
  * Objetivo: Mostra as operações possíveis com ponteiros.
  */
 /* Prog7.c */

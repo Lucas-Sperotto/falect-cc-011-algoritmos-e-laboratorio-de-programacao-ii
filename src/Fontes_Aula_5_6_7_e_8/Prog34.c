@@ -1,6 +1,6 @@
 /*
  * ID: A05-08-P34
- * Aula: ../../atividades/aula-08.md
+ * Aula: ../../aulas/aula-08/README.md
  * Objetivo: Mostra alocação, inicialização e liberação dinâmica de vetores.
  */
 /* Prog34.c */

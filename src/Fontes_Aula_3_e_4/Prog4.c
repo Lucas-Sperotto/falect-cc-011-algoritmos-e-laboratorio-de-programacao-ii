@@ -1,6 +1,6 @@
 /*
  * ID: A03-04-P04
- * Aula: ../../atividades/aulas-03-e-04.md
+ * Aula: ../../aulas/aula-03/README.md
  * Objetivo: Mostra passagem de estruturas para funções por valor; mostra uma função que retorna uma estrutura.
  */
 /* Prog4.c */

@@ -1,6 +1,6 @@
 /*
  * ID: A03-04-P10
- * Aula: ../../atividades/aulas-03-e-04.md
+ * Aula: ../../aulas/aula-04/README.md
  * Objetivo: Mostra união com estrutura.
  */
 /* Prog10.c */
