@@ -55,8 +55,10 @@ Tudo o que está fora dos blocos de citação da seção 3 foi acrescentado nest
 ## Documentos relacionados
 
 - [Matriz de rastreabilidade](../docs/MATRIZ_RASTREABILIDADE.md): para cada slide, a seção da página e o programa C correspondente.
+- [Matriz de controle de qualidade (Antigravity)](../docs/auditorias/MATRIZ_RASTREABILIDADE.md): visão por aula, código, exercícios e pendências.
 - [Inventário dos PDFs](../docs/INVENTARIO_PDFS.md): os 20 PDFs do repositório, classificados entre aulas, planos e documentos institucionais.
-- [Relatório da documentação das aulas](../docs/auditorias/CLAUDE_AUDIT.md): método, lacunas encontradas nos PDFs e recomendações para os fontes.
+- [Auditoria independente Antigravity](../docs/auditorias/ANTIGRAVITY_AUDIT.md): relatório independente, integração e qualidade dos materiais didáticos.
+- [Relatório da documentação das aulas (Claude Code)](../docs/auditorias/CLAUDE_AUDIT.md): método, lacunas encontradas nos PDFs e recomendações para os fontes.
 - [Tarefas do SIGAA](../atividades/README.md) e [revisão por fonte](../docs/auditorias/REVISAO_POR_FONTE.md).
 
 ## Como manter as páginas
