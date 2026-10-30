@@ -813,7 +813,7 @@
       "atividades/aulas-03-e-04.md",
       "aulas/aula-03/README.md"
     ],
-    "objective": "Bits 0 a 7",
+    "objective": "Campos de bits: caractere e atributos de vídeo em 16 bits.",
     "proposed_path": "src/aulas-03-e-04/bit-test.c",
     "interactive": false,
     "file_operations": false,

@@ -1,7 +1,7 @@
 /*
  * ID: A03-04-BITTEST
  * Aula: ../../aulas/aula-03/README.md
- * Objetivo: Bits 0 a 7
+ * Objetivo: Campos de bits: caractere e atributos de vídeo em 16 bits.
  */
 
 typedef struct

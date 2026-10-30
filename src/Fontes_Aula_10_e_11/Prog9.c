@@ -16,7 +16,7 @@ int main(int argc, char **argv)
     if (argc != 2) { fprintf(stderr, "Uso: %s nomearq\n", argv[0]); return 1; }
     fptr = fopen(argv[1], "rb");
     if (fptr == NULL) { perror(argv[1]); return 1; }
-    /* Linux não traduz CRLF em modo texto; cada fgetc conta um byte. */
+    /* Modo binário: sem tradução de fim de linha; cada fgetc conta um byte. */
     while ((ch = fgetc(fptr)) != EOF) {
         if (cont == SIZE_MAX) { status = 1; break; }
         cont++;

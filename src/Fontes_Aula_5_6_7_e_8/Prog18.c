@@ -28,6 +28,6 @@ void doisbeep(void)
 {
     unsigned i;
     printf("\a");
-    for(i=0; i < 800000 ; i++); /* dar um tempo */
+    for(i=0; i < 800000 ; i++); /* dar um tempo (espera ativa: o otimizador pode removê-la) */
     printf("\a");
 }
